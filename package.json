@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jimnieters-online",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Online Portfolio of Jim Nieters, a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.",
+  "version": "0.0.1",
+  "author": "Devanand <dev.ryder88@gmail.com>",
   "dependencies": {
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
@@ -22,7 +22,7 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "portfolio", "online", "jimnieters", "designer", "blog"
   ],
   "license": "MIT",
   "scripts": {

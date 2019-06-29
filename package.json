@@ -2,7 +2,7 @@
   "name": "jimnieters-online",
   "private": true,
   "description": "Online Portfolio of Jim Nieters, a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Devanand <dev.ryder88@gmail.com>",
   "dependencies": {
     "gatsby": "^2.10.4",

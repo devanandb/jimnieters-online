@@ -6,13 +6,9 @@
   "author": "Devanand <dev.ryder88@gmail.com>",
   "dependencies": {
     "gatsby": "^2.10.4",
-    "gatsby-image": "^2.2.3",
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-sharp": "^2.2.1",
-    "gatsby-source-filesystem": "^2.1.0",
-    "gatsby-transformer-sharp": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -24,6 +20,11 @@
     "@semantic-release/git": "^7.0.14",
     "@semantic-release/npm": "^5.1.13",
     "@semantic-release/release-notes-generator": "^7.2.1",
+    "gatsby-image": "^2.2.3",
+    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-source-filesystem": "^2.1.1",
+    "gatsby-transformer-json": "^2.2.0",
+    "gatsby-transformer-sharp": "^2.2.0",
     "prettier": "^1.18.2",
     "semantic-release": "^15.13.18"
   },
@@ -53,7 +54,7 @@
   },
   "release": {
     "repositoryUrl": "https://github.com/devanandb/jimnieters-online",
-     "plugins": [
+    "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",

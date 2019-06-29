@@ -1,5 +1,11 @@
 #### 0.0.1 (2019-06-29)
 
+##### Bug Fixes
+
+* Fix the build issue for missing image ([46f2f9e2](https://github.com/gatsbyjs/gatsby-starter-default/commit/46f2f9e2774e61d09241b7d5e85175d1bb7e83ac))
+
+#### 0.0.1 (2019-06-29)
+
 ##### Chores
 
 * Add basic changelog and release management ([e0bef246](https://github.com/gatsbyjs/gatsby-starter-default/commit/e0bef24627db42318a650c6a358ac69901f1e0da))

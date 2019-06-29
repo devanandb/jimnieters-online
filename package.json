@@ -15,18 +15,14 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/commit-analyzer": "^6.2.0",
-    "@semantic-release/git": "^7.0.14",
-    "@semantic-release/npm": "^5.1.13",
-    "@semantic-release/release-notes-generator": "^7.2.1",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-sharp": "^2.2.1",
     "gatsby-source-filesystem": "^2.1.1",
     "gatsby-transformer-json": "^2.2.0",
     "gatsby-transformer-sharp": "^2.2.0",
+    "generate-changelog": "^1.8.0",
     "prettier": "^1.18.2",
-    "semantic-release": "^15.13.18"
+    "release-it": "^12.3.0"
   },
   "keywords": [
     "portfolio",
@@ -43,7 +39,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "semantic-release": "semantic-release"
+    "release-patch": "changelog -p && git add CHANGELOG.md && git commit -m 'chore:Update CHANGELOG.md' && release-it patch",
+    "release-minor": "changelog -m && git add CHANGELOG.md && git commit -m 'chore:Update CHANGELOG.md' && release-it minor",
+    "release-major": "changelog -M && git add CHANGELOG.md && git commit -m 'chore:Update CHANGELOG.md' && release-it major"
   },
   "repository": {
     "type": "git",

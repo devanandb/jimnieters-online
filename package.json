@@ -6,8 +6,11 @@
   "author": "Devanand <dev.ryder88@gmail.com>",
   "dependencies": {
     "gatsby": "^2.10.4",
+    "gatsby-background-image": "^0.7.4",
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-offline": "^2.2.0",
+    "gatsby-plugin-postcss": "^2.1.0",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "gatsby-plugin-react-helmet": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -22,7 +25,8 @@
     "gatsby-transformer-sharp": "^2.2.0",
     "generate-changelog": "^1.8.0",
     "prettier": "^1.18.2",
-    "release-it": "^12.3.0"
+    "release-it": "^12.3.0",
+    "tailwindcss": "^1.0.4"
   },
   "keywords": [
     "portfolio",

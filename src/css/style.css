@@ -1,0 +1,39 @@
+@tailwind base;
+
+.hero-container {
+	background-image: url('/images/jim-bg.png');
+}
+
+.profile {
+	background-image: url('/images/jim-folio-3.jpg');
+}
+.content {
+
+}
+.content p {
+	@apply mb-10;
+}
+
+.content h1 {
+	@apply text-2xl;
+}
+
+svg.linkedin {
+	fill: #0077B5;
+}
+
+.content h2 {
+	@apply text-3xl text-black font-extrabold mb-3;
+}
+
+.content h3 {
+	@apply text-2xl text-black font-extrabold mb-3;
+}
+
+.content ol {
+	@apply list-decimal list-inside mb-4;
+}
+
+@tailwind components;
+
+@tailwind utilities;

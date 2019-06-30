@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jim Nieters`,
+    description: `I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.`,
+    author: `Devanand`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +15,26 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Shadows Into Light`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Barlow`,
+            variants: [`400`, `500`, `700`]
+          },
+          {
+            family: `Merriweather`,
+            variants: [`400`]
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

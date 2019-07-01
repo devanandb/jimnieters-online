@@ -31,6 +31,7 @@ export const query = graphql`
 
 const Article = ({ data }) => {
 	const article = data.articlesJson;
+	{JSON.stringify(article)}
 	return (
 		<Layout>
 			<div className="relative ">

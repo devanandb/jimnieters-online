@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../../data/images/jim-folio.png"
@@ -67,7 +67,7 @@ const IndexPage = () => (
 		{/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
 			<Image />
 		</div> */}
-		{/* <Link to="content/experience-led-differentiating-on-design">Experience-Led: Differentiating on Design</Link> */}
+		<Link to="content/experience-led-differentiating-on-design">Experience-Led: Differentiating on Design</Link>
 	</Layout>
 )
 

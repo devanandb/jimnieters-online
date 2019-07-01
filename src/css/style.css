@@ -34,6 +34,10 @@ svg.linkedin {
 	@apply list-decimal list-inside mb-4;
 }
 
+.content ul {
+	@apply list-disc list-inside;
+}
+
 @tailwind components;
 
 @tailwind utilities;

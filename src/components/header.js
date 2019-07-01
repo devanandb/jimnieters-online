@@ -17,19 +17,19 @@ const Header = ({ siteTitle }) => (
 				<ul className="flex">
 					<li className="ml-10 text-xl hover:text-blue-800">
 						<Link 
-							to=""
+							to="/designer"
 							className=""
-						>Design</Link>
+						>Designer</Link>
 					</li>
 					<li className="ml-10 text-xl hover:text-blue-800">
 						<Link 
-							to=""
+							to="/leader"
 							className=""
-						>Leadership</Link>
+						>Leader</Link>
 					</li>
 					<li className="ml-10 text-xl hover:text-blue-800">
 						<Link 
-							to=""
+							to="/about"
 							className=""
 						>About</Link>
 					</li>

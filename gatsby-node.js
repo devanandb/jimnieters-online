@@ -1,10 +1,13 @@
 exports.createPages = async ({ graphql, actions: { createPage} }) => {
 	const results = await graphql(`
 		{
-			allArticlesJson {
+			allCategoriesJson {
 				edges {
 					node {
 						slug
+						articles {
+							slug
+						}
 					}
 				}
 			}
@@ -12,19 +15,30 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 	`);
 
 	if (results.error) {
-		console.log('Somethinng went wrong');
+		console.log('Something went wrong');
 		return;
 	}
 
-	results.data.allArticlesJson.edges.forEach(edge => {
-		const article = edge.node;
+	results.data.allCategoriesJson.edges.forEach(edge => {
+		const category = edge.node;
 
 		createPage({
-			path: `/content/${article.slug}`,
-			component: require.resolve('./src/templates/article-graphql.js'),
+			path: `/${category.slug}`,
+			component: require.resolve('./src/templates/category-graphql.js'),
 			context: {
-				slug: article.slug,
+				slug: category.slug,
 			}
+		})
+
+		// 
+		category.articles.forEach(article => {
+			createPage({
+				path: `/content/${article.slug}`,
+				component: require.resolve('./src/templates/article-graphql.js'),
+				context: {
+					slug: article.slug,
+				}
+			})
 		})
 	});
 };

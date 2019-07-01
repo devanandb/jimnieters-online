@@ -4,6 +4,7 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 			allCategoriesJson {
 				edges {
 					node {
+						id
 						slug
 						articles {
 							slug
@@ -36,6 +37,7 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 				path: `/content/${article.slug}`,
 				component: require.resolve('./src/templates/article-graphql.js'),
 				context: {
+					catid: category.id,
 					slug: article.slug,
 				}
 			})

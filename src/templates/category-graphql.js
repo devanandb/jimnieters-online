@@ -26,6 +26,10 @@ export const query = graphql`
 					problem
 					solution
 					impact
+					points {
+						name
+						value
+					}
 					images {
 						alt
 						title

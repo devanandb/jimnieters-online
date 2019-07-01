@@ -15,23 +15,29 @@ const Header = ({ siteTitle }) => (
 			</div>
 			<div className="">
 				<ul className="flex">
-					<li className="ml-10 text-xl hover:text-blue-800">
+					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/designer"
 							className=""
 						>Designer</Link>
 					</li>
-					<li className="ml-10 text-xl hover:text-blue-800">
+					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/leader"
 							className=""
 						>Leader</Link>
 					</li>
-					<li className="ml-10 text-xl hover:text-blue-800">
+					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/about"
 							className=""
 						>About</Link>
+					</li>
+					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
+						<Link 
+							to="/contact"
+							className=""
+						>Contact</Link>
 					</li>
 				</ul>
 			</div>

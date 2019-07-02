@@ -1,3 +1,18 @@
+#### 0.0.3 (2019-07-02)
+
+##### New Features
+
+* Update header, L2 pages and small bug fixes ([717a9b31](https://github.com/gatsbyjs/gatsby-starter-default/commit/717a9b313e412c5f037fe897497ddf11494634a2))
+* Add active header links, image swap, site-title update ([eba9a40e](https://github.com/gatsbyjs/gatsby-starter-default/commit/eba9a40ee802853c140d5ded43886f9efa8d9990))
+
+##### Bug Fixes
+
+* Add multiple fixes for missing images ([c5e4edfd](https://github.com/gatsbyjs/gatsby-starter-default/commit/c5e4edfd7ca22b97d3d1d318b4a296ba58861447))
+
+##### Refactors
+
+* Change the styling for key points in ArticleView component ([516389ce](https://github.com/gatsbyjs/gatsby-starter-default/commit/516389ce8c4d5e1dde1040ec1fab14900a048999))
+
 #### 0.0.2 (2019-07-01)
 
 ##### New Features

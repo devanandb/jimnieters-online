@@ -1,3 +1,15 @@
+#### 0.0.2 (2019-07-01)
+
+##### New Features
+
+* Add small contact form for submissions ([f5ea634e](https://github.com/gatsbyjs/gatsby-starter-default/commit/f5ea634e9e119115d6d6cc703cc55987cbd787a3))
+* Add L2 and fix L1 issues ([bda701aa](https://github.com/gatsbyjs/gatsby-starter-default/commit/bda701aa2b6801bc4161a47490ae69445ea392cc))
+* Add template for articles, fix homepage hero, setup tailwind ([1af5625a](https://github.com/gatsbyjs/gatsby-starter-default/commit/1af5625a977315907cd1dfef7493e1464e1a04da))
+
+##### Bug Fixes
+
+* Fix few rel link issues ([18214f5a](https://github.com/gatsbyjs/gatsby-starter-default/commit/18214f5a44d01bb9427648d4d0c915b407f4662c))
+
 #### 0.0.1 (2019-06-29)
 
 ##### Bug Fixes

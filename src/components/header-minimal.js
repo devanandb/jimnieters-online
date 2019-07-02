@@ -2,8 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-	<header className="bg-gray-200 border-b-2 border-gray-300 absolute w-full z-10 sticky top-0">
+const HeaderMinimal = ({ siteTitle }) => (
+	<header className=" bg-transparent border-gray-300 absolute w-full z-10 top-0">
 		<div className="container mx-auto py-4 flex items-center justify-between flex-wrap">
 			<div className="w-1/4">
 				<Link
@@ -48,12 +48,12 @@ const Header = ({ siteTitle }) => (
 	</header>
 )
 
-Header.propTypes = {
+HeaderMinimal.propTypes = {
 	siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+HeaderMinimal.defaultProps = {
 	siteTitle: ``,
 }
 
-export default Header
+export default HeaderMinimal

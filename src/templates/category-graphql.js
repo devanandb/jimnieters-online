@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/header"
+
 import ArticleView from "../components/articleview"
 
 export const query = graphql`
@@ -50,6 +52,8 @@ const Category = ({ data }) => {
 	const cat = data.categoriesJson;
 	return (
 		<Layout>
+			<Header siteTitle="Jim Nieters - Work" />
+
 			<div className="container mx-auto px-5 mt-10">
 				<h1 className="text-purple-700 text-4xl text-center font-medium">{cat.title}</h1>
 				{/* <Image

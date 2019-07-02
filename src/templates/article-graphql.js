@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/header"
+
 import Image from "gatsby-image"
 
 export const query = graphql`
@@ -33,6 +35,8 @@ const Article = ({ data }) => {
 	const article = data.articlesJson;
 	return (
 		<Layout>
+			<Header siteTitle="Jim Nieters - Work" />
+
 			<div className="relative ">
 				<Image
 					fluid={article.image.childImageSharp.fluid}

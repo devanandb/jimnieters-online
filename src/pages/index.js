@@ -3,6 +3,8 @@ import React from "react"
 
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/header"
+
 import HeroImage from "../components/hero-image"
 import SEO from "../components/seo"
 import ArticleCard from "../components/articlecard"
@@ -39,12 +41,14 @@ export const query = graphql`
 const IndexPage = ({data}) => (
 	<Layout>
 		<SEO title="Home" />
+		{/* <HeaderMinimal siteTitle="Jim Nieters - Work" /> */}
+
 		<div className="hero-container bg-cover">
-			<div className="container flex-wrap mx-auto lg:my-0 py-12">
-				<h1 className="text-black text-6xl font-extrabold font-serif mt-10 tracking-wider">Jim Nieters</h1>
-				<p className="mt-1 text-4xl font-medium text-gray-800 flex items-center justify-center tracking-tight lg:justify-start">User Experience Design Leader</p>
-				<p className="mt-1 text-gray-800 text-2xl flex items-center justify-center lg:justify-start">San Francisco, Bay Area</p>
-				<p className="mt-12 text-3xl w-1/2 mb-24">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
+			<div className="container flex-wrap mx-auto lg:my-0 py-12 pt-32">
+				<h1 className="text-white text-6xl font-extrabold font-serif mt-10 tracking-wider">Jim Nieters</h1>
+				<p className="mt-1 text-4xl font-medium text-gray-200 flex items-center justify-center tracking-tight lg:justify-start">User Experience Design Leader</p>
+				<p className="mt-1 text-gray-200 text-2xl flex items-center justify-center lg:justify-start">San Francisco, Bay Area</p>
+				<p className="mt-12 text-3xl text-gray-100 w-1/2 mb-24">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
 				<div id="profile" className="w-full hidden lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-3xl bg-white opacity-100 mx-6 lg:mx-0 py">
 
 					<div className="p-4 md:p-12 text-center lg:text-left">
@@ -99,12 +103,21 @@ const IndexPage = ({data}) => (
 
 			</div>
 		</div>
-		<div className="my-16 container mx-auto flex flex-wrap">
-			{data.allArticlesJson.edges.map((article, i) => (
-				<ArticleCard key={i} {...article.node}>
-				
-				</ArticleCard>
-			))}
+		<Header siteTitle="My Work" />
+
+		<div className="my-16 container mx-auto ">
+			<div className="pt-0 pb-12">
+				<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 bg-blue-600 text-white">All</a>
+				<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 hover:bg-blue-600 hover:text-white">Only Leader</a>
+				<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 hover:bg-blue-600 hover:text-white">Only Design</a>
+			</div>
+			<div className="flex flex-wrap">
+				{data.allArticlesJson.edges.map((article, i) => (
+					<ArticleCard key={i} {...article.node}>
+					
+					</ArticleCard>
+				))}
+			</div>
 		</div>
 	</Layout>
 )

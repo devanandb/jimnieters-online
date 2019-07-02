@@ -17,28 +17,31 @@ const Header = ({ siteTitle }) => (
 				<ul className="flex">
 					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
-							to="/designer"
+							to="/leader"
 							className=""
-						>Designer</Link>
+							activeClassName="font-bold"
+						>Leader</Link>
 					</li>
 					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
-							to="/leader"
+							to="/designer"
 							className=""
-						>Leader</Link>
+							activeClassName="font-bold"
+						>Designer</Link>
 					</li>
 					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/about"
 							className=""
+							activeClassName="font-bold"
 						>About</Link>
 					</li>
-					<li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
+					{/* <li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/contact"
 							className=""
 						>Contact</Link>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</div>

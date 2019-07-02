@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jim Nieters`,
+    title: `Jim Nieters - Portfolio`,
     description: `I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.`,
     author: `Devanand`,
   },

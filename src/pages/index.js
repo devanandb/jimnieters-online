@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../../data/images/jim-folio.png"
+import HeroImage from "../components/hero-image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -50,7 +50,8 @@ const IndexPage = () => (
 				</div>
 				
 				<div className="w-full lg:w-2/5 relative">
-					<img src="/images/jim-folio-3.jpg" alt="Jim Nieters" className="rounded-none w-full lg:rounded-lg shadow-2xl hidden lg:block" />
+					{/* <img src="/images/jim-folio-3.jpg" alt="Jim Nieters"  /> */}
+					<HeroImage className="rounded-none w-full lg:rounded-lg shadow-2xl hidden lg:block" />
 					<div className="absolute bottom-0 pb-5 inset-x-0 text-center">
 						<a href="/about" className="uppercase text-white text-xl font-medium border border-white inline-block py-2 px-5 rounded-sm ">About me</a>
 					</div>

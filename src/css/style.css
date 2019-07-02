@@ -1,7 +1,9 @@
 @tailwind base;
 
 .hero-container {
-	background-image: url('/images/jim-bg.png');
+	background-image: url('/images/jimbg.png');
+	background-position: bottom right;
+	/* background-attachment: fixed; */
 }
 
 .profile {

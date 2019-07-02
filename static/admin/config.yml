@@ -1,0 +1,22 @@
+backend:
+  name: test-repo
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: Article
+    label: Article
+    folder: article
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: slug, label: Slug }
+      - { name: image, label: Image, widget: image}
+      - { name: date, label: Date, widget: date }
+      - { name: summary, label: Summary, widget: text }
+      - { name: body, label: Body, widget: markdown }
+      - { name: order, label: Order, widget: number }
+      - { name: category, label: Category }
+      - { name: published, label: Published, widget: boolean}
+      - { name: tags, label: Tags, widget: list}

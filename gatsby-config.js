@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jim Nieters - Portfolio`,
+    title: `Jim Nieters - Work`,
     description: `I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.`,
     author: `Devanand`,
   },
@@ -47,6 +47,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

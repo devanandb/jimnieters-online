@@ -10,6 +10,9 @@
 .content {
 
 }
+.color-primary {
+	color: #0B427E;
+}
 .content p {
 	@apply mb-10;
 }

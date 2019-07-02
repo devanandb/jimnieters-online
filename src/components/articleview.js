@@ -10,22 +10,25 @@ const ArticleView = (article) => (
 			<Link to={`/content/${article.slug}`} className="hover:text-blue-700">
 				<h3 className="font-medium text-3xl">{article.title}</h3>
 			</Link>
-			<div className="text-gray-600 w-3/4 text-xl mt-3 mb-4" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
+			<div className="text-gray-600 w-3/4 text-xl mt-3 mb-8" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className={`flex mt-5 ${article.order%2 ? 'flex-row-reverse ' : ''}`}>
 				<div className={`w-1/2 content ${article.order%2 ? 'ml-8' : 'mr-8'}`}>
-					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white mb-5 content">
-						<div className="text-red-600 -m-t-1 mb-1 uppercase font-bold tracking-wider text-sm">Problem</div>
+					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white mb-8 content">
+						<div className="bg-white rounded-full border-black inline-block w-12 h-12  border-1 shadow-md flex items-center -ml-8 -mt-8"><div className="text-center w-full font-medium text-2xl">1</div></div>
+						<div className="color-primary italic -mt-6 ml-6 mb-1 font-semibold tracking-wider text-xl">Problem</div>
 						<div  dangerouslySetInnerHTML={{ __html: article.case_study.problem }}></div>
 					</div>
 
-					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white mb-5 content">
-						<div className="text-orange-500 -m-t-1 mb-1 uppercase font-bold tracking-wider text-sm">Solution</div>
+					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white mb-8 content">
+						<div className="bg-white rounded-full border-black inline-block w-12 h-12  border-1 shadow-md flex items-center -ml-8 -mt-8"><div className="text-center w-full text-2xl">2</div></div>
+						<div className="color-primary italic -mt-6 ml-6 mb-1 font-semibold tracking-wider text-xl">Solution</div>
 						<div  dangerouslySetInnerHTML={{ __html: article.case_study.solution }}></div>
 					</div>
 
 					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white mb-5 content">
-						<div className="text-green-500 -m-t-1 mb-1 uppercase font-bold tracking-wider text-sm">Impact</div>
+						<div className="bg-white rounded-full border-black inline-block w-12 h-12  border-1 shadow-md flex items-center -ml-8 -mt-8"><div className="text-center w-full text-2xl">3</div></div>
+						<div className="color-primary italic -mt-6 ml-6 mb-1 font-semibold tracking-wider text-xl">Impact</div>
 						<div  dangerouslySetInnerHTML={{ __html: article.case_study.impact }}></div>
 					</div>
 					{/* <div className="text-gray-600 text-lg rounded-r-lg border-l-4 border-red-200 p-3 bg-red-100 mt-3 content" dangerouslySetInnerHTML={{ __html: article.case_study.problem }}></div>

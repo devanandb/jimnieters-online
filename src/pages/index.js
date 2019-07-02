@@ -1,11 +1,42 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import HeroImage from "../components/hero-image"
 import SEO from "../components/seo"
+import ArticleCard from "../components/articlecard"
 
-const IndexPage = () => (
+export const query = graphql`
+	query {
+		allArticlesJson(sort: {fields: id}) {
+			edges {
+				node {
+					id
+					category_id
+					title
+					slug
+					summary
+					order
+					updated_at(fromNow: true)
+					tags {
+						name
+						slug
+					}
+					image {
+						childImageSharp {
+							fluid {
+								...GatsbyImageSharpFluid
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+`;
+
+const IndexPage = ({data}) => (
 	<Layout>
 		<SEO title="Home" />
 		<div className="hero-container bg-cover">
@@ -50,7 +81,7 @@ const IndexPage = () => (
 				</div>
 				
 				<div className="w-full lg:w-2/5 relative">
-					{/* <img src="/images/jim-folio-3.jpg" alt="Jim Nieters"  /> */}
+					{/* <img src="/images/jim-folio-3.jpg" alt="Jim Nieters" className="rounded-none w-full lg:rounded-lg shadow-2xl hidden lg:block" /> */}
 					<HeroImage className="rounded-none w-full lg:rounded-lg shadow-2xl hidden lg:block" />
 					<div className="absolute bottom-0 pb-5 inset-x-0 text-center">
 						<a href="/about" className="uppercase text-white text-xl font-medium border border-white inline-block py-2 px-5 rounded-sm ">About me</a>
@@ -61,14 +92,16 @@ const IndexPage = () => (
 					<button className="js-change-theme focus:outline-none">🌙</button>
 				</div> */}
 
+
 			</div>
 		</div>
-		{/* <p>Welcome to your new Gatsby site.</p>
-		<p>Now go build something great.</p> */}
-		{/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-			<Image />
-		</div> */}
-		<Link to="content/experience-led-differentiating-on-design">Experience-Led: Differentiating on Design</Link>
+		<div className="my-16 container mx-auto flex flex-wrap">
+			{data.allArticlesJson.edges.map((article, i) => (
+				<ArticleCard key={i} {...article.node}>
+				
+				</ArticleCard>
+			))}
+		</div>
 	</Layout>
 )
 

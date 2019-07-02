@@ -18,7 +18,7 @@ const HeroImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "images/Jim-pic.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -26,7 +26,7 @@ const HeroImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img className="rounded-none w-full lg:rounded-lg shadow-2xl hidden lg:block" fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default HeroImage

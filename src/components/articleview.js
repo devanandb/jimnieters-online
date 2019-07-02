@@ -6,7 +6,7 @@ import Image from "gatsby-image"
 
 const ArticleView = (article) => (
 	<div className={`${article.order%2 ? 'bg-gray-200' : ''}`}>
-		<div className="container mx-auto mt-6 mb-10 px-5 py-12">
+		<div className="container mx-auto mt-10 px-5 py-12">
 			<Link to={`/content/${article.slug}`} className="hover:text-blue-700">
 				<h3 className="font-medium text-3xl">{article.title}</h3>
 			</Link>
@@ -64,7 +64,7 @@ const ArticleView = (article) => (
 					<span>Read Full Case Study</span>
 				</Link>
 
-				<Link to={`/contact`} className="font-medium text-xl text-purple-700 flex items-center ml-10">
+				<Link to={`/contact`} className="font-medium text-xl text-blue-700 flex items-center ml-10">
 					<img className="w-10" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATsSURBVHhe7ZpvSF11GMcPQYPofaFMmM111Tl1V1PyT2qLRZu6f25tpXMrNE0HvSjcWiptpSL9gUVj0lYbzJjNUPqztmlK2oioV9XLKAZp0IugzTdCPN9+z/E5dc699/zuut5z7+VyPvDl3O/zfX6/52EwPezO8PHx8fHx8fHxiZGMbuzMOEKzmd20lHkESIrUbHOHLmqUtRLD2udpIKsLSCWpnV6T9bxlXQc1ZncC6zppWX1+KauLMiVKODxb7dDDu/BO2Z3UIJF35HTQbE4HoJ49Uko6ap+j5k7P0YyUvCPQTku57UBuG2VIKekEnqFMc6d2uiUl7yhoA1hiU4aE7VX8LMASmzIkbK+SwwBLbMoQ8175e7Gm/BANl7XSQvkhwEvxjLJWDPFMGe8g0plIknYHukxLRQuGKg8CiVTFQRqU8Q4i9UaStDvQZVpqmmmxphmobqYKKXlG7VNUybPUzAUpxY2Ve2P4A9jyNMAS6zlezYv53q0HAJZYz9HNs7JoknYHukzLticBlljP0c2zsmiSdge6TEvjPoAl1uidpxu98wDrlXn6Wspxq4fOixcx37u7CWCJNUamAbukHLd66Lx4EfO9e/cALLHGlc8Bu6Qct3roPDt71ftB0x4aVlqw+ixxrWk3hrhH2h1YfWLvnAO7AJZY44cJmv9xAmDxZynHrR46z87+nRiycjft3xX5HcLKxd45LTsAlljP0c1raaRFzpp3hL+TtDZQ5crZyO8Qunu1HG4EWGI9Rzcv2i6rOetKWz3AEmv0ztGNvjnA1Fe2n+r2upvc+m310Hl2dBmzmrOudGwHWGKNM+ontl1SDqu7Sdpd7wmdZ0eXMas560r3EwBLrPHJFcAuKYfV3STtrveEzrOjy5jVnHXlhccBlljju0ma/34SYPFnKTvqbnLrt9dD59mxsmiSdge6TMuLWwGWWM/RzbOyaJJ2B7pMS89jAEus5+jmRdtlNWddOf4owBLryrFa2nK8jm5a/WFSGfdIuytWv1gHuoxZzVlX+utosb8O6K9BlZQi0ldLN80+jfrq6FdpjwjPMPtqI7/MWPeIDUOXRzvryolHaPBkDZBInaih12W8AysXG4Yuj3bWlf58rBmsooGBaloYrAa8lDlDzeKZMt6B1Sc2DF0e7WzcGK4CWGJThoTt9VYFwBKbMiRsr1MPAyyxKUPC9jpdRrdPl6v3+2DqfDn6TgVl8k7vliXgy9EzpTQz8hCgdFRKSUft9DLvpJ5fSsk7zgWp/lwpcLaUlt8rpWNnNyfvP0jwbHMHtYu5U5C2S+QtF4J08kIQiE20oJ5DH7n8Kgzl/VLKUmfGzwfpdvhd/+n8ZnpVjiSGi4VUP1pMM0q3RouB/6uLRZH/bc/OaBAlqu/3SOdXpGYX0bR6bpMjqc+lIqocKwLGCvXfD14qpIaxIlqS3qkPk/hXLe6MbwJYYsO4vIm6xgvob+65XEAfjJTgbonSg8mNAEvsv/QbuGtiI73JmXrSRD71SpRefJYPsMSajK2lez7No4/NLI+WlZolSj+u5gIssca1B+i+qwH6xqwH6M8vAqiVKD2ZCtBfUwFg6kFUTedS8HqAfjZ9gH65voHypC19mcmhU7MbAIdy6NvpbLpfWtKbn9RL0Nx6elvpt/n19MdcDr1xrZDuldjHx8fHx8fHx8c7DOMfyRQziY+Ed5AAAAAASUVORK5CYII=" />
 					<span>Or Ask to Chat</span>
 				</Link>

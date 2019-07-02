@@ -6,16 +6,21 @@ import Image from "gatsby-image"
 
 const ArticleCard = (article) => (
 	<div className="w-1/2">
-		<Link to={`/content/${article.slug}`} className="group bg-white border-1 block border-gray-400 rounded-lg mr-8 mb-10 shadow-lg hover:shadow-xl">
+		<Link to={`/content/${article.slug}`} className="group block border-gray-400 mr-8 mb-10 flex">
 			{/* {JSON.stringify(article)} */}
+			
 			<Image
 				fluid={article.image.childImageSharp.fluid}
 				alt={article.title}
-				className="w-full p-4 object-cover h-56 rounded-t-lg"
+				className="w-1/2 object-cover h-48 tra shadow-lg rounded-lg hover:shadow-xl border-2 border-gray-200 mr-4"
 			/>
-			<div className="p-5 bg-gray-100 rounded-b-lg">
-				<h3 className="font-medium text-xl">{article.title}</h3>
-				<div className="text-gray-600" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
+			<div className="w-1/2">
+				<div className={`uppercase tracking-wider text-lg font-semibold ${ article.category_id === 1 ? 'text-purple-600' : 'text-orange-700' }`}>{ article.category_id === 1 ? 'Leader' : 'Design'}</div>
+				<h3 className="font-medium text-xl hover:text-blue-700">{article.title}</h3>
+				{/* {article.tags.map((tag, i) => (
+					<div className="inline-block bg-gray-300 px-2 text-sm rounded-lg mr-3 mb-3" key={i}>{tag.name}</div>
+				))} */}
+				{/* <div className="text-gray-600" dangerouslySetInnerHTML={{ __html: article.summary }}></div> */}
 			</div>
 		</Link>
 	</div>

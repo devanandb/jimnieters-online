@@ -29,11 +29,11 @@ const Layout = ({ children }) => {
 			<div className="font-sans">
 				<main>{children}</main>
 			</div>
-			<footer className="bg-gray-200">
-				<div className="container mx-auto py-10 px-5 font-sans">
-					© {new Date().getFullYear()}, Jim Nieters
+			<footer className="bg-gray-300">
+				<div className="container mx-auto py-10 px-5 font-sans text-center">
+					© {new Date().getFullYear()}, Jim Nieters Portfolio
 					{` `}
-					<a href="https://www.linkedin.com/in/jimnieters/en">Contact Me</a>
+					{/* <a className="float-right" href="https://www.linkedin.com/in/jimnieters/en">Contact Me</a> */}
 				</div>
 			</footer>
 		</>

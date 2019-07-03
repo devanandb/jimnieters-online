@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 			</div>
 			<footer className="bg-gray-300">
 				<div className="container mx-auto py-10 px-5 font-sans text-center">
-					© {new Date().getFullYear()}, Jim Nieters Portfoliopl
+					© {new Date().getFullYear()}, Jim Nieters Portfolio
 					{` `}
 					{/* <a className="float-right" href="https://www.linkedin.com/in/jimnieters/en">Contact Me</a> */}
 				</div>

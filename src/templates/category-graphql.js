@@ -68,7 +68,7 @@ const Category = ({ data }) => {
 				</div> */}
 			</div>
 			<div className="container mx-auto px-5 tracking-normal flex">
-				<div className="w-3/4 mx-auto pl-0 p-8 pt-2 text-xl text-gray-800 text-center">
+				<div className="w-full md:w-3/4 mx-auto pl-0 p-2 md:p-8 pt-2 text-base md:text-xl text-gray-800 text-center">
 					<div dangerouslySetInnerHTML={{ __html: cat.description }}></div>
 				</div>
 				{/* {cat.articles} */}

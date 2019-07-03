@@ -45,15 +45,15 @@ const Article = ({ data }) => {
 				/>
 				<div className="absolute inset-0 pin z-50 overflow-auto flex">
 					<div className="container self-center mx-auto px-5">
-						<h1 className=" text-white text-5xl font-bold">{article.title}</h1>
+						<h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-bold">{article.title}</h1>
 					</div>
 				</div>
 			</div>
-			<div className="content container mx-auto px-5 font-content tracking-wide leading-loose flex">
-				<div className="w-3/4 pl-0 p-8 text-xl text-gray-900">
+			<div className="content container mx-auto px-5 font-content tracking-wide leading-loose md:flex">
+				<div className="w-full md:w-3/4 pl-0 p-8 md:text-xl text-gray-900">
 					<div dangerouslySetInnerHTML={{ __html: article.body }}></div>
 				</div>
-				<div className="w-1/4">
+				<div className="w-full md:w-1/4">
 					<div className="mt-10 ml-2 uppercase text-purple-600 font-semibold font-sans">Next Up</div>
 					<div className="rounded overflow-hidden shadow-lg mt-4 ml-2 mr-0">
 						<Image

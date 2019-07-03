@@ -44,11 +44,11 @@ const IndexPage = ({data}) => (
 		{/* <HeaderMinimal siteTitle="Jim Nieters - Work" /> */}
 
 		<div className="hero-container bg-cover">
-			<div className="container flex-wrap mx-auto lg:my-0 py-12 pt-32">
-				<h1 className="text-white text-6xl font-extrabold font-serif mt-10 tracking-wider">Jim Nieters</h1>
-				<p className="mt-1 text-4xl font-medium text-gray-200 flex items-center justify-center tracking-tight lg:justify-start">User Experience Design Leader</p>
-				<p className="mt-1 text-gray-200 text-2xl flex items-center justify-center lg:justify-start">San Francisco, Bay Area</p>
-				<p className="mt-12 text-3xl text-gray-100 w-1/2 mb-24">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
+			<div className="container flex-wrap mx-auto lg:my-0 px-8 py-4 lg:pt-32 sm:pt-20">
+				<h1 className="text-white font-extrabold font-serif mt-2 tracking-wider text-4xl sm:text-4xl lg:text-6xl">Jim Nieters</h1>
+				<p className="mt-1 text-2xl lg:text-4xl font-medium text-gray-200 flex tracking-tight lg:justify-start">User Experience Design Leader</p>
+				<p className="mt-1 text-gray-200 text-2xl flex lg:justify-start">San Francisco, Bay Area</p>
+				<p className="mt-4 text-xl md:text-2xl text-gray-100 w-full md:w-1/2 mb-48 ">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
 				<div id="profile" className="w-full hidden lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-3xl bg-white opacity-100 mx-6 lg:mx-0 py">
 
 					<div className="p-4 md:p-12 text-center lg:text-left">
@@ -58,7 +58,7 @@ const IndexPage = ({data}) => (
 						<div className="mx-auto lg:mx-0 w-4/5 pt-3 opacity-25"></div>
 						<p className="pt-1 text-3xl font-medium flex items-center justify-center lg:justify-start">User Experience Design Leader</p>
 						<p className="pt-2 text-gray-600 text-xl flex items-center justify-center lg:justify-start">San Francisco, Bay Area</p>
-						<p className="pt-8 text-2xl">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
+						<p className="pt-8 text-xl">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
 						<div className="pt-12 pb-8">
 							<a href="mailto:jnieters@mac.com" className="bg-purple-600 cursor-pointer rounded hover:bg-purple-700 text-white font-normal tracking-wide py-3 px-6 text-xl shadow-xl">
 							Get In Touch
@@ -106,12 +106,12 @@ const IndexPage = ({data}) => (
 		<Header siteTitle="My Work" />
 
 		<div className="my-16 container mx-auto ">
-			<div className="pt-0 pb-12">
+			<div className="pt-0 pb-12 mx-4">
 				<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 bg-blue-600 text-white">All</a>
 				<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 hover:bg-blue-600 hover:text-white">Only Leader</a>
 				<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 hover:bg-blue-600 hover:text-white">Only Design</a>
 			</div>
-			<div className="flex flex-wrap">
+			<div className="flex flex-wrap justify-between">
 				{data.allArticlesJson.edges.map((article, i) => (
 					<ArticleCard key={i} {...article.node}>
 					

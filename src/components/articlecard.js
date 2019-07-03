@@ -5,8 +5,8 @@ import Image from "gatsby-image"
 
 
 const ArticleCard = (article) => (
-	<div className="w-1/3  mb-8">
-		<Link to={`/content/${article.slug}`} className="group block border-gray-400 mr-12 mb-10">
+	<div className="w-full md:w-1/2 lg:w-1/3  mb-8">
+		<Link to={`/content/${article.slug}`} className="group block border-gray-400 mx-4 mb-10">
 			{/* {JSON.stringify(article)} */}
 			
 			<Image

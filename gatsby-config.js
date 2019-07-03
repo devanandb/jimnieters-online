@@ -3,6 +3,7 @@ module.exports = {
     title: `Jim Nieters - Work`,
     description: `I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.`,
     author: `Devanand`,
+    siteUrl: 'https://jimnieters.online'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,18 +39,35 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `jimnieters`,
+        short_name: `jimnieters`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/jimfavicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/jimfavicon.png",
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: true
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

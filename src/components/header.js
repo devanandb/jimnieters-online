@@ -21,6 +21,7 @@ const Header = ({ siteTitle }) => (
 							to="/leader"
 							className="px-5 py-5"
 							activeClassName="font-bold"
+							partiallyActive={true}
 						>Leader</Link>
 					</li>
 					<li className="text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
@@ -28,6 +29,7 @@ const Header = ({ siteTitle }) => (
 							to="/designer"
 							className="px-5 py-5"
 							activeClassName="font-bold"
+							partiallyActive={true}
 						>Designer</Link>
 					</li>
 					<li className="text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">
@@ -35,6 +37,7 @@ const Header = ({ siteTitle }) => (
 							to="/about"
 							className="px-5 py-5"
 							activeClassName="font-bold"
+							partiallyActive={true}
 						>About</Link>
 					</li>
 					{/* <li className="ml-10 text-lg font-medium text-gray-700 tracking-wider uppercase hover:text-blue-800">

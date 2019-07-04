@@ -6,8 +6,9 @@ import Image from "gatsby-image"
 
 const ArticleView = (article) => (
 	<div className={`${article.order%2 ? 'bg-gray-200' : ''}`}>
+		{/* {JSON.stringify(article)} */}
 		<div className="container mx-auto mt-10 px-5 py-12">
-			<Link to={`/content/${article.slug}`} className="hover:text-blue-700">
+			<Link to={`/${article.category}/${article.slug}`} className="hover:text-blue-700">
 				<h3 className="font-medium text-2xl sm:text-2xl md:text-3xl">{article.title}</h3>
 			</Link>
 			<div className="text-gray-600 w-full xl:w-3/4 text-base lg:text-xl mt-3 mb-8" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
@@ -23,12 +24,20 @@ const ArticleView = (article) => (
 						{ article.case_study.images[0].title ? article.case_study.images[0].title : "Image will have a caption here" }
 					</div>
 					<div className="mb-10 mt-12">
-						{article.case_study.points.map((point, i) => (
-							<div className="border-l-4 border-green-500 pl-4" key={i}>
-								<div className="uppercase font-semibold mb-2 tracking-wider text-gray-600">{point.name}</div>
-								<div className="text-base "  dangerouslySetInnerHTML={{ __html: point.value }}></div>
-							</div>
-						))}
+						{(() => {
+							if (article.case_study.points) {
+								return (
+									<div>
+										{article.case_study.points.map((point, i) => (
+											<div className="border-l-4 border-green-500 pl-4 mb-12" key={i}>
+												<div className="uppercase font-semibold mb-2 tracking-wider text-gray-600">{point.name}</div>
+												<div className="text-base "  dangerouslySetInnerHTML={{ __html: point.value }}></div>
+											</div>
+										))}
+									</div>
+								)
+							}
+						})()}
 					</div>
 				</div>
 				<div className={`w-full md:w-1/2 content ${article.order%2 ? 'md:ml-8' : 'md:mr-8'}`}>
@@ -60,7 +69,7 @@ const ArticleView = (article) => (
 				{/* <a href="mailto:jnieters@mac.com" className="bg-purple-600 inline-block cursor-pointer rounded hover:bg-purple-700 text-white font-normal tracking-wide py-3 px-6 text-xl shadow-xl">
 							Get In Touch
 							</a> */}
-				<Link to={`/content/${article.slug}`} className="font-medium text-xl text-purple-700 flex items-center hover:underline">
+				<Link to={`/${article.category}/${article.slug}`} className="font-medium text-xl text-purple-700 flex items-center hover:underline">
 					<img alt="Read Icon" className="hidden md:block md:w-10" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVQSURBVHhe7Zpdb1RVFIbnyj+gMRGMpIVOWzL02wItJQXUklo0+InaaaVASxtiYkwLhURiiUENQkQJEBESKgQE0kLFQtsZaqn+AOOtF4qgcgl4USXrda8z60zK7D2TSeecfSKZJ3nCedfenP2m0zPpJBPKkydPnjx5vGd+DzXP30a/P7kNMOms9dBa2f7wsaCbbizoATL5VA/9Jtv//yzsQmPBVooXdtPfhd2A68D3ZmfvmbNb6R6fWdBN66RGMBR1UX+4CzB5IG7WtDc3aY/UsUtpFzWXdhKVdNKM+re3uIPmOfNOgP1q3Ky77txkjvBZJZ3YkTgbKNlMLbJkj8gWikW2ABFVREYOzkz5zRWz7rpszwk+27nfZorLyH8qNlFzeQfFyjbR/fJNQNUWekKWHHjGXrls1l2X7TlRqX4TEvejOzLyl+qNtKu6g6i6A3CVpSTu/IdLwIVTQNfuhHzNs3T/b654fb+01LbRqtq3gdp2+kfZ61wrZTmJOz/8GbBCvTpu5mueuVm254zX90vL8nZMKrG8nd6TrK71g5e30R/ummMbnXCcPWunG7I9Z9x7SvSPFVG61xAF1kTpUc58zTqLs1D7Whpa6deGKN2sb6U2GYf4Wq3dUv65MkrNMs6ZdD08p7EVYCVqOSis9Vjzlnr1lRK1HBTWejz3BsBK1HJQWOvRvAFgJWo5KKz1WPcawErUclBY67H+VYCVqGUTu3/GI33X6RPlzb5pwFFd907TXl6TbaFPrwGZlG1GsunhCS+/ArAStWxiYIr2Dkypj8FGaa9sC018C2RSthnJpocnvP4SwErUsol9cbrFr+C+GNXJKLQ/TvWJV5ZuyignsunhCW+uB1iJWjZxZAJgJSZJN58L2fTwhOiLACtRyya+HgNYiUlS5/vVb0QmZZuRbHp4wsYXAFailk0MjwKZlG2huHrOMynbjGTTwxM2twCsRC2bGFflMynbciKbHp6w9XmAlahlEz+qz/+sxCTp5nMhmx6e0NMMsBK1bOKnIYCVmCR1fkA955mUbUay6eEJ76wFWIlaNvHLeYCVmCR1PjUCZFK2Gcmmhye82wSwErUcFNZ69D4LsBK1HBTWeux4BmAlatnEx5OAF8rtjGTTwxN2rQZYiVo2Ma3e6b1Qbmckmx6e8P4qgJWo5aCw1uODRoCVqOWgsNbjw5UAK1HLQWGtx0cNACtRy0Fhrce+evW5XilRy0FhrceBOvVnqVKiloPg8zqaZ63HwWUAK1HLQXBwGe201uPQUoCVqGWb8Ct/qJb6v1hKM9Z6HK0FWInJfHgpGo8+TZeP1NJtdxaEUss/jtUArMRkDsIva+j2sRq6ooy6M6nlHyeqAVZiMh+vppkTVdR7rDLxHSGbHK+inam9fGOwEmAlJvNgxYPfEbLBafXDPllB/ScraSa1l2+crgDYU2XUdLqcxt08WPXgd4TcuW3leP84Ww6YvJDyAzDt8doz5fTX2TK6fKaMNki+K8f7x/klAHsuQv8qt59bQmPOLGL/EXBRHXYmOtCEjPxjOAKwQ5HEd4QuLqbV6pqGIzRzMUL9w8X23gT5LOdMdTZ3GFpCDbLkHyOLAfZSGI/JSM1ouzsPwkuLiUZKqU/q+Mt3JXRvtBQYLXnwmR8tRqOaxdT6XWfdinRfnTc+WkxNUsN/xsIUHysGxsPBPfNXw9THHa4WW3jmU5lYROtiYSBWRDPK/jGLz/zVQnpcndkbC9P9iTBR3OYrP5vJRbRnsggIymtFRKqDnWc+HVMF1DJVSHHlnesLASsW0t2phTQ+XWDh3T5Pnjx58jz0hEL/ASRaa/sTxGIgAAAAAElFTkSuQmCC"></img>
 					<span>Read Full Case Study</span>
 				</Link>

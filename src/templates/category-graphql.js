@@ -7,14 +7,13 @@ import ArticleView from "../components/articleview"
 
 export const query = graphql`
 	query($slug: String!) {
-		categoriesJson(slug: {eq: $slug}) {
-			title
-			slug
-			description
-			articles {
+		allArticlesJson(filter: {category: {eq: $slug}}) {
+			nodes {
+				id
 				title
 				slug
 				summary
+				category
 				order
 				image {
 					childImageSharp {
@@ -44,18 +43,31 @@ export const query = graphql`
 					}
 				}
 			}
+			distinct(field: category)
 		}
 	}
 `;
 
 const Category = ({ data }) => {
-	const cat = data.categoriesJson;
+	const articles = data.allArticlesJson.nodes;
+	const catName = data.allArticlesJson.distinct[0];
+	const categories = {
+		'leader': {
+			'title': 'Leader',
+			'description':'Jim is a great leader. He inspires world-class design. He inspires us to do the best work of our careers. He speaks the language of business, so he can inspire leaders and stakeholders, and show how great design delights and monetizes'
+		},
+		'designer': {
+			'title': 'Designer',
+			'description':'Great design disrupts markets, from consumer electronics and gadgets to apparel and apps. You miss an opportunity if your products or services don’t delight, inspire and engage users emotionally.'
+		}
+	}
+	const cat = categories[catName];
 	return (
 		<Layout>
 			<Header siteTitle="Jim Nieters - Work" />
 
 			<div className="container mx-auto px-5 mt-10">
-				<h1 className="text-purple-700 text-4xl text-center font-medium">{cat.title}</h1>
+				<h1 className="text-purple-700 text-4xl text-center font-medium capitalize">{catName}</h1>
 				{/* <Image
 					fluid={article.image.childImageSharp.fluid}
 					alt={article.title}
@@ -75,11 +87,11 @@ const Category = ({ data }) => {
 				{/* {JSON.stringify(cat.articles)} */}
 			</div>
 			<div className="bg-gray-100 tracking-normal">
-				{cat.articles.map((node, i) => (
+				{articles.map((node, i) => (
 					<ArticleView key={i} {...node}>
 					
 					</ArticleView>
-					// <div key={i}>{node.title}</div>
+					// <div key={i}>{node}</div>
 				))}
 			</div>
 			

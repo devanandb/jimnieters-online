@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
 	<header className="bg-gray-200 border-b-2 border-gray-300 absolute w-full z-10 sticky top-0">
 		<div className="container mx-auto py-4 flex items-center px-4 justify-between flex-wrap">
-			<div className="w-full md:w-1/4 text-center mb-3 md:text-left">
+			<div className="w-full md:w-1/4 text-center md:text-left">
 				<Link
 					to="/"
 					className="grey-900 text-xl md:text-2xl lg:text-3xl font-400 font-serif"

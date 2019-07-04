@@ -6,7 +6,7 @@ import Image from "gatsby-image"
 
 const ArticleCard = (article) => (
 	<div className="w-full md:w-1/2 lg:w-1/3  mb-8">
-		<Link to={`/content/${article.slug}`} className="group block border-gray-400 mx-4 mb-10">
+		<Link to={`/${article.category}/${article.slug}`} className="group block border-gray-400 mx-4 mb-10">
 			{/* {JSON.stringify(article)} */}
 			
 			<Image
@@ -15,8 +15,9 @@ const ArticleCard = (article) => (
 				className="w-full object-cover h-48 tra shadow-lg rounded-lg hover:shadow-xl border-2 border-gray-200 mr-4"
 			/>
 			<div className="w-full mt-4">
-				<div className={`uppercase tracking-wider text-lg font-semibold ${ article.category_id === 1 ? 'text-purple-600' : 'text-orange-700' }`}>{ article.category_id === 1 ? 'Leader' : 'Design'}</div>
+				<div className={`uppercase tracking-wider text-lg font-semibold ${ article.category === 'designer' ? 'text-purple-600' : 'text-orange-700' }`}>{article.category}</div>
 				<h3 className="font-medium text-xl hover:text-blue-700">{article.title}</h3>
+				<p>{article.tagline}</p>
 				{/* {article.tags.map((tag, i) => (
 					<div className="inline-block bg-gray-300 px-2 text-sm rounded-lg mr-3 mb-3" key={i}>{tag.name}</div>
 				))} */}

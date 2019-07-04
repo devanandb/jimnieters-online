@@ -1,13 +1,47 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
+import _ from 'lodash';
 import Layout from "../components/layout"
 import Header from "../components/header"
+import Card from "../components/card"
 
 import Image from "gatsby-image"
 
 export const query = graphql`
 	query($slug: String!) {
-		articlesJson(slug: {eq: $slug}) {
+		articles: allArticlesJson(sort: {order: ASC, fields: order}) {
+			edges {
+				node {
+					slug
+				}
+				next {
+					title
+					slug
+					category
+					image {
+						childImageSharp {
+							fluid(maxWidth: 320) {
+								...GatsbyImageSharpFluid
+							}
+						}
+					}
+				}
+				previous {
+					title
+					slug
+					category
+					image {
+						childImageSharp {
+							fluid(maxWidth: 320) {
+								...GatsbyImageSharpFluid
+							}
+						}
+					}
+				}
+			}
+		}
+		article: articlesJson(slug: {eq: $slug}) {
 			id
 			title
 			slug
@@ -16,7 +50,7 @@ export const query = graphql`
 			published
 			order
 			featured
-			category_id
+			category
 			tags {
 				name
 			}
@@ -32,45 +66,39 @@ export const query = graphql`
 `;
 
 const Article = ({ data }) => {
-	const article = data.articlesJson;
+	const article = data.article;
+	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.slug===article.slug});
+	console.log(activeArticle)
 	return (
 		<Layout>
 			<Header siteTitle="Jim Nieters - Work" />
-
-			<div className="relative ">
-				<Image
-					fluid={article.image.childImageSharp.fluid}
-					alt={article.title}
-					className="h-64 w-full object-cover"
-				/>
-				<div className="absolute inset-0 pin z-50 overflow-auto flex">
-					<div className="container self-center mx-auto px-5">
-						<h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-bold">{article.title}</h1>
-					</div>
-				</div>
+			<div className="container mx-auto px-5">
+				<Link to={`/${article.category}`} className="mt-10 block text-2xl text-blue-700 font-medium capitalize">{article.category}/</Link>
+				<h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mt-1 mb-10">{article.title}</h1>
 			</div>
-			<div className="content container mx-auto px-5 font-content tracking-wide leading-loose md:flex">
-				<div className="w-full md:w-3/4 pl-0 p-8 md:text-xl text-gray-900">
-					<div dangerouslySetInnerHTML={{ __html: article.body }}></div>
-				</div>
-				<div className="w-full md:w-1/4">
-					<div className="mt-10 ml-2 uppercase text-purple-600 font-semibold font-sans">Next Up</div>
-					<div className="rounded overflow-hidden shadow-lg mt-4 ml-2 mr-0">
+			<div className="container mx-auto px-5 font-content tracking-wide leading-loose md:flex">
+				
+				<div className="w-full md:w-3/4 pl-0 mr-8 md:text-xl text-gray-900">
+					<div className="w-full">
 						<Image
 							fluid={article.image.childImageSharp.fluid}
 							alt={article.title}
-							className="h-48 w-full object-cover"
+							className="h-full w-full object-cover rounded-lg"
 						/>
-						<div className="px-6 py-4">
-							<div className="font-medium font-sans text-xl text-indigo-800 leading-relaxed tracking-normal mb-2">{article.title}</div>
-						
-						</div>
-						<div className="px-6 py-4 font-sans ">
-							<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-normal mr-2 mb-2">#photography</span>
-							<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-normal mr-2 mb-2">#travel</span>
-							<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-normal">#winter</span>
-						</div>
 					</div>
+					<div className="content mt-10">
+						<div dangerouslySetInnerHTML={{ __html: article.body }}></div>
+					</div>
+				</div>
+				<div className="w-full md:w-1/4">
+					<div className="-m-2 ml-2 uppercase text-purple-600 font-semibold font-sans ">{activeArticle.next ? 'Next Up →' : ''}</div>
+					{ activeArticle.next ? <Card article={activeArticle.next} align="left"></Card> : ''}
+
+					<div className="-m-2 ml-2 uppercase text-gray-600 font-semibold font-sans ">
+						
+						{activeArticle.previous ? '← Previous' : ''}
+					</div>
+					{ activeArticle.previous ? <Card article={activeArticle.previous}></Card> : ''}
 				</div>
 			</div>
 			

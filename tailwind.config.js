@@ -4,10 +4,12 @@ module.exports = {
       'sans': ['Barlow', '-apple-system', 'BlinkMacSystemFont'],
       'serif': ['"Shadows Into Light"', 'Georgia', 'Cambria'],
       'mono': ['SFMono-Regular', 'Menlo'],
-      'content': ['Merriweather', 'sans-serif']
+      'content': ['"PT Serif"', 'sans-serif']
     },
     extend: {}
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('glhd-tailwindcss-transitions')(),
+  ]
 }

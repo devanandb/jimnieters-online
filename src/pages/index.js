@@ -11,12 +11,13 @@ import ArticleCard from "../components/articlecard"
 
 export const query = graphql`
 	query {
-		allArticlesJson(sort: {fields: id}) {
+		allArticlesJson(sort: {fields: order}) {
 			edges {
 				node {
 					id
-					category_id
+					category
 					title
+					tagline
 					slug
 					summary
 					order

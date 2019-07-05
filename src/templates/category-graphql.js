@@ -73,35 +73,37 @@ const Category = ({ data }) => {
 				article
 			/>
 			<Header siteTitle="Jim Nieters - Work" />
-
-			<div className="container mx-auto px-5 mt-10">
-				<h1 className="text-purple-700 text-4xl text-center font-medium capitalize">{catName}</h1>
-				{/* <Image
-					fluid={article.image.childImageSharp.fluid}
-					alt={article.title}
-					className="h-64 w-full object-cover"
-				/> */}
-				{/* <div className="absolute inset-0 pin z-50 overflow-auto flex">
-					<div className="container self-center mx-auto px-5">
-						<h1 className=" text-white text-5xl font-bold">{cat.title}</h1>
-					</div>
-				</div> */}
-			</div>
-			<div className="container mx-auto px-5 tracking-normal flex">
-				<div className="w-full md:w-3/4 mx-auto pl-0 p-2 md:p-8 pt-2 text-base md:text-xl text-gray-800 text-center">
-					<div dangerouslySetInnerHTML={{ __html: cat.description }}></div>
+			<div className="dark:bg-black">
+				<div className="container mx-auto px-5 pt-10">
+					<h1 className="text-purple-700 dark:text-purple-100 text-4xl text-center font-medium capitalize">{catName}</h1>
+					{/* <Image
+						fluid={article.image.childImageSharp.fluid}
+						alt={article.title}
+						className="h-64 w-full object-cover"
+					/> */}
+					{/* <div className="absolute inset-0 pin z-50 overflow-auto flex">
+						<div className="container self-center mx-auto px-5">
+							<h1 className=" text-white text-5xl font-bold">{cat.title}</h1>
+						</div>
+					</div> */}
 				</div>
-				{/* {cat.articles} */}
-				{/* {JSON.stringify(cat.articles)} */}
+				<div className="container mx-auto px-5 tracking-normal flex">
+					<div className="w-full md:w-3/4 mx-auto pl-0 p-2 md:p-8 pt-2 text-base md:text-xl text-gray-800 text-center  dark:text-gray-300">
+						<div dangerouslySetInnerHTML={{ __html: cat.description }}></div>
+					</div>
+					{/* {cat.articles} */}
+					{/* {JSON.stringify(cat.articles)} */}
+				</div>
+				<div className="bg-gray-100 dark:bg-gray-900 tracking-normal">
+					{articles.map((node, i) => (
+						<ArticleView key={i} {...node}>
+						
+						</ArticleView>
+						// <div key={i}>{node}</div>
+					))}
+				</div>
 			</div>
-			<div className="bg-gray-100 tracking-normal">
-				{articles.map((node, i) => (
-					<ArticleView key={i} {...node}>
-					
-					</ArticleView>
-					// <div key={i}>{node}</div>
-				))}
-			</div>
+			
 			
 		</Layout>
 	)

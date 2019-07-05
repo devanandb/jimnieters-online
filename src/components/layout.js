@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
 			<div className="font-sans">
 				<main>{children}</main>
 			</div>
-			<footer className="bg-gray-300">
-				<div className="container mx-auto py-10 px-5 font-sans text-center">
+			<footer className="bg-gray-300 dark:bg-gray-900">
+				<div className="container mx-auto py-10 px-5 font-sans text-center dark:text-gray-300">
 					© {new Date().getFullYear()}, Jim Nieters Portfolio
 					{` `}
 					{/* <a className="float-right" href="https://www.linkedin.com/in/jimnieters/en">Contact Me</a> */}

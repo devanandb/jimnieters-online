@@ -103,7 +103,11 @@ input[type='checkbox'].dmcheck + label {
 	@apply list-disc list-inside;
 }
 .mode-dark .content h2, .mode-dark .content h3 {
-	@apply text-gray-100
+	@apply text-gray-100 
+}
+
+.list-block {
+	@apply border-l-4 border-green-400 mb-5 pl-5 text-xl text-gray-600
 }
 
 @tailwind components;

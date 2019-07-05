@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
+import SEO from "../components/seo"
 
 import ArticleView from "../components/articleview"
 
@@ -51,6 +52,7 @@ export const query = graphql`
 const Category = ({ data }) => {
 	const articles = data.allArticlesJson.nodes;
 	const catName = data.allArticlesJson.distinct[0];
+	const cateName = data.allArticlesJson.distinct[0].charAt(0).toUpperCase() + data.allArticlesJson.distinct[0].slice(1);
 	const categories = {
 		'leader': {
 			'title': 'Leader',
@@ -64,6 +66,12 @@ const Category = ({ data }) => {
 	const cat = categories[catName];
 	return (
 		<Layout>
+			<SEO
+				title={cateName}
+				description={cat.description}
+				pathname={`/${catName}`}
+				article
+			/>
 			<Header siteTitle="Jim Nieters - Work" />
 
 			<div className="container mx-auto px-5 mt-10">

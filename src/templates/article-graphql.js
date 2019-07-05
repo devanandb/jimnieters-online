@@ -5,6 +5,8 @@ import _ from 'lodash';
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Card from "../components/card"
+import SEO from "../components/seo"
+
 
 import Image from "gatsby-image"
 
@@ -67,9 +69,18 @@ export const query = graphql`
 
 const Article = ({ data }) => {
 	const article = data.article;
+	console.log(article);
 	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.slug===article.slug});
 	return (
 		<Layout>
+			<SEO
+				title={article.title}
+				description={article.summary}
+				image={article.image.childImageSharp.fluid.src}
+				pathname={article.slug}
+				article
+			/>
+
 			<Header siteTitle="Jim Nieters - Work" />
 			<div className="container mx-auto px-5">
 				<Link to={`/${article.category}`} className="mt-10 block text-2xl text-blue-700 font-medium capitalize">{article.category}/</Link>

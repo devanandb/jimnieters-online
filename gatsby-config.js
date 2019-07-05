@@ -2,8 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Jim Nieters - Work`,
     description: `I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.`,
+    image: '/images/jimbg.png',
     author: `Devanand`,
-    siteUrl: 'https://jimnieters.online'
+    siteUrl: 'https://jimnieters.online',
+    twitterUsername: 'jimnieters'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

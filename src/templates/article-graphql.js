@@ -68,7 +68,6 @@ export const query = graphql`
 const Article = ({ data }) => {
 	const article = data.article;
 	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.slug===article.slug});
-	console.log(activeArticle)
 	return (
 		<Layout>
 			<Header siteTitle="Jim Nieters - Work" />

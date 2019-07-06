@@ -37,6 +37,7 @@
     "generate-changelog": "^1.8.0",
     "prettier": "^1.18.2",
     "release-it": "^12.3.0",
+    "showdown": "^1.9.0",
     "tailwindcss": "^1.0.4"
   },
   "keywords": [

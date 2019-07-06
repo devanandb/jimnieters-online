@@ -20,6 +20,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-postcss',
     {
+      resolve: 'gatsby-plugin-crisp-chat',
+      options: {
+        websiteId: 'f0bcff04-529b-42c4-bf62-80edfea7b989',
+        enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+        enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [

@@ -10,6 +10,7 @@
     "gatsby-plugin-crisp-chat": "^3.2.0",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.2.0",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-netlify-cms": "^4.1.1",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-postcss": "^2.1.0",

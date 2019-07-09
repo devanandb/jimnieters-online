@@ -30,15 +30,15 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 		})
 	});
 
-	results.data.allArticlesJson.distinct.forEach(edge => {
-		const category = edge;
+	// results.data.allArticlesJson.distinct.forEach(edge => {
+	// 	const category = edge;
 
-		createPage({
-			path: `${category}`,
-			component: require.resolve('./src/templates/category-graphql.js'),
-			context: {
-				slug: category,
-			}
-		})
-	});
+	// 	createPage({
+	// 		path: `${category}`,
+	// 		component: require.resolve('./src/templates/category-graphql.js'),
+	// 		context: {
+	// 			slug: category,
+	// 		}
+	// 	})
+	// });
 };

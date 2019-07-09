@@ -5,13 +5,13 @@ import Image from "gatsby-image"
 
 
 const ArticleView = (article) => (
-	<div className={`border-b-2 border-gray-300 dark:border-gray-600 ${article.order%2 ? 'bg-gray-200 dark:bg-gray-800 ' : 'bg-gray-100 dark:bg-gray-800'}`}>
+	<div className={`border-t-2 dark:border-gray-600 ${article.order%2 ? ' bg-gray-200 dark:bg-gray-800 ' : 'bg-gray-100 dark:bg-gray-800'}`}>
 		{/* {JSON.stringify(article)} */}
 		<div className="container mx-auto px-5 py-12">
 			<Link to={`/${article.category}/${article.slug}`} className="hover:text-blue-700">
 				<h3 className="font-medium text-2xl sm:text-2xl md:text-3xl dark:text-blue-300">{article.title}</h3>
 			</Link>
-			<div className="text-gray-600 w-full xl:w-3/4 text-base lg:text-xl mt-3 mb-8  dark:text-gray-400" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
+			<div className="text-gray-600 w-full xl:w-3/4 text-base lg:text-xl mt-3 mb-8  dark:text-gray-400  pl-4 border-l-4 border-blue-500" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className={`md:flex mt-5 ${article.order%2 ? '' : 'md:flex-row-reverse '}`}>
 				<div className="w-full md:w-1/2">
@@ -65,16 +65,16 @@ const ArticleView = (article) => (
 				
 			</div>
 
-			<div className="my-10 justify-center flex">
+			<div className="my-10 justify-left flex">
 				{/* <a href="mailto:jnieters@mac.com" className="bg-purple-600 inline-block cursor-pointer rounded hover:bg-purple-700 text-white font-normal tracking-wide py-3 px-6 text-xl shadow-xl">
 							Get In Touch
 							</a> */}
-				<Link to={`/${article.category}/${article.slug}`} className=" text-xl text-gray-700 flex items-center bg-blue-300 dark:bg-blue-500 dark:text-gray-300 px-8 shadow-lg border-2 border-blue-400 py-2 rounded-full">
+				<Link to={`/${article.category}/${article.slug}`} className="text-lg text-blue-700 dark:text-gray-300 font-medium uppercase">
 					
 					<span>Read Full Case Study →</span>
 				</Link>
 
-				<Link to={`/contact`} className="font-medium text-xl text-blue-700 flex items-center ml-10 px-8 border-2 shadow-lg border-blue-400 dark:border-gray-300 dark:text-gray-300 py-2 rounded-full">
+				<Link to={`/contact`} className="ml-16 uppercase font-medium text-lg text-blue-700 dark:text-gray-300">
 					
 					<span>Or Ask to Chat ↗</span>
 				</Link>

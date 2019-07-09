@@ -1,5 +1,7 @@
 @tailwind base;
-
+/* * {
+	transition: all .3s;
+} */
 .hero-container {
 	background-image: url('/images/jimbg.png');
 	background-position: bottom right;
@@ -17,6 +19,10 @@
 }
 .content p {
 	@apply mb-10;
+}
+label input[type="radio"] {
+    /* opacity: 0; */
+	display: none;
 }
 
 .content h1 {
@@ -108,6 +114,22 @@ input[type='checkbox'].dmcheck + label {
 
 .list-block {
 	@apply border-l-4 border-green-400 mb-5 pl-5 text-xl text-gray-600
+}
+.filter-nav {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.filter {
+	@apply mr-4 px-8 rounded-lg py-2 cursor-pointer rounded-full border-2 uppercase shadow-md bg-gray-100 font-medium tracking-wider;
+	-webkit-transition: all .3s ease-in-out;
+  	transition: all .3s ease-in-out;
+}
+.filter:hover {
+	@apply bg-red-600 text-white bg-blue-400 text-white border-blue-400 shadow-xl
+}
+
+.filter.active {
+	@apply bg-blue-600 text-white border-blue-600
 }
 
 @tailwind components;

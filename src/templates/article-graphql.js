@@ -84,8 +84,8 @@ const Article = ({ data }) => {
 			<Header siteTitle="Jim Nieters - Work" />
 			<div className="dark:bg-gray-800">
 				<div className="container mx-auto px-5">
-					<Link to={`/${article.category}`} className="pt-10 block text-2xl text-blue-700 font-medium capitalize dark:text-blue-300">{article.category}/</Link>
-					<h1 className="text-3xl md:text-3xl lg:text-4xl font-medium mt-1 mb-10  dark:text-white">{article.title}</h1>
+					<div className="pt-10 block text-xl text-blue-700 font-bold tracking-wider dark:text-blue-300 uppercase">{article.category}</div>
+					<h1 className="text-3xl md:text-3xl lg:text-4xl font-medium mb-10  dark:text-white">{article.title}</h1>
 				</div>
 				<div className="container mx-auto px-5 font-content tracking-wide leading-loose md:flex">
 					

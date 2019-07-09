@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			
-			<div className="font-sans">
+			<div className="font-sans dark:bg-gray-800">
 				<main>{children}</main>
 			</div>
 			<footer className="bg-gray-300 dark:bg-gray-900">

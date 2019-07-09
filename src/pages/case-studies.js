@@ -39,7 +39,7 @@ class CaseStudies extends React.Component {
 	render() {
 		const articles = this.state.articles;
 		return (
-			<Layout className="">
+			<Layout className="dark:bg-gray-900">
 				<SEO title="Home" />
 				{/* <HeaderMinimal siteTitle="Jim Nieters - Work" /> */}
 
@@ -51,7 +51,7 @@ class CaseStudies extends React.Component {
 						
 					</div>
 				</div> */}
-				<div className="filter-nav pt-0 inline-block mx-auto text-left dark:bg-gray-800 absolute sticky top-0 z-20">
+				<div className="filter-nav pt-0 inline-block mx-auto text-left absolute sticky top-0 z-20">
 					<form className="inline-block py-4 flex justify-center">
 						<label className={`filter ${ this.state.filter === 'all' ? 'active' : ''}`}>
 							<input className="appearance-none" type="radio" value="all" checked={this.state.filter === 'all'} onChange={this.handleChange} />

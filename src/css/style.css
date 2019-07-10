@@ -126,7 +126,7 @@ input[type='checkbox'].dmcheck + label {
 	transform: translateX(-50%); */
 }
 .filter {
-	@apply mr-4 px-8 rounded-lg py-2 cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
+	@apply mr-4 px-8 rounded-lg py-2 text-sm cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
 	-webkit-transition: all .3s ease-in-out;
   	transition: all .3s ease-in-out;
 }

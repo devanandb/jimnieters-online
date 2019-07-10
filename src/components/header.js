@@ -34,14 +34,14 @@ const Header = ({ siteTitle }) => (
 							partiallyActive={true}
 						>Designer</Link>
 					</li> */}
-					<li className="text-lg font-medium text-gray-700 dark:text-gray-200 tracking-wider uppercase hover:text-blue-800">
+					{/* <li className="text-lg font-medium text-gray-700 dark:text-gray-200 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/case-studies"
 							className="px-5 py-5"
 							activeClassName="font-bold dark:text-blue-500"
 							partiallyActive={true}
 						>Case Studies</Link>
-					</li>
+					</li> */}
 					<li className="text-lg font-medium text-gray-700  dark:text-gray-200 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/about"

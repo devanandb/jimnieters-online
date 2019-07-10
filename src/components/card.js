@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 
 
 const Card = ({article, align}) => (
-	<Link to={`/${article.category}/${article.slug}`} className="block">
+	<Link to={`/case-study/${article.slug}/detail`} className="block">
 		<div className="mt-4 ml-2 mr-0 mb-10">
 			<Image
 				fluid={article.image.childImageSharp.fluid}

@@ -6,16 +6,17 @@ import Image from "gatsby-image"
 
 const ArticleCard = (article) => (
 	<div className="w-full md:w-1/2 lg:w-1/3  mb-8">
-		<Link to={`/case-studies?category=${article.category}#${article.slug}`} className="group block border-gray-400 dark:border-gray-800 mx-4 mb-10">
+		<Link to={`/case-study/${article.slug}`} className="group block border-gray-400 dark:border-gray-800 mx-4 mb-10">
 			{/* {JSON.stringify(article)} */}
-			
-			<Image
-				fluid={article.image.childImageSharp.fluid}
-				alt={article.title}
-				className="w-full object-cover h-48 tra shadow-lg rounded-lg hover:shadow-xl border-2 border-gray-200 dark:border-gray-800 mr-4"
-			/>
+			<div className="relative h-48">
+				<Image
+					fluid={article.image.childImageSharp.fluid}
+					alt={article.title}
+					className="w-full object-cover h-48 tra shadow-lg rounded-lg hover:shadow-xl border-2 border-gray-200 dark:border-gray-800 mr-4"
+				/>
+				<div className={`uppercase tracking-wider text-sm font-semibold absolute text-white top-0 mt-8 pl-4 py-1 rounded-r pr-4 shadow-lg ${ article.category === 'designer' ? 'bg-orange-700 dark:bg-orange-800' : 'bg-purple-700 dark:bg-purple-800' }`}>{article.category}</div>
+			</div>
 			<div className="w-full mt-4">
-				<div className={`uppercase tracking-wider text-lg font-semibold ${ article.category === 'designer' ? 'text-purple-600 dark:text-purple-400' : 'text-orange-700 dark:text-orange-400' }`}>{article.category}</div>
 				<h3 className="font-medium text-xl hover:text-blue-700 dark:text-gray-200 dark-hover: text-blue-700">{article.title}</h3>
 				<p className="dark:text-gray-300">{article.tagline}</p>
 				{/* {article.tags.map((tag, i) => (

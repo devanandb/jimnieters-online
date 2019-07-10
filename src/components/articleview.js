@@ -8,9 +8,9 @@ const ArticleView = (article) => (
 	<div id={`${article.slug}`} className={`border-t-2 dark:border-gray-600 ${article.order%2 ? ' bg-gray-200 dark:bg-gray-800 ' : 'bg-gray-100 dark:bg-gray-800'}`}>
 		{/* {JSON.stringify(article)} */}
 		<div className="container mx-auto px-5 pt-40 md:pt-24 pb-10">
-			<Link to={`/${article.category}/${article.slug}`} className="hover:text-blue-700">
-				<h3 className="font-medium text-2xl sm:text-2xl md:text-3xl dark:text-blue-300">{article.title}</h3>
-			</Link>
+			{/* <Link to={`/${article.category}/${article.slug}`} className="hover:text-blue-700">
+			</Link> */}
+			<h3 className="font-medium text-2xl sm:text-2xl md:text-3xl dark:text-blue-300">{article.title}</h3>
 			<div className="text-gray-600 w-full xl:w-3/4 text-base lg:text-xl mt-3 mb-8  dark:text-gray-400  pl-4 border-l-4 border-blue-500" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className={`md:flex mt-5 ${article.order%2 ? '' : 'md:flex-row-reverse '}`}>
@@ -69,7 +69,7 @@ const ArticleView = (article) => (
 				{/* <a href="mailto:jnieters@mac.com" className="bg-purple-600 inline-block cursor-pointer rounded hover:bg-purple-700 text-white font-normal tracking-wide py-3 px-6 text-xl shadow-xl">
 							Get In Touch
 							</a> */}
-				<Link to={`/${article.category}/${article.slug}`} className="text-lg text-blue-700 dark:text-gray-300 font-medium uppercase">
+				<Link to={`/case-study/${article.slug}/detail`} className="text-lg text-blue-700 dark:text-gray-300 font-medium uppercase">
 					
 					<span>Read Full Case Study →</span>
 				</Link>

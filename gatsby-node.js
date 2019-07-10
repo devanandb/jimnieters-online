@@ -22,7 +22,15 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 		const article = edge.node;
 
 		createPage({
-			path: `${article.category}/${article.slug}`,
+			path: `case-study/${article.slug}`,
+			component: require.resolve('./src/templates/articles-graphql.js'),
+			context: {
+				slug: article.slug,
+			}
+		})
+
+		createPage({
+			path: `case-study/${article.slug}/detail`,
 			component: require.resolve('./src/templates/article-graphql.js'),
 			context: {
 				slug: article.slug,

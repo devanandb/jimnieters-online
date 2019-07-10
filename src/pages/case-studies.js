@@ -91,6 +91,7 @@ export const query = graphql`
 		allArticlesJson {
 			nodes {
 				id
+				article_id
 				title
 				slug
 				summary

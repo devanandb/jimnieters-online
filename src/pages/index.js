@@ -15,6 +15,7 @@ export const query = graphql`
 			edges {
 				node {
 					id
+					article_id
 					category
 					title
 					tagline

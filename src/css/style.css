@@ -102,11 +102,11 @@ input[type='checkbox'].dmcheck + label {
 }
 
 .content ol {
-	@apply list-decimal list-inside mb-4;
+	@apply list-decimal list-outside mb-4;
 }
 
 .content ul {
-	@apply list-disc list-inside;
+	@apply list-disc list-outside ml-6;
 }
 .mode-dark .content h2, .mode-dark .content h3 {
 	@apply text-gray-100 
@@ -118,9 +118,15 @@ input[type='checkbox'].dmcheck + label {
 .filter-nav {
 	left: 50%;
 	transform: translateX(-50%);
+	/* top:80px; */
+}
+.filter-nav-sm {
+	/* left:0; */
+	/* margin-left: 50%;
+	transform: translateX(-50%); */
 }
 .filter {
-	@apply mr-4 px-8 rounded-lg py-2 cursor-pointer rounded-full border-2 uppercase shadow-md bg-gray-100 font-medium tracking-wider;
+	@apply mr-4 px-8 rounded-lg py-2 cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
 	-webkit-transition: all .3s ease-in-out;
   	transition: all .3s ease-in-out;
 }

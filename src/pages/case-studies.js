@@ -1,4 +1,5 @@
 import React from "react"
+import queryString from 'query-string'
 // import { Link } from "gatsby"
 
 import { graphql } from "gatsby"
@@ -13,11 +14,29 @@ import ArticleView from "../components/articleview"
 class CaseStudies extends React.Component {
 	constructor(props) {
 		super(props);
+		let qparams = queryString.parse(this.props.location.search);
 		this.state = {
-			articles: this.props.data.allArticlesJson.nodes,
-			filter: 'all'
+			filter: qparams.category || 'all'
 		};
+		// console.log(qparams);
+		
+		let category = qparams.category || 'all';
+		console.log(qparams.category);
+		this.state.articles = this.props.data.allArticlesJson.nodes;
+		if (qparams.category && qparams.category!=='all') {
+			let filtered = this.props.data.allArticlesJson.nodes.filter(function(article) {
+				return article.category === category;
+			});
+			this.state.articles = filtered;
+		} else {
+			let filtered = this.props.data.allArticlesJson.nodes;
+			this.state.articles = filtered;
+		}
+		
 		this.handleChange = this.handleChange.bind(this);
+	}
+	componentWillMount() {
+
 	}
 	handleChange(event) {
 		let filter = event.target.value;
@@ -51,7 +70,7 @@ class CaseStudies extends React.Component {
 						
 					</div>
 				</div> */}
-				<div className="filter-nav pt-0 inline-block mx-auto text-left absolute sticky top-0 z-20">
+				<div className="filter-nav hidden lg:inline-block pt-0 mx-auto text-left absolute sticky top-0 z-20">
 					<form className="inline-block py-4 flex justify-center">
 						<label className={`filter ${ this.state.filter === 'all' ? 'active' : ''}`}>
 							<input className="appearance-none" type="radio" value="all" checked={this.state.filter === 'all'} onChange={this.handleChange} />
@@ -66,9 +85,22 @@ class CaseStudies extends React.Component {
 							Designer
 						</label>
 					</form>
-					{/* <a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 bg-blue-600 text-white">All</a>
-					<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 hover:bg-blue-600 hover:text-white">Just Leader</a>
-					<a href="javascript:void(0)" className="bg-gray-200 mr-4 px-4 rounded-lg py-2 hover:bg-blue-600 hover:text-white">Just Design</a> */}
+				</div>
+				<div className="filter-nav-sm md:hidden pt-0 block mx-auto text-left">
+					<form className=" py-4 flex justify-center">
+						<label className={`filter text-sm py-1 px-3 ${ this.state.filter === 'all' ? 'active' : ''}`}>
+							<input className="appearance-none" type="radio" value="all" checked={this.state.filter === 'all'} onChange={this.handleChange} />
+							All
+						</label>
+						<label className={`filter text-sm py-1 px-3 ${ this.state.filter === 'leader' ? 'active' : ''}`}>
+							<input className="appearance-none" type="radio" value="leader" checked={this.state.filter === 'leader'} onChange={this.handleChange} />
+							Leader
+						</label>
+						<label className={`filter text-sm py-1 px-3 ${ this.state.filter === 'designer' ? 'active' : ''}`}>
+							<input className="appearance-none" type="radio" value="designer" checked={this.state.filter === 'designer'} onChange={this.handleChange} />
+							Designer
+						</label>
+					</form>
 				</div>
 				<div className="">
 					{articles.map((article, i) => (

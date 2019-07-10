@@ -6,8 +6,8 @@ import DarkModeToggle from './DarkModeToggle';
 
 const Header = ({ siteTitle }) => (
 	<header className="bg-gray-200 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-600 absolute w-full z-10 sticky top-0">
-		<div className="container mx-auto py-4 flex items-center px-4 justify-between flex-wrap">
-			<div className="w-full py-5 md:py-0 md:w-1/4 text-center md:text-left">
+		<div className="container mx-auto py-4 flex items-center px-0 lg:px-4 justify-between flex-wrap">
+			<div className="w-full py-2 md:py-0 md:w-1/4 text-center md:text-left">
 				<Link
 					to="/"
 					className="text-gray-900 dark:text-gray-100 text-xl md:text-2xl lg:text-3xl font-400 font-serif"
@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
 				
 			</div>
 			<div className="w-full md:w-3/4 text-right">
-				<ul className="flex justify-center md:justify-end">
+				<ul className="flex justify-center mt-3 md:mt-0 md:justify-end">
 					{/* <li className="text-lg font-medium text-gray-700 dark:text-gray-200 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/leader"

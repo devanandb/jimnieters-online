@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Card from "../components/card"
 import SEO from "../components/seo"
+import ScrollButton from "../components/scrolltop"
 
 
 import Image from "gatsby-image"
@@ -113,7 +114,7 @@ const Article = ({ data }) => {
 					</div>
 				</div>
 			</div>
-			
+			<ScrollButton scrollStepInPx="50" delayInMs="5"/>
 		</Layout>
 	)
 };

@@ -9,6 +9,7 @@ import Header from "../components/header"
 import HeroImage from "../components/hero-image"
 import SEO from "../components/seo"
 import ArticleView from "../components/articleview"
+import ScrollButton from "../components/scrolltop"
 // import CaseStudies from "../components/casestudies"
 
 class CaseStudies extends React.Component {
@@ -110,6 +111,7 @@ class CaseStudies extends React.Component {
 						// <div>{article.slug}</div>
 					))}
 				</div>
+				<ScrollButton scrollStepInPx="50" delayInMs="5"/>
 			</Layout>
 		)
 	}

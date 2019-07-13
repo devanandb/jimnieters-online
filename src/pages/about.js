@@ -44,7 +44,7 @@ const About = () => (
 					</ul>
 				</div>
 				<div className="w-1/4">
-					<Link to="/contact" className="text-xl inline text-cennter text-gray-700 flex items-center bg-blue-300 dark:bg-blue-500 dark:text-gray-300 px-8 shadow-lg border-2 border-blue-400 py-2 rounded-full">
+					<Link to="/contact" className="button">
 							
 						Contact me  →
 					</Link>

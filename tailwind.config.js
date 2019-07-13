@@ -1,10 +1,11 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'sans': ['Barlow', '-apple-system', 'BlinkMacSystemFont'],
+      'sans': ['Roboto', '-apple-system', 'BlinkMacSystemFont'],
       'serif': ['"Shadows Into Light"', 'Georgia', 'Cambria'],
       'mono': ['SFMono-Regular', 'Menlo'],
-      'content': ['"PT Serif"', 'sans-serif']
+      'content': ['"PT Serif"', 'sans-serif'],
+      'title': ['Lato', 'sans-serif'],
     },
     extend: {}
   },

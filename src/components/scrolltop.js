@@ -22,7 +22,7 @@ class ScrollButton extends React.Component {
   }
   
   render () {
-      return <button title='Back to top' className='scroll bg-indigo-600 rounded-full w-16 h-16 text-3xl text-white shadow-lg bottom-0 right-0 fixed z-50 mb-5 mr-24 focus:outline-none' 
+      return <button title='Back to top' className='scroll bg-indigo-600 rounded-full text-2xl text-white shadow-lg right-0 bottom-0 fixed z-50 focus:outline-none' 
                onClick={ () => { this.scrollToTop(); }}>
                 <span>&#10514;</span>
               </button>;

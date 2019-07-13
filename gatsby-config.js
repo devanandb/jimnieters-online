@@ -37,13 +37,17 @@ module.exports = {
             subsets: [`latin`],
           },
           {
-            family: `Barlow`,
+            family: `Roboto`,
             variants: [`400`, `500`, `700`]
           },
           {
             family: `PT Serif`,
             variants: [`400`]
           },
+          {
+            family: 'Lato',
+            variants: [`900i`]
+          }
         ],
       },
     },

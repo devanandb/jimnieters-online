@@ -5,80 +5,77 @@ import Image from "gatsby-image"
 
 
 const ArticleView = (article) => (
-	<div id={`${article.slug}`} className={`border-t-2 dark:border-gray-600 ${article.order%2 ? ' bg-gray-200 dark:bg-gray-800 ' : 'bg-gray-100 dark:bg-gray-800'}`}>
-		{/* {JSON.stringify(article)} */}
-		<div className="container mx-auto px-5 pt-40 md:pt-24 pb-10">
-			{/* <Link to={`/${article.category}/${article.slug}`} className="hover:text-blue-700">
-			</Link> */}
-			<h3 className="font-medium text-2xl sm:text-2xl md:text-3xl dark:text-blue-300">{article.title}</h3>
-			<div className="text-gray-600 w-full xl:w-3/4 text-base lg:text-xl mt-3 mb-8  dark:text-gray-400  pl-4 border-l-4 border-blue-500" dangerouslySetInnerHTML={{ __html: article.summary }}></div>
+	<div id={`${article.slug}`} className={`border-t-2 dark:border-gray-600 ${article.order%2 ? 'dark:bg-gray-900 ' : 'dark:bg-gray-900'}`}>
+		{/* {JSON.stringify(article.tags)} */}
+		<div className="container mx-auto px-5 pb-10">
+			{/* <Link to="/" className="text-xl text-blue-700 font-medium">← Back</Link> */}
+			<div className="pt-10 block text-xl font-medium  color-sp uppercase">{article.category}</div>
+			<Link to={`/case-study/${article.slug}/detail`}><h1 className="title font-medium text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-content dark:text-gray-200">{article.title}</h1></Link>
+			<div className="">{article.tagline}</div>
+			<div className="text-gray-900 font-light w-full text-base lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
-			<div className={`md:flex mt-5 ${article.order%2 ? '' : 'md:flex-row-reverse '}`}>
-				<div className="w-full md:w-1/2">
+			<div className="flex justify-start">
+				<div className="w-3/4 mx-auto">
 					<Image
 						fluid={article.image.childImageSharp.fluid}
 						alt={article.title}
 						className="object-cover h-auto rounded-lg shadow-lg"
 					/>
-					<div className="text-center mt-5 text-gray-800 text-sm md:text-xl dark:text-gray-400">
+					<div className="text-center italic font-light font-content mt-4 mb-10 text-gray-800 text-sm md:text-xl dark:text-gray-400">
 						{ article.case_study.images[0].title ? article.case_study.images[0].title : "Image will have a caption here" }
 					</div>
-					<div className="mb-10 mt-12">
-						{(() => {
-							if (article.case_study.points) {
-								return (
-									<div>
-										{article.case_study.points.map((point, i) => (
-											<div className="border-l-4 border-green-500 dark:border-green-400 pl-4 mb-12" key={i}>
-												<div className="uppercase font-semibold mb-2 tracking-wider text-gray-600 dark:text-gray-200">{point.name}</div>
-												<div className="text-base dark:text-gray-500"  dangerouslySetInnerHTML={{ __html: point.value }}></div>
-											</div>
-										))}
-									</div>
-								)
-							}
-						})()}
-					</div>
 				</div>
-				<div className={`w-full md:w-1/2 content ${article.order%2 ? 'md:ml-8' : 'md:mr-8'}`}>
-					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white dark:bg-gray-900 mb-8 content">
-						<div className="bg-white rounded-full border-black inline-block w-12 h-12  border-1 shadow-md flex items-center -ml-8 -mt-8 dark:bg-gray-700 dark:text-gray-300"><div className="text-center w-full font-medium text-2xl ">1</div></div>
-						<div className="color-primary italic -mt-6 ml-6 mb-1 font-semibold tracking-wider dark:text-gray-300 text-base md:text-xl">Problem</div>
-						<div className="text-base md:text-xl dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: article.case_study.problem }}></div>
-					</div>
-
-					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white dark:bg-gray-900 mb-8 content">
-						<div className="bg-white rounded-full border-black inline-block w-12 h-12  border-1 shadow-md flex items-center -ml-8 -mt-8 dark:bg-gray-700 dark:text-gray-300"><div className="text-center w-full text-2xl">2</div></div>
-						<div className="color-primary italic -mt-6 ml-6 mb-1 font-semibold tracking-wider text-base md:text-xl dark:text-gray-300">Solution</div>
-						<div className="text-base md:text-xl dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: article.case_study.solution }}></div>
-					</div>
-
-					<div className="text-gray-700 text-lg rounded-lg border-red-200 p-4 pl-5 shadow-md bg-white dark:bg-gray-900 mb-5 content">
-						<div className="bg-white rounded-full border-black inline-block w-12 h-12  border-1 shadow-md flex items-center -ml-8 -mt-8 dark:bg-gray-700 dark:text-gray-300"><div className="text-center w-full text-2xl">3</div></div>
-						<div className="color-primary italic -mt-6 ml-6 mb-1 font-semibold tracking-wider text-base md:text-xl dark:text-gray-300">Impact</div>
-						<div className="text-base md:text-xl dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: article.case_study.impact }}></div>
-					</div>
-					{/* <div className="text-gray-600 text-lg rounded-r-lg border-l-4 border-red-200 p-3 bg-red-100 mt-3 content" dangerouslySetInnerHTML={{ __html: article.case_study.problem }}></div>
-					<div className="text-gray-600 text-lg rounded-r-lg border-l-4 border-orange-200 p-3 bg-orange-100 mt-3 content" dangerouslySetInnerHTML={{ __html: article.case_study.solution }}></div>
-					<div className="text-gray-600 text-lg rounded-r-lg border-l-4 border-green-200 p-3 bg-green-100 mt-3 content" dangerouslySetInnerHTML={{ __html: article.case_study.impact }}></div> */}
-				</div>
-				
 			</div>
-
-			<div className="my-10 justify-left flex">
+			<div className={`content summary flex`}>
+				{
+					Object.keys({'problem':'', 'solution':'', 'impact':''}).map((key,i)=>{
+						let item = article.case_study[key];
+						return (
+							// <div key={i} className="text-gray-700 text-lg dark:bg-gray-900 mb-10 content summary flex">
+							// 	<div className="bg-white font-bold font-title italic border-1  justify-end pr-6 point border-r-4 dark:bg-gray-700 dark:text-gray-300 color-sp w-1/5 text-right flex items-center">
+							// 		<div>
+							// 		<div className="text-right font-bold text-4xl">
+							// 			0{i+1}
+							// 		</div>
+							// 		<div className="color-sp font-title font-bold capitalize dark:text-gray-300 text-3xl md:text-2xl">{key}</div>
+							// 		</div>
+							// 	</div>
+							// 	<div className="text-base md:text-xl font-light pl-2 pt-2 text-gray-900 dark:text-gray-400 w-4/5"  dangerouslySetInnerHTML={{ __html: item }}></div>
+							// </div>
+							<div key={i} className="w-1/3 mx-3 flex">
+								<div className="flex color-sp align-top">
+									<div className="text-center font-medium font-content text-6xl">
+										{i+1}
+									</div>
+								</div>
+								<div className="mt-4">
+									<div className="text-2xl color-sp capitalize font-content font-black">&nbsp;{key}</div>
+									<div className="text-base md:text-xl font-light pt-2 text-gray-900 dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: item }}></div>
+								</div>
+							</div>
+						)
+					})
+				}
+			</div>
+			<div className="mt-16 flex justify-center flex-wrap">
+				{article.tags.map((tag, i)=> (
+					<div key={i} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</div>
+				))}
+			</div>
+			<div className="my-16 justify-center flex">
 				{/* <a href="mailto:jnieters@mac.com" className="bg-purple-600 inline-block cursor-pointer rounded hover:bg-purple-700 text-white font-normal tracking-wide py-3 px-6 text-xl shadow-xl">
 							Get In Touch
 							</a> */}
-				<Link to={`/case-study/${article.slug}/detail`} className="text-lg text-blue-700 dark:text-gray-300 font-medium uppercase">
-					
+				<Link to={`/case-study/${article.slug}/detail`} className="button  hover:shadow-xl hover:bg-black">
 					<span>Read Full Case Study →</span>
 				</Link>
 
-				<Link to={`/contact`} className="ml-16 uppercase font-medium text-lg text-blue-700 dark:text-gray-300">
-					
+				<Link to={`/contact`} className="ml-10 mt-2 color-sp capitalize font-medium text-lg dark:text-gray-300">
 					<span>Or Ask to Chat ↗</span>
 				</Link>
 			</div>
+			{/* <hr className="border-b-2 mx-24"/> */}
+			
 		</div>
 	</div>
 )

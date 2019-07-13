@@ -11,14 +11,26 @@
 .profile {
 	background-image: url('/images/jim-folio-3.jpg');
 }
+.title {
+	transition: all .5s ease-in-out;
+}
+.title:hover {
+	color: #0B427E;
+}
 .content {
-
+}
+.slash {
+	width: 200px;
+	height: 100%;
+	/* background-color: white; */
+	border: 3px solid gray;
+	transform: rotate(-45deg) translateY(100%);
 }
 .color-primary {
 	color: #0B427E;
 }
 .content p {
-	@apply mb-10;
+	@apply mb-8;
 }
 label input[type="radio"] {
     /* opacity: 0; */
@@ -96,9 +108,25 @@ input[type='checkbox'].dmcheck + label {
 .content h2 {
 	@apply text-3xl text-black font-extrabold mb-3;
 }
+.point {
+	border-color: #3A06EC;
+}
+.color-sp {
+	color: #3A06EC;
+}
 
+.mode-dark .color-sp {
+	color: #fff;
+}
 .content h3 {
 	@apply text-2xl text-black font-extrabold mb-3;
+}
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	margin-right: 25px;
+	margin-bottom: 100px;
 }
 
 .content ol {
@@ -107,6 +135,22 @@ input[type='checkbox'].dmcheck + label {
 
 .content ul {
 	@apply list-disc list-outside ml-6;
+}
+
+.button {
+	background-color: #3A06EC;
+	transition: all .3s cubic-bezier();
+	@apply text-lg text-gray-300 px-4 py-2 font-medium capitalize rounded-sm shadow-lg;
+}
+.button:hover {
+	background-color: #000;
+}
+.content.summary ul {
+	@apply list-outside ml-2;
+}
+
+.content.summary ul li {
+	@apply list-none list-outside mb-2 border-t-2 pt-2;
 }
 .mode-dark .content h2, .mode-dark .content h3 {
 	@apply text-gray-100 

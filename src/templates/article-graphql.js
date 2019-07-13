@@ -85,10 +85,11 @@ const Article = ({ data }) => {
 			<Header siteTitle="Jim Nieters - Work" />
 			<div className="dark:bg-gray-800">
 				<div className="container mx-auto px-5">
-					<div className="pt-10 block text-xl text-blue-700 font-bold tracking-wider dark:text-blue-300 uppercase">{article.category}</div>
-					<h1 className="text-3xl md:text-3xl lg:text-4xl font-medium mb-10  dark:text-white">{article.title}</h1>
+					<div className="pt-10 block text-xl font-medium  color-sp uppercase">{article.category}</div>
+					<h1 className="text-3xl md:text-3xl lg:text-4xl font-content font-medium mb-10  dark:text-white">{article.title}</h1>
+					
 				</div>
-				<div className="container mx-auto px-5 font-content tracking-wide leading-loose md:flex">
+				<div className="container mx-auto px-5  tracking-wide leading-loose md:flex">
 					
 					<div className="w-full md:w-3/4 pl-0 mr-8 md:text-xl text-gray-900">
 						<div className="w-full">
@@ -98,19 +99,19 @@ const Article = ({ data }) => {
 								className="h-full w-full object-cover rounded-lg"
 							/>
 						</div>
-						<div className="content mt-10 dark:text-gray-200">
+						<div className="content font-content mt-10 dark:text-gray-200 text-xl leading-relaxed">
 							<div dangerouslySetInnerHTML={{ __html: article.body }}></div>
 						</div>
 					</div>
 					<div className="w-full md:w-1/4">
-						<div className="-m-2 ml-2 uppercase text-purple-600 dark:text-blue-400 font-semibold font-sans ">{activeArticle.next ? 'Next Up →' : ''}</div>
-						{ activeArticle.next ? <Card article={activeArticle.next} align="left"></Card> : ''}
-
-						<div className="-m-2 ml-2 uppercase text-gray-600 dark:text-gray-300 font-semibold font-sans ">
-							
-							{activeArticle.previous ? '← Previous' : ''}
+						
+						{ activeArticle.next ? <div><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase text-purple-600 dark:text-blue-400 font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} align="left"></Card></div> : ''}
+						{ activeArticle.previous ? <div><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase text-gray-600 dark:text-gray-300 font-semibold font-sans ">← Previous</Link><Card article={activeArticle.previous}></Card></div> : ''}
+						<div className="mt-8 flex justify-left flex-wrap">
+							{article.tags.map((tag, i)=> (
+								<div key={i} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</div>
+							))}
 						</div>
-						{ activeArticle.previous ? <Card article={activeArticle.previous}></Card> : ''}
 					</div>
 				</div>
 			</div>

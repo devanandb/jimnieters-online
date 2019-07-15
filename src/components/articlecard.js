@@ -14,10 +14,10 @@ const ArticleCard = (article) => (
 					alt={article.title}
 					className="w-full object-cover h-48 tra shadow-lg rounded-lg hover:shadow-xl border-2 border-gray-200 dark:border-gray-800 mr-4"
 				/>
-				<div className={`uppercase tracking-wider text-sm font-semibold absolute text-white top-0 mt-8 pl-4 py-1 rounded-r pr-4 shadow-lg ${ article.category === 'designer' ? 'bg-orange-700 dark:bg-orange-800' : 'bg-purple-700 dark:bg-purple-800' }`}>{article.category}</div>
+				<div className={`uppercase tracking-wider text-sm font-semibold absolute text-white top-0 mt-8 pl-4 py-1 rounded-r pr-4 shadow-lg bg-${ article.category}`}>{article.category}</div>
 			</div>
 			<div className="w-full mt-4">
-				<h3 className="tracking-wide font-normal font-title text-gray-800 text-2xl hover:text-blue-700 dark:text-gray-200 dark-hover:text-blue-700">{article.title}</h3>
+				<h3 className={`tracking-wide font-normal font-title text-${article.category} text-2xl hover:text-blue-700 dark:text-gray-200 dark-hover:text-blue-700`}>{article.title}</h3>
 				<p className="text-gray-600 dark:text-gray-200 text-lg">{article.tagline}</p>
 				{/* {article.tags.map((tag, i) => (
 					<div className="inline-block bg-gray-300 px-2 text-sm rounded-lg mr-3 mb-3" key={i}>{tag.name}</div>

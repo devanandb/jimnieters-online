@@ -113,15 +113,15 @@ class IndexPage extends React.Component {
 				</div> */}
 				<div className="filter-nav hidden lg:inline-block pt-1 mx-auto text-left absolute sticky top-0 z-20">
 					<form className="inline-block py-4 flex justify-center">
-						<label className={`filter ${ this.state.filter === 'all' ? 'active' : ''}`}>
+						<label className={`filter ${ this.state.filter === 'all' ? 'active bg-gray-700' : ''}`}>
 							<input className="appearance-none" type="radio" value="all" checked={this.state.filter === 'all'} onChange={this.handleChange} />
 							All
 						</label>
-						<label className={`filter ${ this.state.filter === 'leader' ? 'active' : ''}`}>
+						<label className={`filter ${ this.state.filter === 'leader' ? 'active bg-leader' : ''}`}>
 							<input className="appearance-none" type="radio" value="leader" checked={this.state.filter === 'leader'} onChange={this.handleChange} />
 							Leader
 						</label>
-						<label className={`filter ${ this.state.filter === 'designer' ? 'active' : ''}`}>
+						<label className={`filter ${ this.state.filter === 'designer' ? 'active bg-designer' : ''}`}>
 							<input className="appearance-none" type="radio" value="designer" checked={this.state.filter === 'designer'} onChange={this.handleChange} />
 							Designer
 						</label>

@@ -29,6 +29,20 @@
 .color-primary {
 	color: #0B427E;
 }
+
+.text-designer {
+	color: #602417 !important;
+}
+.text-leader {
+	color: #4224A8 !important;
+}
+.bg-designer {
+	background-color: #602417 !important;
+}
+
+.bg-leader {
+	background-color: #4224A8 !important;
+}
 .content p {
 	@apply mb-8;
 }
@@ -175,11 +189,11 @@ input[type='checkbox'].dmcheck + label {
   	transition: all .3s ease-in-out;
 }
 .filter:hover {
-	@apply bg-red-600 text-white bg-blue-400 text-white border-blue-400 shadow-xl
+	@apply text-white text-white border-blue-400 shadow-xl bg-blue-600
 }
 
 .filter.active {
-	@apply bg-blue-600 text-white border-blue-600
+	@apply text-white
 }
 
 @tailwind components;

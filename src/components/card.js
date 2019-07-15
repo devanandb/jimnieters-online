@@ -4,8 +4,8 @@ import React from "react"
 import Image from "gatsby-image"
 
 
-const Card = ({article, align}) => (
-	<Link to={`/case-study/${article.slug}/detail`} className="block">
+const Card = ({article, mode}) => (
+	<Link to={ mode === 'summary' ? `/case-study/${article.slug}` : `/case-study/${article.slug}/detail`} className="block">
 		<div className="mt-4 ml-2 mr-0 mb-10">
 			<Image
 				fluid={article.image.childImageSharp.fluid}

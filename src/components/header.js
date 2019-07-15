@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
 				
 			</div>
 			<div className="w-3/5 md:w-3/4 text-right">
-				<ul className="flex justify-end md:mt-3 md:mt-0 md:justify-end mr-5 md:mr-0">
+				<ul className="flex justify-end md:mt-3 lg:mt-0 md:justify-end mr-5 md:mr-0">
 					{/* <li className="text-lg font-medium text-gray-700 dark:text-gray-200 tracking-wider uppercase hover:text-blue-800">
 						<Link 
 							to="/leader"

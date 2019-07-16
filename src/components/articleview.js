@@ -12,7 +12,7 @@ const ArticleView = (article) => (
 			{/* <Link to="/" className="text-xl text-blue-700 font-medium">← Back</Link> */}
 			<div className={`pt-10 block text-xl font-medium text-${article.category} uppercase`}>{article.category}</div>
 			<Link to={`/case-study/${article.slug}/detail`}><h1 className={`title font-semibold text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-title text-${article.category} dark:text-gray-200`}>{article.title}  →</h1></Link>
-			<div className="">{article.tagline}</div>
+			<div className="text-gray-600 text-2xl font-light mt-1 mb-4">{article.tagline}</div>
 			<div className="text-gray-900 font-light w-full text-base lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className="flex justify-start">
@@ -61,7 +61,7 @@ const ArticleView = (article) => (
 				</Link>
 
 				<Link to={`/contact`} className="ml-10 mt-2 color-sp capitalize font-medium text-lg dark:text-gray-300">
-					<span>Or Ask to Chat ↗</span>
+					Or Ask to Chat ↗
 				</Link>
 			</div>
 			<hr className="border-b-2 mx-24"/>

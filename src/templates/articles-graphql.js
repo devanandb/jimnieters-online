@@ -60,6 +60,7 @@ export const query = graphql`
 		article: articlesJson(slug: {eq: $slug}) {
 			id
 			title
+			tagline
 			slug
 			body
 			summary

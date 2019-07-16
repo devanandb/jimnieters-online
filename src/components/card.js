@@ -16,7 +16,7 @@ const Card = ({article, mode}) => (
 				<div className={`font-medium font-title text-xl text-${article.category} leading-relaxed tracking-normal mb-2`}>
 					{article.title}
 				</div>
-				<div className="dark:text-gray-400 text-lg leading-normal">{article.tagline}</div>
+				<div className="text-gray-600 dark:text-gray-400 text-lg leading-normal">{article.tagline}</div>
 			</div>
 		</div>
 	</Link>

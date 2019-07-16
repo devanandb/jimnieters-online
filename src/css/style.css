@@ -5,7 +5,8 @@
 .hero-container {
 	background-image: url('/images/jimbg.png');
 	background-position: bottom right;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
+	height: 60vh;
 }
 
 .profile {

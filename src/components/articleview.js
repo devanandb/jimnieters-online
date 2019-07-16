@@ -32,7 +32,7 @@ const ArticleView = (article) => (
 					Object.keys({'problem':'', 'solution':'', 'impact':''}).map((key,i)=>{
 						let item = article.case_study[key];
 						return (
-							<div key={i} className="w-full mx-3 flex mb-5">
+							<div key={i} className="w-full mr-6 flex mb-5">
 								<div className={`flex text-${article.category} align-top`}>
 									<div className="text-center font-medium font-content text-6xl">
 										{i+1}

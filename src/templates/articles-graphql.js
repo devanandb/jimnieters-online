@@ -156,9 +156,9 @@ const ArticleSum = ({ data }) => {
 			<div className="container mx-auto mt-10">
 
 				<div className="flex flex-row-reverse flex-wrap md:justify-between">
-					{ activeArticle.next ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase dark:text-blue-400 color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} mode="summary"></Card></div> : ''}
+					{ activeArticle.next ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} mode="summary"></Card></div> : ''}
 					<hr className="" />
-					{ activeArticle.previous ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase  dark:text-gray-300 font-semibold font-sans ">← Previous</Link><Card  mode="summary" article={activeArticle.previous}></Card></div> : ''}
+					{ activeArticle.previous ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card  mode="summary" article={activeArticle.previous}></Card></div> : ''}
 				</div>
 			</div>
 			

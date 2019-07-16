@@ -17,6 +17,7 @@ const ArticleCard = (article) => (
 				<div className={`uppercase tracking-wider text-sm font-semibold absolute text-white top-0 mt-8 pl-4 py-1 rounded-r pr-4 shadow-lg bg-${ article.category}`}>{article.category}</div>
 			</div>
 			<div className="w-full mt-4">
+				{/* <div className={`uppercase tracking-wider text-sm font-semibold text-white top-0 -mb-1 py-1 text-${ article.category}`}>{article.category}</div> */}
 				<h3 className={`tracking-wide font-normal font-title text-${article.category} text-xl hover:text-blue-700 dark:text-gray-200 dark-hover:text-blue-700`}>{article.title}</h3>
 				<p className="text-gray-600 dark:text-gray-200 text-lg">{article.tagline}</p>
 				{/* {article.tags.map((tag, i) => (

@@ -107,13 +107,15 @@ const Article = ({ data }) => {
 						</div>
 					</div>
 					<div className="w-full md:w-1/4">
-						{ activeArticle.next ? <div><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase text-purple-600 dark:text-blue-400 font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} align="left"></Card></div> : ''}
-						{ activeArticle.previous ? <div><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase text-gray-600 dark:text-gray-300 font-semibold font-sans ">← Previous</Link><Card article={activeArticle.previous}></Card></div> : ''}
-						<div className="mt-8 flex justify-left flex-wrap">
+						<div className="flex justify-left flex-wrap">
 							{article.tags.map((tag, i)=> (
 								<div key={i} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</div>
 							))}
 						</div>
+						<hr className="border-b-2 mb-10"/>
+						{ activeArticle.next ? <div><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} align="left"></Card></div> : ''}
+						{ activeArticle.previous ? <div><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card article={activeArticle.previous}></Card></div> : ''}
+						
 					</div>
 				</div>
 			</div>

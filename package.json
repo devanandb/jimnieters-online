@@ -1,7 +1,7 @@
 {
   "name": "jimnieters-online",
   "private": true,
-  "description": "Online Portfolio of Jim Nieters, a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.",
+  "description": "Online Portfolio of Jim Nieters, a UX leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.",
   "version": "0.0.3",
   "author": "Devanand <dev.ryder88@gmail.com>",
   "dependencies": {
@@ -17,6 +17,7 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "gatsby-plugin-react-helmet": "^3.1.0",
     "gatsby-plugin-robots-txt": "^1.4.0",
+    "gatsby-plugin-sitemap": "^2.2.3",
     "gatsby-plugin-use-dark-mode": "^1.1.2",
     "glhd-tailwindcss-transitions": "^0.3.0",
     "lodash": "^4.17.11",

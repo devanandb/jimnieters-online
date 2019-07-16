@@ -38,7 +38,7 @@ module.exports = {
           },
           {
             family: `Roboto`,
-            variants: [`400`, `500`, `700`]
+            variants: [`300`, `400`, `500`, `700`]
           },
           {
             family: `PT Serif`,
@@ -46,7 +46,7 @@ module.exports = {
           },
           {
             family: 'Lato',
-            variants: [`900i`]
+            variants: [`700i`, `900i`]
           }
         ],
       },

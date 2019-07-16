@@ -66,9 +66,9 @@ class IndexPage extends React.Component {
 				<div className="hero-container bg-cover">
 					<div className="container flex-wrap mx-auto lg:my-0 px-8 py-4 lg:pt-32 sm:pt-20 relative">
 						<h1 className="text-white dark:text-black font-extrabold font-serif mt-2 tracking-wider text-4xl sm:text-4xl lg:text-6xl">Jim Nieters</h1>
-						<p className="mt-1 text-2xl lg:text-4xl font-medium text-gray-200 dark:text-black flex tracking-tight lg:justify-start">User Experience Design Leader</p>
-						<p className="mt-1 text-gray-200 dark:text-gray-700 text-2xl flex lg:justify-start">San Francisco, Bay Area</p>
-						<p className="mt-4 text-xl md:text-2xl text-gray-100 dark:text-gray-800 w-full md:w-1/2 pb-40 sm:pb-40 md:pb-20 lg:pb-10">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
+						<p className="mt-1 text-2xl lg:text-4xl font-bold font-title text-gray-200 dark:text-black flex tracking-tight lg:justify-start">User Experience Design Leader</p>
+						<p className="mt-1 text-gray-200 dark:text-gray-700 text-2xl flex lg:justify-start font-medium lg:pb-10">San Francisco, Bay Area</p>
+						<p className="mt-4 text-xl md:text-2xl text-gray-100 dark:text-gray-800 w-full md:w-1/2 pb-40 font-light sm:pb-40 md:pb-20 lg:pb-16">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
 						
 						<div className="absolute inset-x-0 bottom-0 md:static w-2/3 md:w-2/5 flex flex-wrap items-center justify-between lg:mb-48 mb-5 ml-6 md:ml-0">
 							<a className="border border-gray-600 bg-white dark:bg-black rounded-full p-2 lg:p-4 border-2 hover:shadow-xl" target="_blank" rel="noopener noreferrer" aria-label="Linkedin" href="https://www.linkedin.com/in/jimnieters/en">

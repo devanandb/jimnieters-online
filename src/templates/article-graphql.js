@@ -22,6 +22,7 @@ export const query = graphql`
 					title
 					slug
 					category
+					tagline
 					image {
 						childImageSharp {
 							fluid(maxWidth: 320) {
@@ -34,6 +35,7 @@ export const query = graphql`
 					title
 					slug
 					category
+					tagline
 					image {
 						childImageSharp {
 							fluid(maxWidth: 320) {
@@ -96,7 +98,7 @@ const Article = ({ data }) => {
 							<Image
 								fluid={article.image.childImageSharp.fluid}
 								alt={article.title}
-								className="h-full w-full object-cover rounded-lg"
+								className="h-full w-full object-cover rounded-lg shadow-md"
 							/>
 						</div>
 						<div className="content font-content mt-10 dark:text-gray-200 text-xl leading-relaxed">
@@ -104,7 +106,6 @@ const Article = ({ data }) => {
 						</div>
 					</div>
 					<div className="w-full md:w-1/4">
-						
 						{ activeArticle.next ? <div><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase text-purple-600 dark:text-blue-400 font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} align="left"></Card></div> : ''}
 						{ activeArticle.previous ? <div><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase text-gray-600 dark:text-gray-300 font-semibold font-sans ">← Previous</Link><Card article={activeArticle.previous}></Card></div> : ''}
 						<div className="mt-8 flex justify-left flex-wrap">

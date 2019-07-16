@@ -13,9 +13,10 @@ const Card = ({article, mode}) => (
 				className="h-48 w-full object-cover rounded-lg shadow-md hover:shadown-xl"
 			/>
 			<div className="py-4">
-				<div className="font-medium font-sans text-xl text-blue-700 dark:text-blue-300 leading-relaxed tracking-normal mb-2">
+				<div className={`font-medium font-title text-xl text-${article.category} leading-relaxed tracking-normal mb-2`}>
 					{article.title}
 				</div>
+				<div className="dark:text-gray-400 text-lg leading-normal">{article.tagline}</div>
 			</div>
 		</div>
 	</Link>

@@ -29,20 +29,10 @@
 .color-primary {
 	color: #0B427E;
 }
-
-.text-designer {
-	color: #602417 !important;
-}
-.text-leader {
-	color: #4224A8 !important;
-}
-.bg-designer {
-	background-color: #602417 !important;
+figure figcaption {
+	@apply italic pt-2
 }
 
-.bg-leader {
-	background-color: #4224A8 !important;
-}
 .content p {
 	@apply mb-8;
 }
@@ -131,6 +121,32 @@ input[type='checkbox'].dmcheck + label {
 
 .mode-dark .color-sp {
 	color: #fff;
+}
+
+.text-designer {
+	color: #602417 !important;
+}
+.text-leader {
+	color: #4224A8 !important;
+}
+.bg-designer {
+	background-color: #602417 !important;
+}
+.bg-leader {
+	background-color: #4224A8 !important;
+}
+
+.mode-dark .text-designer {
+	color: #c7725f !important;
+}
+.mode-dark .text-leader {
+	color: #a087f5 !important;
+}
+.mode-dark .bg-designer {
+	background-color: #c7725f !important;
+}
+.mode-dark .bg-leader {
+	background-color: #a087f5 !important;
 }
 .content h3 {
 	@apply text-2xl text-black font-extrabold mb-3;

@@ -16,13 +16,13 @@ const ArticleView = (article) => (
 			<div className="text-gray-900 font-light w-full text-base lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className="flex justify-start">
-				<div className="w-3/4 mx-auto">
+				<div className="w-3/4">
 					<Image
 						fluid={article.image.childImageSharp.fluid}
 						alt={article.title}
 						className="object-cover h-auto rounded-lg shadow-lg"
 					/>
-					<div className="text-center italic font-light font-content mt-4 mb-10 text-gray-800 text-sm md:text-xl dark:text-gray-400">
+					<div className="italic font-light font-content mt-4 mb-10 text-gray-800 text-sm md:text-xl dark:text-gray-400">
 						{ article.case_study.images[0].title ? article.case_study.images[0].title : "Image will have a caption here" }
 					</div>
 				</div>

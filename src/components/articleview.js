@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
 import Image from "gatsby-image"
-import Card from "../components/card"
 
 
 const ArticleView = (article) => (
@@ -49,7 +48,7 @@ const ArticleView = (article) => (
 			</div>
 			<div className="mt-16 flex justify-center flex-wrap">
 				{article.tags.map((tag, i)=> (
-					<div key={i} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</div>
+					<Link key={i} to={`/tag/${tag.slug}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 hover:bg-indigo-300 hover:color-sp rounded-full">{tag.name}</Link>
 				))}
 			</div>
 			<div className="my-16 justify-center flex">

@@ -6,11 +6,11 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Card from "../components/card"
 import SEO from "../components/seo"
-import ScrollButton from "../components/scrolltop"
+// import ScrollButton from "../components/scrolltop"
 import ArticleView from "../components/articleview"
 
 
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
 
 export const query = graphql`
 	query($slug: String!) {
@@ -69,6 +69,7 @@ export const query = graphql`
 			featured
 			category
 			tags {
+				slug
 				name
 			}
 			image {
@@ -104,8 +105,8 @@ export const query = graphql`
 
 const ArticleSum = ({ data }) => {
 	const article = data.article;
-	const edges = data.articles.edges;
-	console.log('asdasd', data.articles);
+	// const edges = data.articles.edges;
+	// console.log('asdasd', data.articles);
 	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.slug===article.slug});
 	return (
 		<Layout>

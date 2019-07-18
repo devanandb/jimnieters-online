@@ -10,9 +10,9 @@ module.exports = {
     extend: {}
   },
   variants: {
-    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover'],
-    borderColor: ['dark', 'dark-focus', 'dark-focus-within'],
-    textColor: ['dark', 'dark-hover', 'dark-active']
+    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'group-hover'],
+    borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'group-hover'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'group-hover']
   },
   plugins: [
     require('glhd-tailwindcss-transitions')(),

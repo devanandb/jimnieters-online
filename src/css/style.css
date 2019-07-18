@@ -112,11 +112,23 @@ input[type='checkbox'].dmcheck + label {
 .content h2 {
 	@apply text-3xl text-black font-extrabold mb-3;
 }
+.tag-cont {
+	min-height: calc(100vh - 360px);
+}
+
+.tag-cont .sticky.top-0 {
+	top: 100px;
+}
+.hide {}
 .point {
 	border-color: #3A06EC;
 }
 .color-sp {
 	color: #3A06EC;
+}
+
+.bg-sp {
+	background-color: #3A06EC !important;
 }
 
 .mode-dark .color-sp {

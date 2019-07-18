@@ -58,6 +58,7 @@ export const query = graphql`
 			featured
 			category
 			tags {
+				slug
 				name
 			}
 			image {
@@ -109,7 +110,7 @@ const Article = ({ data }) => {
 					<div className="w-full md:w-1/4">
 						<div className="flex justify-left flex-wrap">
 							{article.tags.map((tag, i)=> (
-								<div key={i} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</div>
+								<Link key={i} to={`/tag/${tag.slug}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</Link>
 							))}
 						</div>
 						<hr className="border-b-2 mb-10"/>

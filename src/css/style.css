@@ -45,6 +45,8 @@ label input[type="radio"] {
 	@apply text-2xl;
 }
 
+
+
 svg.linkedin {
 	fill: #0077B5;
 }
@@ -161,9 +163,11 @@ input[type='checkbox'].dmcheck + label {
 	background-color: #a087f5 !important;
 }
 .content h3 {
-	@apply text-2xl text-black font-extrabold mb-3;
+	@apply text-2xl text-black mb-3;
 }
-
+.content h1, .content h2, .content h3, .content h4, .content h5 {
+	@apply font-sans font-medium;
+}
 .scroll {
 	width: 60px;
 	height: 60px;

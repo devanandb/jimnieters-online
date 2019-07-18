@@ -13,7 +13,7 @@ const ArticleView = (article) => (
 			<div className={`pt-10 block text-xl font-medium text-${article.category} uppercase`}>{article.category}</div>
 			<Link to={`/case-study/${article.slug}/detail`}><h1 className={`title font-semibold text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-title text-${article.category} dark:text-gray-200`}>{article.title}  →</h1></Link>
 			<div className="text-gray-600 text-2xl font-light mt-1 mb-4">{article.tagline}</div>
-			<div className="text-gray-900 font-light w-full text-base lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
+			<div className="text-gray-900 font-content font-light w-full text-base lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className="flex justify-start">
 				<div className="w-3/4">
@@ -34,13 +34,13 @@ const ArticleView = (article) => (
 						return (
 							<div key={i} className="w-full mr-6 flex mb-5">
 								<div className={`flex text-${article.category} align-top`}>
-									<div className="text-center font-medium font-content text-6xl">
+									<div className="text-center font-light font-content text-6xl">
 										{i+1}
 									</div>
 								</div>
 								<div className="mt-4">
-									<div className={`text-2xl color-sp capitalize font-content text-${article.category}`}>&nbsp;{key}</div>
-									<div className="text-base md:text-xl font-light pt-2 text-gray-900 dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: item }}></div>
+									<div className={`text-2xl color-sp capitalize font-sans font-normal text-${article.category}`}>&nbsp;{key}</div>
+									<div className="text-base md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: item }}></div>
 								</div>
 							</div>
 						)

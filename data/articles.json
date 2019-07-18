@@ -628,9 +628,9 @@
         "slug": "new-app-interaction-model",
         "image": "images/7-Airplane-IxD-Models-shorter.jpg",
         "case_study": {
-            "problem": "<ul><li>When I arrived, Yahoo Search Marketing was difficult to use.</li><li>The product team resisted change.</li><li>E.g., 57% of users with YSM campaigns could not successfully create a second campaign.</li></ul>",
-            "solution": "<ul><li>I requested and facilitated a Rapid Design Lab with PM, Eng, Sales and Customers to brainstorm solutions and align teams.</li><li>Collaboration resulted in agreement to build a separate desktop tool.</li><li>Bought the time and directed my team to conduct research, prototype the solution and test before coding.</li></ul>",
-            "impact": "<ul><li>Significantly simplified the UX.</li><li>User success on ad campaigns increased 85% (75% for novices).</li><li>Increased revenue 16% in the 1st month.</li></ul>",
+            "problem": "<ul><li>When I arrived, existing designs did not follow a cohesive interaction model- a design model that binds an app together so it supports the conceptual models of its target users.</li><li>There were places where different apps needed to be consistent, and where each needed a unique structure or flow, and a model that described which was appropriate when.</li><li>Take for example word processing, spreadsheet and presentation apps from a single company. They are consistent in some ways and properly inconsistent in others.</li></ul>",
+            "solution": "<ul><li>Conducted research and documented the conceptual model of different sets of users.</li><li>Defined the Interaction Design goals that mattered the most in this family of apps.</li><li>Assembled an interaction model, an 11\" x 17\" IXD Guide that demonstrated how different parts of each app fit together, plus a pattern library with code components.</li><li>Tested this IXD model against three apps, validated and iterated on the model.</li></ul>",
+            "impact": "<ul><li>Provided an intelligible structure and flow for designers, engineers and customers, leaving room for designers to solve real problems, which is the very purpose of Interaction Design.</li><li>Increased speed for Design and Engineering teams to move from concept to code by 40%.</li><li>Usability and satisfaction (and delight) increased as users were always oriented and could easily find information and perform tasks.</li></ul>",
             "images": [
                 {
                     "src": "images/7-Airplane-IxD-Models-shorter.jpg",

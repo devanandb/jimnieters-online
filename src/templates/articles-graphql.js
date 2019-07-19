@@ -118,7 +118,7 @@ const ArticleSum = ({ data }) => {
 				article
 			/>
 
-			<Header siteTitle="Jim Nieters - Work" />
+			<Header siteTitle="work" />
 			<div className="dark:bg-gray-800">
 				{/* <div className="container mx-auto px-5">
 					<div className="pt-10 block text-xl text-blue-700 font-bold tracking-wider dark:text-blue-300 uppercase">{article.category}</div>
@@ -156,7 +156,7 @@ const ArticleSum = ({ data }) => {
 			</ArticleView>
 			<div className="container mx-auto mt-10">
 
-				<div className="flex flex-row-reverse flex-wrap md:justify-between">
+				<div className="flex flex-row-reverse flex-wrap justify-center md:justify-center">
 					{ activeArticle.next ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} mode="summary"></Card></div> : ''}
 					<hr className="" />
 					{ activeArticle.previous ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card  mode="summary" article={activeArticle.previous}></Card></div> : ''}

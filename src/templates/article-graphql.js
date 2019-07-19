@@ -86,12 +86,12 @@ const Article = ({ data }) => {
 				article
 			/>
 
-			<Header siteTitle="Jim Nieters - Work" />
+			<Header siteTitle="work" />
 			<div className="dark:bg-gray-800">
 				<div className="container mx-auto px-5">
 					<div className={`pt-10 block text-xl font-medium text-${article.category} uppercase`}>{article.category}</div>
 					<h1 className={`text-3xl md:text-3xl lg:text-4xl font-title  text-${article.category} font-medium dark:text-white`}>{article.title}</h1>
-					<div className="text-gray-600 text-2xl font-light mt-1 mb-6">{article.tagline}</div>
+					<div className="text-gray-800 text-2xl font-light mt-1 mb-6  dark:text-gray-100">{article.tagline}</div>
 				</div>
 				<div className="container mx-auto px-5  tracking-wide leading-loose md:flex">
 					

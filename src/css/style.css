@@ -3,11 +3,24 @@
 	transition: all .3s;
 } */
 .hero-container {
-	background-image: url('/images/jimbg.png');
-	background-position: bottom right;
+	background-color: #6272BC;
+	background-image: url('/images/jimbg-n.jpg');
+	background-position: right -300px bottom 0px;
+	background-repeat: no-repeat;
 	/* background-attachment: fixed; */
 }
 
+@media (min-width: 768px) { 
+	.hero-container {
+		background-position: right -100px bottom 0px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.hero-container {
+		background-position: right -10px bottom 0px;
+	}
+}
 .profile {
 	background-image: url('/images/jim-folio-3.jpg');
 }
@@ -216,7 +229,7 @@ input[type='checkbox'].dmcheck + label {
 	transform: translateX(-50%); */
 }
 .filter {
-	@apply mr-4 px-8 rounded-lg py-2 text-sm cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
+	@apply mx-2 px-4 rounded-lg py-4 text-sm cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
 	-webkit-transition: all .3s ease-in-out;
   	transition: all .3s ease-in-out;
 }
@@ -225,8 +238,19 @@ input[type='checkbox'].dmcheck + label {
 }
 
 .filter.active {
-	@apply text-white
+	@apply text-white;
 }
+
+
+.text-shadow { text-shadow: 0px 0px .4px rgba(0,17,0, .6) }
+.text-shadow1 { text-shadow: 0px 0px .6px rgba(0,17,0, .6) }
+.text-shadow2 { text-shadow: .2px .5px 1px rgba(0,17,0, .6) }
+.text-shadow3 { text-shadow: 1px 2px 2px rgba(0,17,0, .6) }
+
+.mode-dark .text-shadow { text-shadow: 0px 0px .4px rgba(140,140,140, .6) }
+.mode-dark .text-shadow1 { text-shadow: 0px 0px .6px rgba(140,140,140, .6) }
+.mode-dark .text-shadow2 { text-shadow: .2px .5px 1px rgba(140,140,140, .6) }
+.mode-dark .text-shadow3 { text-shadow: 1px 2px 2px rgba(140,140,140, .6) }
 
 @tailwind components;
 

@@ -11,11 +11,11 @@ const ArticleView = (article) => (
 			{/* <Link to="/" className="text-xl text-blue-700 font-medium">← Back</Link> */}
 			<div className={`pt-10 block text-xl font-medium text-${article.category} uppercase`}>{article.category}</div>
 			<Link to={`/case-study/${article.slug}/detail`}><h1 className={`title font-semibold text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-title text-${article.category} dark:text-gray-200`}>{article.title}  →</h1></Link>
-			<div className="text-gray-600 text-2xl font-light mt-1 mb-4">{article.tagline}</div>
-			<div className="text-gray-900 font-content font-light w-full text-base lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
+			<div className="text-gray-800 text-2xl font-light mt-1 mb-4 dark:text-gray-100">{article.tagline}</div>
+			<div className="text-gray-900 font-content font-light w-full text-xl lg:text-xl mt-3 mb-8  dark:text-gray-400 " dangerouslySetInnerHTML={{ __html: article.summary }}></div>
 			{/* {JSON.stringify(index)} */}
 			<div className="flex justify-start">
-				<div className="w-3/4">
+				<div className="w-full md:w-3/4">
 					<Image
 						fluid={article.image.childImageSharp.fluid}
 						alt={article.title}
@@ -33,13 +33,13 @@ const ArticleView = (article) => (
 						return (
 							<div key={i} className="w-full mr-6 flex mb-5">
 								<div className={`flex text-${article.category} align-top`}>
-									<div className="text-center font-light font-content text-6xl">
+									<div className="text-center font-normal font-content text-6xl">
 										{i+1}
 									</div>
 								</div>
 								<div className="mt-4">
 									<div className={`text-2xl color-sp capitalize font-sans font-normal text-${article.category}`}>&nbsp;{key}</div>
-									<div className="text-base md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: item }}></div>
+									<div className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: item }}></div>
 								</div>
 							</div>
 						)
@@ -51,15 +51,15 @@ const ArticleView = (article) => (
 					<Link key={i} to={`/tag/${tag.slug}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 hover:bg-indigo-300 hover:color-sp rounded-full">{tag.name}</Link>
 				))}
 			</div>
-			<div className="my-16 justify-center flex">
+			<div className="my-16 justify-center flex flex-wrap text-center">
 				{/* <a href="mailto:jnieters@mac.com" className="bg-purple-600 inline-block cursor-pointer rounded hover:bg-purple-700 text-white font-normal tracking-wide py-3 px-6 text-xl shadow-xl">
 							Get In Touch
 							</a> */}
-				<Link to={`/case-study/${article.slug}/detail`} className="button  hover:shadow-xl hover:bg-black">
+				<Link to={`/case-study/${article.slug}/detail`} className="button mb-3 hover:shadow-xl hover:bg-black">
 					<span>Read Full Case Study →</span>
 				</Link>
 
-				<Link to={`/contact`} className="ml-10 mt-2 color-sp capitalize font-medium text-lg dark:text-gray-300">
+				<Link to={`/contact`} className="ml-0 md:ml-10 mt-2 w-1/2 md:w-auto color-sp capitalize font-medium text-lg dark:text-gray-300">
 					Or Ask to Chat ↗
 				</Link>
 			</div>

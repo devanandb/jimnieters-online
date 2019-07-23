@@ -12,6 +12,9 @@ const About = () => (
 		<div className="dark:bg-gray-800">
 			<div className="container mx-auto px-5 py-20">
 				<h1 className="text-4xl font-medium dark:text-gray-300">About me</h1>
+				<div className="hero-container  rounded-lg w-2/3 h-56">
+					adsasd
+				</div>
 				<div className="content summary flex flex-col lg:flex-row flex flex-wrap">
 
 					<div className="w-1/2 flex mb-5">

@@ -9,7 +9,7 @@ import Header from "../components/header"
 import HeroImage from "../components/hero-image"
 import SEO from "../components/seo"
 import ArticleCard from "../components/articlecard"
-import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaTwitterSquare  } from 'react-icons/fa';
+import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaQuoteLeft  } from 'react-icons/fa';
 
 
 class IndexPage extends React.Component {
@@ -86,15 +86,18 @@ class IndexPage extends React.Component {
 				<div className="hero-container sm:small bg-cover">
 					<div className="container flex-wrap mx-auto pt-10 lg:my-0 px-8 py-4 lg:pt-32 sm:pt-20 relative">
 						<h1 className="text-white dark:text-black font-extrabold font-serif mt-2 tracking-wider text-5xl sm:text-4xl lg:text-6xl">Jim Nieters</h1>
-						<p className="mt-1 text-2xl lg:text-5xl font-bold tracking-normal font-title text-gray-100 dark:text-black flex lg:justify-start text-shadow3">User Experience Design Leader</p>
-						<p className="mt-1 text-gray-100 dark:text-gray-800 font-title text-xl flex lg:justify-start font-normal lg:pb-10 tracking-wide text-shadow3">San Francisco, Bay Area</p>
-						<p className="mt-4 text-2xl md:text-2xl text-gray-100 dark:text-gray-300 w-full md:w-1/2 pb-10 font-normal sm:pb-40 md:pb-20 lg:pb-16 text-shadow2">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
+						<p className="mt-1 text-2xl lg:text-4xl font-medium tracking-normal text-gray-100 dark:text-black flex lg:justify-start">User Experience Design Leader</p>
+						<p className="mt-1 text-gray-100 dark:text-gray-800 text-xl flex lg:justify-start font-normal lg:pb-10 tracking-normal">San Francisco, Bay Area</p>
+						<div className="absolute opacity-25 -ml-6">
+							<FaQuoteLeft className="text-6xl text-gray-500" />
+						</div>
+						<p className="mt-5 text-2xl md:text-2xl text-gray-100 dark:text-gray-300 w-full md:w-3/5 pb-10 font-light sm:pb-40 md:pb-20 lg:pb-16 summary">I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</p>
 						
 						<div className="flex flex-wrap w-1/5 md:w-1/2 mb-10">
 
 							{/* {socialLinks.map()} */}
 							{socialLinks.map((slink, i) => (
-								<a className="mr-3 mb-5 text-gray-200 cursor-pointer shadow-md hover:shadow-lg text-5xl dark:text-gray-800" key={i} target={slink.name !=='mail' ? "_blank" :''} rel="noopener noreferrer" aria-label={slink.name} href={slink.url}>
+								<a className="mr-5 mb-8 text-gray-200 cursor-pointer shadow-md hover:shadow-lg text-5xl dark:text-gray-800" key={i} target={slink.name !=='mail' ? "_blank" :''} rel="noopener noreferrer" aria-label={slink.name} href={slink.url}>
 									{(() => {
 										switch (slink.name) {
 											case 'linkedin':
@@ -131,7 +134,7 @@ class IndexPage extends React.Component {
 					</div>
 				</div>
 				
-				<Header siteTitle="&nbsp;" />
+				<Header className="mb-3" siteTitle="&nbsp;" />
 				{/* <div className="dark:bg-gray-800 absolute w-full sticky top-0 z-20">
 					<div className="py-4 container mx-auto">
 						
@@ -139,16 +142,16 @@ class IndexPage extends React.Component {
 					</div>
 				</div> */}
 				<div className="filter-nav hidden lg:inline-block pt-1 mx-auto text-left absolute sticky top-0 z-20">
-					<form className="inline-block py-4 flex justify-center">
-						<label className={`filter px-12 ${ this.state.filter === 'all' ? 'active bg-gray-700' : ''}`}>
+					<form className="inline-block py-2 flex justify-center">
+						<label className={`filter px-8 ${ this.state.filter === 'all' ? 'active bg-gray-700' : ''}`}>
 							<input className="appearance-none" type="radio" value="all" checked={this.state.filter === 'all'} onChange={this.handleChange} />
 							All
 						</label>
-						<label className={`filter px-12 ${ this.state.filter === 'leader' ? 'active bg-leader' : ''}`}>
+						<label className={`filter px-8 ${ this.state.filter === 'leader' ? 'active bg-leader' : ''}`}>
 							<input className="appearance-none" type="radio" value="leader" checked={this.state.filter === 'leader'} onChange={this.handleChange} />
 							Leader
 						</label>
-						<label className={`filter px-12 ${ this.state.filter === 'designer' ? 'active bg-designer' : ''}`}>
+						<label className={`filter px-8 ${ this.state.filter === 'designer' ? 'active bg-designer' : ''}`}>
 							<input className="appearance-none" type="radio" value="designer" checked={this.state.filter === 'designer'} onChange={this.handleChange} />
 							Designer
 						</label>
@@ -170,12 +173,14 @@ class IndexPage extends React.Component {
 						</label>
 					</form>
 				</div>
-				<div className="container pt-12 pb-12 mx-auto">
+				<div className="container pt-12 pb-12 mb-10 mx-auto">
 					<div className="flex flex-wrap justify-left">
 						{articles.map((article, i) => (
-							<ArticleCard key={i} {...article}>
-							
-							</ArticleCard>
+							<div key={i} className="w-full md:w-1/2 lg:w-1/3">
+								<ArticleCard  {...article}>
+								
+								</ArticleCard>
+							</div>
 							// <div>{article.slug}</div>
 						))}
 					</div>

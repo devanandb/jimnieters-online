@@ -5,7 +5,7 @@ import DarkModeToggle from './DarkModeToggle';
 
 
 const Header = ({ siteTitle }) => (
-	<header className="bg-gray-200 dark:bg-black border-b-2 border-gray-300 dark:border-gray-800 absolute w-full z-10 sticky top-0">
+	<header className="bg-gray-200 mb-5 dark:bg-black border-b-2 border-gray-300 dark:border-gray-800 absolute w-full z-10 sticky top-0">
 		<div className="container mx-auto py-2 flex items-center px-5 lg:px-4 justify-between flex-wrap">
 			<div className="w-2/5 py-2 md:py-0 md:w-1/4 md:text-left">
 				<Link

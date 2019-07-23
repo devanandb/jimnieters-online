@@ -46,6 +46,13 @@ figure figcaption {
 	@apply italic pt-2
 }
 
+.summary:first-letter {
+	float: left;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 60px;
+	@apply font-content pt-0 pr-3;
+}
 .content p {
 	@apply mb-8;
 }
@@ -229,7 +236,7 @@ input[type='checkbox'].dmcheck + label {
 	transform: translateX(-50%); */
 }
 .filter {
-	@apply mx-2 px-4 rounded-lg py-4 text-sm cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
+	@apply mx-2 px-4 rounded-lg py-2 text-sm cursor-pointer rounded-full uppercase shadow-md bg-gray-200 font-medium tracking-wider;
 	-webkit-transition: all .3s ease-in-out;
   	transition: all .3s ease-in-out;
 }

@@ -3,7 +3,7 @@ backend:
   repo: devanandb/jimnieters-online
 
 media_folder: static/images
-public_folder: public
+public_folder: images
 publish_mode: editorial_workflow
 
 collections:
@@ -16,7 +16,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: id, label: ID, widget: number }
       - { name: article_id, label: Article ID, widget: number }
       - { name: title, label: Title }
       - { name: tagline, label: Tagline, widget: string }
@@ -44,7 +43,12 @@ collections:
       - { name: summary, label: Summary, widget: text }
       - { name: body, label: Body, widget: markdown }
       - { name: order, label: Order, widget: number }
-      - { name: category, label: Category }
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - { label: Designer, value: designer }
+          - { label: Leader, value: leader }
       - name: tags
         label: Tags, 
         widget: list
@@ -54,7 +58,6 @@ collections:
             widget: relation
             collection: tag
             searchFields: ['title']
-            valueField: slug
       - { name: created, label: Created, widget: date }
       - { name: published, label: Published, widget: boolean}
   - name: Tag

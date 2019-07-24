@@ -8,6 +8,13 @@ module.exports = {
     twitterUsername: 'jimnieters'
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-106389519-3",
+        head: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -121,24 +128,6 @@ module.exports = {
         classNameLight: 'mode-light',
         storageKey: 'darkMode',
         minify: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-106389519-3",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: false,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "jimnieters.online",
       },
     },
     'gatsby-plugin-netlify-cache',

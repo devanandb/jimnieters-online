@@ -3,17 +3,16 @@
   "article_id": 7,
   "summary": "Great Design has become a differentiator for many startups looking to receive early funding. In fact, hiring a noted design leader can set such startups apart from their competitors. Being able to demonstrate a complete, powerful and delightful experience for CoachList was one of the key factors in their being able to generate initial funding.",
   "created": "2019-07-24T19:12:24.660Z",
-  "slug": "Slug- What is this for?",
+  "slug": "building-a-coaching-athlete-marketplace",
   "published": true,
   "tagline": "Designer",
   "order": 7,
   "title": "Building a Coaching – Athlete Marketplace",
   "case_study": {
-    "problem": "Research showed there was an unmet need for aggregating coaches and trainers in what is \n\ntoday a cottage industry.\n\nThere was no initial funding.\n\nA previous rough design got little traction.",
-    "solution": "Research with coaches, athletes and camps.\n\nDefined initial requirements and screens.\n\nEnded up designing ~ 200 screens, including landing pages, consumer review pages, profile pages, booking and checkout pages, messaging pages, dashboards for multiple personas and more",
-    "impact": "Designs helped launch a company.\n\nDesigns were used to acquire $2M in funding.\n\nFormed the basis not just for an app, but for a complete market ecosystem."
+    "problem": "* Research showed there was an unmet need for aggregating coaches and trainers in what is today a cottage industry.\n* There was no initial funding.\n* A previous rough design got little traction.",
+    "solution": "* Research with coaches, athletes and camps.\n* Defined initial requirements and screens.\n* Ended up designing ~ 200 screens, including landing pages, consumer review pages, profile pages, booking and checkout pages, messaging pages, dashboards for multiple personas and more",
+    "impact": "* Designs helped launch a company.\n* Designs were used to acquire $2M in funding.\n* Formed the basis not just for an app, but for a complete market ecosystem."
   },
-  "id": "7",
   "image": "/public/Cruise-1.png",
   "category": "Design"
 }

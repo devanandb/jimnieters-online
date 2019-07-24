@@ -1,22 +1,71 @@
 backend:
-  name: test-repo
+  name: github
+  repo: devanandb/jimnieters-online
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/images
+public_folder: public
+publish_mode: editorial_workflow
 
 collections:
   - name: Article
     label: Article
-    folder: article
+    folder: data/articles
+    extension: json
+    format: json
     create: true
+    editor:
+      preview: false
     fields:
+      - { name: id, label: ID, widget: number }
+      - { name: article_id, label: Article ID, widget: number }
       - { name: title, label: Title }
+      - { name: tagline, label: Tagline, widget: string }
       - { name: slug, label: Slug }
       - { name: image, label: Image, widget: image}
-      - { name: date, label: Date, widget: date }
+      - name: case_study
+        label: Case Study
+        widget: object
+        fields:
+          - label: Problem
+            name: problem
+            widget: markdown
+          - label: Solution
+            name: solution
+            widget: markdown
+          - label: Impact
+            name: impact
+            widget: markdown
+          - label: Images
+            name: images
+            widget: list
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Title, name: title, widget: string }
       - { name: summary, label: Summary, widget: text }
       - { name: body, label: Body, widget: markdown }
       - { name: order, label: Order, widget: number }
       - { name: category, label: Category }
+      - name: tags
+        label: Tags, 
+        widget: list
+        fields:
+          - name: tag
+            label: Tag
+            widget: relation
+            collection: tag
+            searchFields: ['title']
+            valueField: slug
+      - { name: created, label: Created, widget: date }
       - { name: published, label: Published, widget: boolean}
-      - { name: tags, label: Tags, widget: list}
+  - name: Tag
+    label: Tag
+    folder: data/tags
+    extension: json
+    format: json
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: title, label: Title }
+      - { name: slug, label: Slug }
+

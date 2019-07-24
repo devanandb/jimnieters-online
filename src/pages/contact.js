@@ -9,7 +9,7 @@ import Header from "../components/header"
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-	<Header siteTitle="Jim Nieters - Work" />
+	<Header siteTitle="work" />
 	<div className="dark:bg-gray-800">
 		<div className="container mx-auto px-5 py-20">
 			<div className="flex">

@@ -5,7 +5,7 @@ module.exports = {
       'serif': ['"Shadows Into Light"', 'Georgia', 'Cambria'],
       'mono': ['SFMono-Regular', 'Menlo'],
       'content': ['"PT Serif"', 'sans-serif'],
-      'title': ['Lato', 'sans-serif'],
+      'title': ['Lato', 'Roboto', 'sans-serif'],
     },
     extend: {}
   },

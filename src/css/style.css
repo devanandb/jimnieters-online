@@ -10,9 +10,18 @@
 	/* background-attachment: fixed; */
 }
 
+.hero-about {
+	background-image: url('/images/jimbg-n.jpg');
+	background-position: right -20px bottom 0px;
+	background-size: 230%;
+	background-repeat: no-repeat;
+
+}
+
 @media (min-width: 768px) { 
 	.hero-container {
 		background-position: right -100px bottom 0px;
+		background-position: right -300px bottom 0px;
 	}
 }
 

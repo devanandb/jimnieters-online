@@ -12,18 +12,18 @@ const About = () => (
 		<div className="dark:bg-gray-800">
 			<div className="container mx-auto px-5 py-20">
 				<h1 className="text-4xl font-medium dark:text-gray-300">About me</h1>
-				<div className="hero-container  rounded-lg w-2/3 h-56">
-					adsasd
+				<div className="hero-about rounded-lg w-1/2 lg:w-1/4 h-64">
+					
 				</div>
 				<div className="content summary flex flex-col lg:flex-row flex flex-wrap">
 
-					<div className="w-1/2 flex mb-5">
+					<div className="w-full md:w-1/2 flex mb-5">
 						<div className={`flex align-top`}>
 							<div className="text-center font-normal font-content text-6xl">
 								&nbsp;
 							</div>
 						</div>
-						<div className="mt-4">
+						<div className="mt-10 -ml-6">
 							<div className={`text-2xl color-sp capitalize font-sans font-normal`}>&nbsp;Professional Profile</div>
 							<div className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400" >
 								<ul>
@@ -35,13 +35,13 @@ const About = () => (
 							</div>
 						</div>
 					</div>
-					<div className="w-1/2 flex mb-5">
+					<div className="w-full md:w-1/2 flex mb-5">
 						<div className={`flex align-top`}>
 							<div className="text-center font-normal font-content text-6xl">
 								&nbsp;
 							</div>
 						</div>
-						<div className="mt-4">
+						<div className="mt-10">
 							<div className={`text-2xl color-sp capitalize font-sans font-normal`}>&nbsp;Key Achievements</div>
 							<div className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400" >
 								<ul>

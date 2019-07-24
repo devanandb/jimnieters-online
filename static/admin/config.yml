@@ -10,6 +10,7 @@ collections:
   - name: Article
     label: Article
     folder: data/articles
+    identifier_field: fields.slug
     extension: json
     format: json
     create: true

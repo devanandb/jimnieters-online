@@ -1,3 +1,7 @@
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node);
+};
 exports.createPages = async ({ graphql, actions: { createPage} }) => {
 	const results = await graphql(`
 		{
@@ -65,3 +69,4 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 	// 	})
 	// });
 };
+

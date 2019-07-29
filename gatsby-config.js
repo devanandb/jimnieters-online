@@ -22,10 +22,49 @@ module.exports = {
         path: `./data/`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `./static/images`,
+        name: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `./content/case-studies`,
+        name: 'pages',
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-postcss',
+     {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1024,
+            },
+          },
+          // {
+          //   resolve: 'gatsby-remark-copy-linked-files',
+          //   options: {
+          //     destinationDir: 'static',
+          //   },
+          // },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-crisp-chat',
       options: {

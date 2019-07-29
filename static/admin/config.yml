@@ -56,25 +56,8 @@ collections:
           - { label: Designer, value: designer }
           - { label: Leader, value: leader }
       - name: tags
-        label: Tags, 
+        label: Tags
         widget: list
-        fields:
-          - name: tag
-            label: Tag
-            widget: relation
-            collection: tag
-            searchFields: ['title']
       - { name: created, label: Created, widget: date }
-      - { name: published, label: Published, widget: boolean}
-  - name: Tag
-    label: Tag
-    folder: data/tags
-    extension: json
-    format: json
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { name: title, label: Title }
-      - { name: slug, label: Slug }
+      - { name: published, label: Published, widget: boolean }
 

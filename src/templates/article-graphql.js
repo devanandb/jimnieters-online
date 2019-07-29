@@ -53,9 +53,7 @@ export const query = graphql`
 			slug
 			body
 			summary
-			published
 			order
-			featured
 			category
 			tags {
 				slug

@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 
 
 const ArticleView = (article) => (
-	<div id={`${article.slug}`} className={`border-t-2 dark:border-gray-600 ${article.order%2 ? 'dark:bg-gray-900 ' : 'dark:bg-gray-900'}`}>
+	<div id={`${article.slug}`} className={`dark:border-gray-600 ${article.order%2 ? 'dark:bg-gray-900 ' : 'dark:bg-gray-900'}`}>
 		{/* {JSON.stringify(article)} */}
 		<div className="container mx-auto px-5 pb-10">
 			{/* <Link to="/" className="text-xl text-blue-700 font-medium">← Back</Link> */}

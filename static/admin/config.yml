@@ -9,10 +9,8 @@ publish_mode: editorial_workflow
 collections:
   - name: Article
     label: Article
-    folder: data/articles
+    folder: content/case-studies
     identifier_field: fields.slug
-    extension: json
-    format: json
     create: true
     editor:
       preview: false
@@ -22,6 +20,8 @@ collections:
       - { name: tagline, label: Tagline, widget: string }
       - { name: slug, label: Slug }
       - { name: image, label: Image, widget: image}
+      - { name: image_caption, label: Image Caption, widget: string}
+      - { name: summary, label: Summary, widget: text }
       - name: case_study
         label: Case Study
         widget: object
@@ -35,13 +35,18 @@ collections:
           - label: Impact
             name: impact
             widget: markdown
+          - label: Points
+            name: points
+            widget: list
+            fields: 
+              - { label: Name, name: name, widget: string }
+              - { label: Value, name: value, widget: markdown }
           - label: Images
             name: images
             widget: list
             fields:
               - { label: Image, name: src, widget: image }
               - { label: Title, name: title, widget: string }
-      - { name: summary, label: Summary, widget: text }
       - { name: body, label: Body, widget: markdown }
       - { name: order, label: Order, widget: number }
       - label: Category

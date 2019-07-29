@@ -34,7 +34,12 @@ case_study:
     solution and test before coding.
 order: 1
 category: leader
-tags: []
+tags:
+  - Monetization
+  - Strategy
+  - Customer Journey
+  - Multidisciplinary Design
+  - Usability
 created: '2019-07-24T21:37:08.477Z'
 published: true
 ---

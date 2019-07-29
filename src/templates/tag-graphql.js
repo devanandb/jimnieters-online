@@ -10,50 +10,28 @@ import ArticleCard from "../components/articlecard"
 
 export const query = graphql`
 	query($slug: String!) {
-		articles: allArticlesJson(filter: {tags: {elemMatch: {slug: {eq: $slug}}}}) {
+		articles: allMarkdownRemark(filter: {frontmatter: {tags: {eq: $slug}}}) {
 			nodes {
-				id
-				title
-				tagline
-				slug
-				summary
-				category
-				order
-				image {
-					childImageSharp {
-						fluid {
-							...GatsbyImageSharpFluid
-						}
-					}
-				}
-				tags {
-					name
+				frontmatter {
+					title
+					tagline
 					slug
-				}
-				case_study {
-					problem
-					solution
-					impact
-					points {
-						name
-						value
-					}
-					images {
-						alt
-						title
-						src {
-							childImageSharp {
-								fluid {
-									...GatsbyImageSharpFluid
-								}
+					summary
+					category
+					order
+					tags
+					image {
+						childImageSharp {
+							fluid {
+								...GatsbyImageSharpFluid
 							}
 						}
 					}
 				}
 			}
 		}
-		tags: allArticlesJson {
-			distinct(field: tags___slug)
+		tags: allMarkdownRemark {
+			distinct(field: frontmatter___tags)
 		}
 	}
 `;
@@ -61,7 +39,6 @@ export const query = graphql`
 const Tag = ({ data, props }) => {
 	const articles = data.articles.nodes;
 	const tags = data.tags.distinct;
-	console.log(data);
 	// const cat = 'slug';
 	return (
 		<Layout>
@@ -87,8 +64,8 @@ const Tag = ({ data, props }) => {
 								// <ArticleCard key={i} {...node}>
 								
 								// </ArticleCard>
-								<div className="w-full md:w-1/2 lg:w-1/3">
-									<ArticleCard key={i} {...node}>
+								<div key={i} className="w-full md:w-1/2 lg:w-1/3">
+									<ArticleCard  {...node}>
 									
 									</ArticleCard>
 								</div>

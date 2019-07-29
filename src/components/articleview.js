@@ -22,7 +22,7 @@ const ArticleView = (article) => (
 						className="object-cover h-auto rounded-lg shadow-lg"
 					/>
 					<div className="italic font-light font-content mt-4 mb-10 text-gray-800 text-sm md:text-xl dark:text-gray-400">
-						{ article.case_study.images[0].title ? article.case_study.images[0].title : "Image will have a caption here" }
+						{ article.image_caption ? article.image_caption : "Image will have a caption here" }
 					</div>
 				</div>
 			</div>
@@ -48,7 +48,7 @@ const ArticleView = (article) => (
 			</div>
 			<div className="mt-16 flex justify-center flex-wrap">
 				{article.tags.map((tag, i)=> (
-					<Link key={i} to={`/tag/${tag.slug}#tagView`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 hover:bg-indigo-300 hover:color-sp rounded-full">{tag.name}</Link>
+					<Link key={i} to={`/tag/${tag}#tagView`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 hover:bg-indigo-300 hover:color-sp rounded-full">{tag}</Link>
 				))}
 			</div>
 			<div className="my-16 justify-center flex flex-wrap text-center">

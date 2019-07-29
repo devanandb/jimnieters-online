@@ -14,98 +14,88 @@ import ArticleView from "../components/articleview"
 
 export const query = graphql`
 	query($slug: String!) {
-		articles: allArticlesJson(sort: {order: ASC, fields: order}) {
+		articles: allMarkdownRemark(sort: {order: ASC, fields: frontmatter___order}) {
 			edges {
 				node {
-					title
-					slug
-					category
-					tagline
-					image {
-						childImageSharp {
-							fluid(maxWidth: 320) {
-								...GatsbyImageSharpFluid
-							}
-						}
+					frontmatter {
+						slug
 					}
 				}
 				next {
-					title
-					slug
-					category
-					tagline
-					image {
-						childImageSharp {
-							fluid(maxWidth: 320) {
-								...GatsbyImageSharpFluid
+					frontmatter {
+						title
+						slug
+						category
+						tagline
+						image {
+							childImageSharp {
+								fluid(maxWidth: 320) {
+									...GatsbyImageSharpFluid
+								}
 							}
 						}
 					}
 				}
 				previous {
-					title
-					slug
-					category
-					tagline
-					image {
-						childImageSharp {
-							fluid(maxWidth: 320) {
-								...GatsbyImageSharpFluid
+					frontmatter {
+						title
+						slug
+						category
+						tagline
+						image {
+							childImageSharp {
+								fluid(maxWidth: 320) {
+									...GatsbyImageSharpFluid
+								}
 							}
 						}
 					}
 				}
 			}
 		}
-		article: articlesJson(slug: {eq: $slug}) {
-			id
-			title
-			tagline
-			slug
-			body
-			summary
-			order
-			category
-			tags {
+		article: markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+			frontmatter {
+				title
+				tagline
 				slug
-				name
-			}
-			image {
-				childImageSharp {
-					fluid {
-						...GatsbyImageSharpFluid
+				summary
+				order
+				category
+				tags
+				image {
+					childImageSharp {
+						fluid {
+							...GatsbyImageSharpFluid
+						}
 					}
 				}
-			}
-			case_study {
-				problem
-				solution
-				impact
-				points {
-					name
-					value
-				}
-				images {
-					alt
-					title
-					src {
-						childImageSharp {
-							fluid {
-								...GatsbyImageSharpFluid
+				image_caption
+				case_study {
+					problem
+					solution
+					impact
+					images {
+						title
+						src {
+							childImageSharp {
+								fluid {
+									...GatsbyImageSharpFluid
+								}
 							}
 						}
 					}
 				}
 			}
+			html
 		}
 	}
 `;
 
 const ArticleSum = ({ data }) => {
-	const article = data.article;
+	const article = data.article.frontmatter;
 	// const edges = data.articles.edges;
 	// console.log('asdasd', data.articles);
-	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.slug===article.slug});
+	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.frontmatter.slug===article.slug});
 	return (
 		<Layout>
 			<SEO
@@ -124,9 +114,9 @@ const ArticleSum = ({ data }) => {
 			<div className="container mx-auto mt-10">
 
 				<div className="flex flex-row-reverse flex-wrap justify-center md:justify-center">
-					{ activeArticle.next ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} mode="summary"></Card></div> : ''}
+					{ activeArticle.next ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.next.frontmatter.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next.frontmatter} mode="summary"></Card></div> : ''}
 					<hr className="" />
-					{ activeArticle.previous ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card  mode="summary" article={activeArticle.previous}></Card></div> : ''}
+					{ activeArticle.previous ? <div className="w-full md:w-1/3 lg:w-1/3 mx-5"><Link to={`/case-study/${activeArticle.previous.frontmatter.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card  mode="summary" article={activeArticle.previous.frontmatter}></Card></div> : ''}
 				</div>
 			</div>
 			

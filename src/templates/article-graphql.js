@@ -13,67 +13,71 @@ import Image from "gatsby-image"
 
 export const query = graphql`
 	query($slug: String!) {
-		articles: allArticlesJson(sort: {order: ASC, fields: order}) {
+		articles: allMarkdownRemark(sort: {order: ASC, fields: frontmatter___order}) {
 			edges {
 				node {
-					slug
+					frontmatter {
+						slug
+					}
 				}
 				next {
-					title
-					slug
-					category
-					tagline
-					image {
-						childImageSharp {
-							fluid(maxWidth: 320) {
-								...GatsbyImageSharpFluid
+					frontmatter {
+						title
+						slug
+						category
+						tagline
+						image {
+							childImageSharp {
+								fluid(maxWidth: 320) {
+									...GatsbyImageSharpFluid
+								}
 							}
 						}
 					}
 				}
 				previous {
-					title
-					slug
-					category
-					tagline
-					image {
-						childImageSharp {
-							fluid(maxWidth: 320) {
-								...GatsbyImageSharpFluid
+					frontmatter {
+						title
+						slug
+						category
+						tagline
+						image {
+							childImageSharp {
+								fluid(maxWidth: 320) {
+									...GatsbyImageSharpFluid
+								}
 							}
 						}
 					}
 				}
 			}
 		}
-		article: articlesJson(slug: {eq: $slug}) {
-			id
-			title
-			tagline
-			slug
-			body
-			summary
-			order
-			category
-			tags {
+		article: markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+			frontmatter {
+				title
+				tagline
 				slug
-				name
-			}
-			image {
-				childImageSharp {
-					fluid {
-						...GatsbyImageSharpFluid
+				summary
+				order
+				category
+				tags
+				image {
+					childImageSharp {
+						fluid {
+							...GatsbyImageSharpFluid
+						}
 					}
 				}
 			}
+			html
 		}
 	}
 `;
 
 const Article = ({ data }) => {
-	const article = data.article;
-	console.log(article);
-	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.slug===article.slug});
+	const article = data.article.frontmatter;
+	console.log('ydrtydytaa', article)
+	const activeArticle = _.find(data.articles.edges, function (x) {return x.node.frontmatter.slug===article.slug});
 	return (
 		<Layout>
 			<SEO
@@ -102,18 +106,18 @@ const Article = ({ data }) => {
 							/>
 						</div>
 						<div className="content font-content mt-10 dark:text-gray-200 text-xl leading-relaxed">
-							<div dangerouslySetInnerHTML={{ __html: article.body }}></div>
+							<div dangerouslySetInnerHTML={{ __html: data.article.html }}></div>
 						</div>
 					</div>
 					<div className="w-full md:w-1/4">
 						<div className="flex justify-left flex-wrap">
 							{article.tags.map((tag, i)=> (
-								<Link key={i} to={`/tag/${tag.slug}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag.name}</Link>
+								<Link key={i} to={`/tag/${tag}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag}</Link>
 							))}
 						</div>
 						<hr className="border-b-2 mb-10"/>
-						{ activeArticle.next ? <div><Link to={`/case-study/${activeArticle.next.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next} align="left"></Card></div> : ''}
-						{ activeArticle.previous ? <div><Link to={`/case-study/${activeArticle.previous.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card article={activeArticle.previous}></Card></div> : ''}
+						{ activeArticle.next ? <div><Link to={`/case-study/${activeArticle.next.frontmatter.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">Next Up →</Link><Card article={activeArticle.next.frontmatter} align="left"></Card></div> : ''}
+						{ activeArticle.previous ? <div><Link to={`/case-study/${activeArticle.previous.frontmatter.slug}`} className="-m-2 ml-2 uppercase color-sp font-semibold font-sans ">← Previous</Link><Card article={activeArticle.previous.frontmatter}></Card></div> : ''}
 						
 					</div>
 				</div>

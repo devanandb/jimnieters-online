@@ -19,17 +19,15 @@ class IndexPage extends React.Component {
 		this.state = {
 			filter: qparams.category || 'all'
 		};
-		console.log(this.state.filter);
-		
 		let category = qparams.category || 'all';
-		this.state.articles = this.props.data.allArticlesJson.nodes;
+		this.state.articles = this.props.data.articles.nodes;
 		if (qparams.category && qparams.category!=='all') {
-			let filtered = this.props.data.allArticlesJson.nodes.filter(function(article) {
-				return article.category === category;
+			let filtered = this.props.data.articles.nodes.filter(function(article) {
+				return article.frontmatter.category === category;
 			});
 			this.state.articles = filtered;
 		} else {
-			let filtered = this.props.data.allArticlesJson.nodes;
+			let filtered = this.props.data.articles.nodes;
 			this.state.articles = filtered;
 		}
 		// console.log(this.state.articles);
@@ -44,12 +42,12 @@ class IndexPage extends React.Component {
 		this.setState({filter: filter});
 		// let filtered =[];
 		if (filter!=='all') {
-			let filtered = this.props.data.allArticlesJson.nodes.filter(function(article) {
-				return article.category ===  filter;
+			let filtered = this.props.data.articles.nodes.filter(function(article) {
+				return article.frontmatter.category ===  filter;
 			});
 			this.setState({articles: filtered});
 		} else {
-			let filtered = this.props.data.allArticlesJson.nodes;
+			let filtered = this.props.data.articles.nodes;
 			this.setState({articles: filtered});
 		}
 		
@@ -196,29 +194,27 @@ export default IndexPage
 
 export const query = graphql`
 	query {
-		allArticlesJson(sort: {fields: order}) {
+		articles: allMarkdownRemark {
 			nodes {
-				id
-				article_id
-				title
-				tagline
-				slug
-				summary
-				category
-				order
-				updated_at(fromNow: true)
-				tags {
-					name
+				frontmatter {
+					article_id
+					title
+					tagline
 					slug
-				}
-				image {
-					childImageSharp {
-						fluid {
-							...GatsbyImageSharpFluid
+					summary
+					category
+					order
+					created(fromNow: true)
+					tags
+					image {
+						childImageSharp {
+							fluid(maxWidth: 320) {
+								...GatsbyImageSharpFluid
+							}
 						}
 					}
 				}
-			}
+			} 
 		}
 	}
 `;

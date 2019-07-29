@@ -31,6 +31,14 @@ case_study:
     solution and test before coding.
 order: 2
 category: leader
+tags:
+  - Concept to Code
+  - Engagement
+  - Strategy
+  - Customer Journey
+  - Experience outcomes
+  - Multidisciplinary Design
+  - Emotional Design
 created: 2019-07-29T13:09:56.543Z
 published: true
 ---

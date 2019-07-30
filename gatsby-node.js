@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 
 		createPage({
 			path: `case-study/${article.frontmatter.slug}`,
-			component: require.resolve('./src/templates/articles-graphql.js'),
+			component: require.resolve('./src/templates/casestudy-graphql.js'),
 			context: {
 				slug: article.frontmatter.slug,
 			}
@@ -46,10 +46,11 @@ exports.createPages = async ({ graphql, actions: { createPage} }) => {
 	});
 
 	results.data.tags.distinct.forEach(edge => {
+		const url = edge.replace(/\s+/g, '-').toLowerCase();
 		const tag = edge;
 
 		createPage({
-			path: `/tag/${tag}`,
+			path: `/tag/${url}`,
 			component: require.resolve('./src/templates/tag-graphql.js'),
 			context: {
 				slug: tag,

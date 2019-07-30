@@ -54,7 +54,7 @@ const Header = ({ siteTitle }) => (
 						<Link 
 							to="/about"
 							className="px-5 py-5"
-							activeClassName="text-sm font-bold dark:text-blue-500"
+							activeClassName=""
 							partiallyActive={true}
 						>About</Link>
 					</li>

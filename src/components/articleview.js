@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
 import Image from "gatsby-image"
+import MarkdownContent from "../components/markdown-content"
 
 
 const ArticleView = (article) => (
@@ -39,7 +40,8 @@ const ArticleView = (article) => (
 								</div>
 								<div className="mt-4">
 									<div className={`text-2xl color-sp capitalize font-sans font-normal text-${article.category}`}>&nbsp;{key}</div>
-									<div className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400">{item}</div>
+									{/* <div dangerouslySetInnerHTML={{ __html: item }}></div> */}
+									<MarkdownContent className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400" content={item} />
 								</div>
 							</div>
 						)
@@ -48,7 +50,7 @@ const ArticleView = (article) => (
 			</div>
 			<div className="mt-16 flex justify-center flex-wrap">
 				{article.tags.map((tag, i)=> (
-					<Link key={i} to={`/tag/${tag}#tagView`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 hover:bg-indigo-300 hover:color-sp rounded-full">{tag}</Link>
+					<Link key={i} to={`/tag/${tag.replace(/\s+/g, '-').toLowerCase()}#tagView`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 hover:bg-indigo-300 hover:color-sp rounded-full">{tag}</Link>
 				))}
 			</div>
 			<div className="my-16 justify-center flex flex-wrap text-center">

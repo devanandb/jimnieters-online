@@ -144,7 +144,7 @@ input[type='checkbox'].dmcheck + label {
 	@apply text-3xl text-black font-extrabold mb-3;
 }
 .tag-cont {
-	min-height: calc(100vh - 360px);
+	min-height: calc(100vh - 340px);
 }
 
 .tag-cont .sticky.top-0 {

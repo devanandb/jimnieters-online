@@ -112,7 +112,7 @@ const Article = ({ data }) => {
 					<div className="w-full md:w-1/4">
 						<div className="flex justify-left flex-wrap">
 							{article.tags.map((tag, i)=> (
-								<Link key={i} to={`/tag/${tag}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag}</Link>
+								<Link key={i} to={`/tag/${tag.replace(/\s+/g, '-').toLowerCase()}`} className="bg-indigo-100 text-gray-700 mr-5 mb-5 px-3 py-1 rounded-full">{tag}</Link>
 							))}
 						</div>
 						<hr className="border-b-2 mb-10"/>

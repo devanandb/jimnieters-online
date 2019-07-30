@@ -54,7 +54,7 @@ const Tag = ({ data, props }) => {
 					<div className="">
 						<div className="sticky top-0 flex flex-wrap justify-center">
 							{tags.map((tag, i) => (
-								<Link key={i} className="inline-block px-6 py-2 tracking-wide mr-5 mb-5 rounded-full dark:bg-gray-900 dark:text-gray-300 bg-white" activeClassName="bg-sp text-white dark:text-gray-100" partiallyActive={true} to={`/tag/${tag}`}>{tag}</Link>
+								<Link key={i} className="inline-block px-6 py-2 tracking-wide mr-5 mb-5 rounded-full dark:bg-gray-900 dark:text-gray-300 bg-white" activeClassName="bg-sp text-white dark:text-gray-100" partiallyActive={true} to={`/tag/${tag.replace(/\s+/g, '-').toLowerCase()}`}>{tag}</Link>
 							))}
 						</div>
 					</div>

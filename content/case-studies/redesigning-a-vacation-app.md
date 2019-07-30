@@ -1,5 +1,5 @@
 ---
-article_id: 13
+article_id: 14
 title: Redesigning a Vacation App
 tagline: 'Redesign, Position for Acquisition'
 slug: redesigning-vacation-app
@@ -30,7 +30,7 @@ case_study:
     enhancements.
 
     -   Led to roadmap of changes that would take several releases to implement.
-order: 13
+order: 14
 category: designer
 tags:
   - Consumer

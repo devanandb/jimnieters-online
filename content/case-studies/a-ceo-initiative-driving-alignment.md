@@ -22,27 +22,27 @@ case_study:
     -   We were requested by teams across the company to teach them about Rapid
     Design Labs.
   problem: >-
-    -   At Yahoo!, a newly redesigned advertising/publishing system was too
+    * At Yahoo!, a newly redesigned advertising/publishing system was too
     complex for our Sales team and customers to use.
 
-    -   In a CEO meeting, the SVP of Sales refused to use the product and the
-    SVP of Product blamed Sales for no requirements.
+    * In a CEO meeting, the SVP of Sales refused to use the product and the SVP
+    of Product blamed Sales for a lack of requirements.
 
-    -   The CEO gave both one year for the product to be improved sufficiently
-    that Sales would use the product (or else…).
+    * The CEO gave both one year for the product to be improved sufficiently
+    that Sales would use and find the product useful (or else…).
   solution: >-
-    -   I volunteered to facilitate Rapid Design Labs to define a solution that
-    we could all align around. Others stepped back due to fear of visibility.
+    * I volunteered to facilitate Rapid Design Labs to define a solution that we
+    could all align around. Others stepped back due to fear of visibility.
 
-    -   We gathered requirements, brainstormed solutions and teams that had been
-    divided aligned around a common solution.
+    * We gathered requirements, brainstormed solutions and aligned teams around
+    a common solution, teams which had been deeply divided up to this point.
 
-    -   Each representative was willing to sell the solution up their chain, so
-    it looked like it was their idea.
+    * Each representative was willing to sell the solution up their chain, so it
+    looked like it was their idea.
 
-    -   Prototyped and tested a new solution in two weeks.
+    * We prototyped and tested a new solution in two weeks.
 
-    -   The workflow went from 15+ screens and a loss of context to one screen
+    * The workflow went from 15+ screens and a loss of context to one screen
     with faster load times and bulk actions.
 order: 8
 category: leader

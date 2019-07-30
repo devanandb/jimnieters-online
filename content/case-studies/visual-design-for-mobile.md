@@ -1,5 +1,5 @@
 ---
-article_id: 9
+article_id: 10
 title: Visual Design for Mobile
 tagline: 'Research, Mood Boards, Final VisD'
 slug: visual-design-for-mobile
@@ -33,7 +33,7 @@ case_study:
     -   Design explorations and mood boards.
     -   Final design options validated with users.
     -   Reference apps designed and developed.
-order: 9
+order: 10
 category: leader
 tags:
   - Visual Design

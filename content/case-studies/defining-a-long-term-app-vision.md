@@ -1,5 +1,5 @@
 ---
-article_id: 11
+article_id: 12
 title: Defining a Long-term App Vision
 tagline: 'Journey Maps, Visualization'
 slug: defining-long-term-app-vision
@@ -31,7 +31,7 @@ case_study:
     -   Numerous meetings with airlines and TMCs.
 
     -   Journey Maps highlighting current challenges and future opportunities.
-order: 10
+order: 12
 category: designer
 tags:
   - Prototyping

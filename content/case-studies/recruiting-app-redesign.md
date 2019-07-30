@@ -66,13 +66,15 @@ We conducted qualitative user research and identified several key insights:
 * Companies in the range of 30 - 100 employees would use this sort of tool.
 * Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS)
 
+
+
 Our more quantitative research found that:
 
 * The existing calls to action on the marketing page were confusing
 * Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had:
-* confusing calls to action
-* a lack of focus that overwhelmed them
-* an unclear visual hierarchy
+  * confusing calls to action
+  * a lack of focus that overwhelmed them
+  * an unclear visual hierarchy
 
 One user said “going through this is like \[experiencing] death by a thousand cuts.”
 
@@ -84,12 +86,32 @@ Here are screens that show the new marketing page, signup pages, and landing pag
 
 ![Simplified call to action](/images/recruiting-details-image-1.png "Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)")
 
+Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)
+
 ![How It Works On Marketing Page](/images/recruiting-details-image-2.png "How It Works On Marketing Page")
+
+_How It Works On Marketing Page_
+
+
 
 ![Detailed text on How It Works after a User Clicks or Taps the ATTRACT, MATCH, or MANAGE & HIRE boxes](/images/recruiting-details-image-3.png "How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE")
 
+_How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE_
+
+
+
 ![Sign Up Page. Note Chatbot in the Bottom Right and a Status Icon showing User Profile Creation in the Upper Right](/images/recruiting-details-image-4.png "Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right")
+
+_Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right_
+
+
 
 ![Cost Screen, Showing Safety/Certification Graphic in the Upper Right](/images/recruiting-details-image-5.png "Cost Screen, Showing Safety/Certification Graphic in the Upper Right")
 
+_Cost Screen, Showing Safety/Certification Graphic in the Upper Right_
+
+
+
 ![Job Landing Page, showing Users How To Create a More Effective Job Posting- in this case, they are 40% complete](/images/recruiting-details-image-6.png "Job Landing Page, Educating Users on How To Create a More Effective Job Posting")
+
+_Job Landing Page, Educating Users on How To Create a More Effective Job Posting_

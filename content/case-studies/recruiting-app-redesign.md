@@ -1,7 +1,7 @@
 ---
 article_id: 11
 title: Recruiting App Redesign
-tagline: 'Research, Redesign, Improved Acquisition Funnel'
+tagline: 'Research, Redesign, Improved Acquisition'
 slug: recruiting-app-redesign
 image: /images/how-it-works.png
 image_caption: Description of How Easy It is to Get Highly Relevant Candidates

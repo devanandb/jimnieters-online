@@ -30,6 +30,9 @@ case_study:
 
     * The CEO gave both one year for the product to be improved sufficiently
     that Sales would use and find the product useful (or else…).
+
+    * The product was designed to support the most common use cases. However,
+    data showed that a missed "corner case" eliminated 70% of the revenue.
   solution: >-
     * I volunteered to facilitate Rapid Design Labs to define a solution that we
     could all align around. Others stepped back due to fear of visibility.

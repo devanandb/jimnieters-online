@@ -3,7 +3,7 @@ article_id: 9
 title: Building a Coach–Athlete Marketplace
 tagline: Generated Funding for a Startup
 slug: Building-a-coach-athlete-marketplace
-image: /images/l2-coachlist.png
+image: /images/coach-profile-page-responsive.png
 image_caption: Coach Profile Page (Mobile)
 summary: >-
   Great Design has become a differentiator for many startups looking to receive

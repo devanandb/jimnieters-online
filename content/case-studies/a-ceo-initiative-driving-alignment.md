@@ -37,8 +37,8 @@ case_study:
     * I volunteered to facilitate Rapid Design Labs to define a solution that we
     could all align around. Others stepped back due to fear of visibility.
 
-    * We gathered requirements, brainstormed solutions and aligned teams around
-    a common solution, teams which had been deeply divided up to this point.
+    * We gathered requirements, brainstormed solutions and aligned teams that
+    had been deeply divided around a common solution.
 
     * Each representative was willing to sell the solution up their chain, so it
     looked like it was their idea.

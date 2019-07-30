@@ -39,7 +39,7 @@ const ArticleView = (article) => (
 								</div>
 								<div className="mt-4">
 									<div className={`text-2xl color-sp capitalize font-sans font-normal text-${article.category}`}>&nbsp;{key}</div>
-									<div className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400"  dangerouslySetInnerHTML={{ __html: item }}></div>
+									<div className="text-xl md:text-xl font-content font-normal pt-2 text-gray-800 dark:text-gray-400">{item}</div>
 								</div>
 							</div>
 						)

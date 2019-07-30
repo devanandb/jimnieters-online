@@ -3,7 +3,8 @@ article_id: 5
 title: Unifying Personas
 tagline: Ethnography, Creativity; Innovation
 slug: unifying-personas
-image: images/Ed-Photo-Shoot-1.jpg
+image: /images/Ed-Photo-Shoot-1.jpg
+image_caption: Eagle-eye Edward Action Figure Presenting in a Meeting
 summary: >-
   Innovation requires thinking differently. We needed to make personas sticky (memorable) and create a buzz. Our action figures stirred controversy, got people talking, and got engineers and senior executives on our side.
 case_study:
@@ -19,10 +20,6 @@ case_study:
     * Won an award for innovation by the CMO.
     * Posters of these personas showed up outside the office of the CMO and several Senior VPs, with a sign “get to know your users!”
     * My team was invited to participate in cross-business-unit tiger teams to solve challenges.
-  images:
-    - src: images/Ed-Photo-Shoot-1.jpg
-      title: Eagle-eye Edward Action Figure Presenting in a Meeting
-}
 order: 5
 category: leader
 published: true

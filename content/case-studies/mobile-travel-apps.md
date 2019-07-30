@@ -7,10 +7,7 @@ image: /images/mobile-travel.jpg
 image_caption: Customer-facing Airline App (Smartphone) and Agent Check-in App (Tablet)
 summary: >-
     Mass exposure to elegant apps has driven users of every demographic to expect usable, useful and delightful mobile apps, whether consumer or enterprise. Our mobile travel apps exceeded customer expectations.
-case_study: 
-  images: 
-    - src: images/RapidDesignLabs.jpg
-      title: Customer-facing Airline App (Smartphone) and Agent Check-in App (Tablet)
+case_study:
   problem: >- 
     * Hard for Airlines to expand check-in footprint.
     * Enough agents for a high-touch experience.

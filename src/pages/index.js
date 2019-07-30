@@ -194,7 +194,7 @@ export default IndexPage
 
 export const query = graphql`
 	query {
-		articles: allMarkdownRemark {
+		articles: allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
 			nodes {
 				frontmatter {
 					article_id

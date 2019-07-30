@@ -16,7 +16,7 @@ case_study:
     * Enough agents for a high-touch experience.
     * Airlines needed a vendor to show the future.
   solution: >- 
-    * User research: Lean Ethnography at 12 airports and 8 back offices worldwide.
+    * 'User research: Lean Ethnography at 12 airports and 8 back offices worldwide.'
     * Led innovation workshops with airlines to brainstorm solutions.
     * Filtered options to mobile airline checkin app.* Built  apps used by airlines worldwide.
   impact: >- 

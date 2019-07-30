@@ -1,5 +1,5 @@
 ---
-article_id: 10
+article_id: 11
 title: Cruise Line App Prototype
 tagline: 'LEAN Design, Prototyping'
 slug: cruise-line-app-prototype
@@ -32,7 +32,7 @@ case_study:
     -   Gathered rapid contextual research.
     -   Designed a cruise-line app for passengers.
     -   Built a functional tablet prototype to sho executives.
-order: 10
+order: 11
 category: designer
 tags:
   - Prototyping

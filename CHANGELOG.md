@@ -1,3 +1,49 @@
+### 0.1.0 (2019-07-30)
+
+##### Build System / Dependencies
+
+* Fix the version of cms to fix the deploy ([bdbc90de](https://github.com/gatsbyjs/gatsby-starter-default/commit/bdbc90ded5b8e9a2e42da4c28553a66a0f517cbf))
+
+##### Chores
+
+* Update more content ([b9fd7d08](https://github.com/gatsbyjs/gatsby-starter-default/commit/b9fd7d088d157445743f62bb2fd6a3484640ded0))
+* Remove test files ([4f120792](https://github.com/gatsbyjs/gatsby-starter-default/commit/4f120792b82dd1c66abe7cb94dab2fe999a9884c))
+
+##### New Features
+
+* Fixed Tags, added md support, cleanup ([2c9dde45](https://github.com/gatsbyjs/gatsby-starter-default/commit/2c9dde45e595300d8bc88125e28910fb2b4b4b4d))
+* Testing addition of articles by files ([1903267b](https://github.com/gatsbyjs/gatsby-starter-default/commit/1903267bd22f85e27f99f2022c64560829aaeced))
+* Small updates ([92ba3bd9](https://github.com/gatsbyjs/gatsby-starter-default/commit/92ba3bd916ffc61d3f2c6ec926f8b2daeb8a85f8))
+* Small updates ([b1954242](https://github.com/gatsbyjs/gatsby-starter-default/commit/b195424276d2feb5368a8d40af79c813f5fdf49e))
+* Add CMS editor for articles and tags ([3e95af3f](https://github.com/gatsbyjs/gatsby-starter-default/commit/3e95af3fd28085b15669c294eab50a4ba5cd900e))
+* New Hero background, small clean up, fix responsive ([039395f4](https://github.com/gatsbyjs/gatsby-starter-default/commit/039395f49bc610f669ef55e5f65c53642f4a6b33))
+* Add tag pages, minor fixes ([3385a643](https://github.com/gatsbyjs/gatsby-starter-default/commit/3385a6438f437f82f9a736b48a7ed2bff5a1cb9f))
+* Add GA tracking ID ([f5b4ce89](https://github.com/gatsbyjs/gatsby-starter-default/commit/f5b4ce8980c7e8db55a2c5ce211c40feb1c2b88f))
+
+##### Bug Fixes
+
+* Small updates to CMS config and cleanup ([45b46da6](https://github.com/gatsbyjs/gatsby-starter-default/commit/45b46da6e0511739efc83e0ba8d762a404e8b761))
+* Clean up old generate ([88b3a9e4](https://github.com/gatsbyjs/gatsby-starter-default/commit/88b3a9e479604ea0f8813eff8e15c08d42cfede9))
+* Fix About page image issue ([f88c96eb](https://github.com/gatsbyjs/gatsby-starter-default/commit/f88c96eb88b391dde69783361ee98c41e2d4993e))
+* Fix the GA ([1c301025](https://github.com/gatsbyjs/gatsby-starter-default/commit/1c3010254f308bd8af471ca234b26baa67b5deab))
+* Change the default setting for anonymize in GA ([43199629](https://github.com/gatsbyjs/gatsby-starter-default/commit/43199629a652add34f3f3514d72ce9894c5d0d65))
+* Update GA ID for analytics ([6a73bcb7](https://github.com/gatsbyjs/gatsby-starter-default/commit/6a73bcb7aed3e5e5dae44af7acb46f5563d398a1))
+* Update font styles on hero, New tag page design ([9c06f069](https://github.com/gatsbyjs/gatsby-starter-default/commit/9c06f069bdcad9c1598c99be440a6ed285ec5e85))
+* Change the subsequent heading font to sans-serif ([138c5d56](https://github.com/gatsbyjs/gatsby-starter-default/commit/138c5d5613dfa7f033b4b7dc221beb5a71f6600f))
+* Fix content for article 7, Update few fonts ([4f77ec98](https://github.com/gatsbyjs/gatsby-starter-default/commit/4f77ec98037423f8c20b66213b6776364efcf3d7))
+
+##### Other Changes
+
+* //github.com/devanandb/jimnieters-online ([69845ba2](https://github.com/gatsbyjs/gatsby-starter-default/commit/69845ba2bc000555e8da087ef72088984c59e2e2))
+* //github.com/devanandb/jimnieters-online ([f83fd6ff](https://github.com/gatsbyjs/gatsby-starter-default/commit/f83fd6ff54c8c846f075b2acf4827b03eb2b9820))
+* //github.com/devanandb/jimnieters-online ([1628936f](https://github.com/gatsbyjs/gatsby-starter-default/commit/1628936fbc68d5debeed1a335ff0f438121326e5))
+
+##### Refactors
+
+* Major refactor to use markdown throughout ([ec3cfb8a](https://github.com/gatsbyjs/gatsby-starter-default/commit/ec3cfb8a74caed3a28fe563bf580c8aadef0c99c))
+* Update cms config ([85ae465b](https://github.com/gatsbyjs/gatsby-starter-default/commit/85ae465b847adb88f9f3835bd29aaa71a56a4691))
+* Update the article cms config ([68ce122a](https://github.com/gatsbyjs/gatsby-starter-default/commit/68ce122abd2fc6fea2c9ad84bcc1a5e71c885a7b))
+
 #### 0.0.4 (2019-07-16)
 
 ##### Build System / Dependencies

@@ -70,11 +70,10 @@ We conducted qualitative user research and identified several key insights:
 
 ## Quantitative research:
 
-Our more quantiutative research found that:
+Our more quantitative research found that:
 
 * The existing calls to action on the marketing page were confusing.
-* Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had confusing calls to action\
-   an overwhelming lack of focus and an unclear visual hierarchy.
+* Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had confusing calls to action, an overwhelming lack of focus and an unclear visual hierarchy.
 
 
 

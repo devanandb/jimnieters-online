@@ -64,15 +64,16 @@ We conducted qualitative user research and identified several key insights:
 
 * Their call-to-action, which was “Post your job to 100s of job sites with a single click” initially sounded good to recruiters. However, they received at times thousands of resumes, 90% of which were from completely unqualified candidates. Instead, they wanted maybe 50 to 100 resumes from highly qualified candidates.
 * Companies in the range of 30 - 100 employees would use this sort of tool.
-* Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS)
+* Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS).
 
 Our more quantitative research found that:
 
-* The existing calls to action on the marketing page were confusing
+* The existing calls to action on the marketing page were confusing.
 * Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had:
-  * confusing calls to action
-  * a lack of focus that overwhelmed them
-  * an unclear visual hierarchy
+
+\    –  confusing calls to action\
+       –  a lack of focus that overwhelmed them\
+       –  an unclear visual hierarchy.
 
 One user said “going through this is like \[experiencing] death by a thousand cuts.”
 
@@ -118,4 +119,4 @@ _Job Landing Page, Educating Users on How To Create a More Effective Job Posting
 
 __
 
-This last screen is the Landing Page that appears when the recruiter has posted a job. This was entirely our recommendation and design, and research showed that it helped recruiters understand that there are things they must do to get more relevant candidates. In the end, there were many ways to represent this page, but the team chose this representation. For example, the Effectiveness score (40%) could have appeared in a bar, showing more visually how complete their job ad is. This would have provided greater visual prominence, and we urged the internal UX team to test different landing pages with different visual treatments, to continue improving.
+This last screen is the Landing Page that appears when the recruiter has posted a job. This was entirely our recommendation and design, and research showed that it helped recruiters understand that there are things they must do to get more relevant candidates. In the end, there were many ways to represent this page, but the team chose this option. For example, the Effectiveness score (40%) could have appeared in a bar, showing more prominently how complete their job ad is. We urged the internal UX team to test different landing pages with different visual treatments, to continue improving, given the value of this page.

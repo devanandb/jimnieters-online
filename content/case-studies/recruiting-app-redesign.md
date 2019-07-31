@@ -66,8 +66,6 @@ We conducted qualitative user research and identified several key insights:
 * Companies in the range of 30 - 100 employees would use this sort of tool.
 * Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS)
 
-
-
 Our more quantitative research found that:
 
 * The existing calls to action on the marketing page were confusing
@@ -86,32 +84,38 @@ Here are screens that show the new marketing page, signup pages, and landing pag
 
 ![Simplified call to action](/images/recruiting-details-image-1.png "Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)")
 
-Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)
+_Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)_
+
+__
 
 ![How It Works On Marketing Page](/images/recruiting-details-image-2.png "How It Works On Marketing Page")
 
 _How It Works On Marketing Page_
 
-
+__
 
 ![Detailed text on How It Works after a User Clicks or Taps the ATTRACT, MATCH, or MANAGE & HIRE boxes](/images/recruiting-details-image-3.png "How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE")
 
 _How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE_
 
-
+__
 
 ![Sign Up Page. Note Chatbot in the Bottom Right and a Status Icon showing User Profile Creation in the Upper Right](/images/recruiting-details-image-4.png "Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right")
 
 _Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right_
 
-
+__
 
 ![Cost Screen, Showing Safety/Certification Graphic in the Upper Right](/images/recruiting-details-image-5.png "Cost Screen, Showing Safety/Certification Graphic in the Upper Right")
 
 _Cost Screen, Showing Safety/Certification Graphic in the Upper Right_
 
-
+__
 
 ![Job Landing Page, showing Users How To Create a More Effective Job Posting- in this case, they are 40% complete](/images/recruiting-details-image-6.png "Job Landing Page, Educating Users on How To Create a More Effective Job Posting")
 
 _Job Landing Page, Educating Users on How To Create a More Effective Job Posting_
+
+__
+
+This last screen is the Landing Page that appears when the recruiter has posted a job. This was entirely our recommendation and design, and research showed that it helped recruiters understand that there are things they must do to get more relevant candidates. In the end, there were many ways to represent this page, but the team chose this representation. For example, the Effectiveness score (40%) could have appeared in a bar, showing more visually how complete their job ad is. This would have provided greater visual prominence, and we urged the internal UX team to test different landing pages with different visual treatments, to continue improving.

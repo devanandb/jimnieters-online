@@ -58,7 +58,7 @@ tags:
 created: 2019-07-30T21:55:49.947Z
 published: true
 ---
-When we started this project, the CMO told us she needed someone who her VP of UX could learn from, in order to help the team design experiences that differentated. The company had a 12-person UX team and had invested in marketing to drive people to their site. Their initial acquisition funnel looked OK, in that a sufficient number of users signed up for a free trial. However, most dropped off the free trial before paying a subscription fee for the product.
+When we started this project, the CMO told us she needed someone who her VP of UX could learn from, in order to help the team design experiences that differentiated. The company had a 12-person UX team and had invested in marketing to drive people to their site. Their initial acquisition funnel looked OK, in that a sufficient number of users signed up for a free trial. However, most dropped off the free trial before paying a subscription fee for the product.
 
 We conducted qualitative user research and identified several key insights:
 

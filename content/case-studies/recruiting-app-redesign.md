@@ -82,12 +82,30 @@ We also helped them redefine their roadmap. For example, instead of adding featu
 
 Here are screens that show the new marketing page, signup pages, and landing page to increase the quality of applicants.
 
-![How It Works On Marketing Page](/images/recruiting-details-image-2.png "How It Works On Marketing Page")
+![How We Help On Marketing Page](/images/how-we-help.png "How We Help On Marketing Page")
 
-![Detailed text on How It Works after a User Clicks or Taps the ATTRACT, MATCH, or MANAGE & HIRE boxes](/images/recruiting-details-image-3.png "How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE")
+_How We Help- ATTRACT, MATCH, MANAGE & HIRE!_
+
+__
+
+![Detailed text on How We Help after a User Clicks or Taps the ATTRACT, MATCH, or MANAGE & HIRE boxes](/images/how-we-help-attractselected.png "How We Help When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE")
+
+_How We Help- Additional Detail After User Taps ATTRACT_
+
+__
 
 ![Sign Up Page. Note Chatbot in the Bottom Right and a Status Icon showing User Profile Creation in the Upper Right](/images/recruiting-details-image-4.png "Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right")
 
+_Sign Up Page with Chatbot in the Bottom Right and a Status Icon in the Upper Right_
+
+
+
 ![Cost Screen, Showing Safety/Certification Graphic in the Upper Right](/images/recruiting-details-image-5.png "Cost Screen, Showing Safety/Certification Graphic in the Upper Right")
 
+_Cost Screen, Showing Safety/Certification Graphic In the Upper Righty_
+
+
+
 ![Job Landing Page, showing Users How To Create a More Effective Job Posting- in this case, they are 40% complete](/images/recruiting-details-image-6.png "Job Landing Page, Educating Users on How To Create a More Effective Job Posting")
+
+_Job Landing Page, showing Users How To Create a More Effective Job Posting_

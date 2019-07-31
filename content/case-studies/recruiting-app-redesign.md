@@ -82,8 +82,6 @@ We also helped them redefine their roadmap. For example, instead of adding featu
 
 Here are screens that show the new marketing page, signup pages, and landing page to increase the quality of applicants.
 
-![Simplified call to action](/images/recruiting-details-image-1.png "Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)")
-
 ![How It Works On Marketing Page](/images/recruiting-details-image-2.png "How It Works On Marketing Page")
 
 ![Detailed text on How It Works after a User Clicks or Taps the ATTRACT, MATCH, or MANAGE & HIRE boxes](/images/recruiting-details-image-3.png "How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE")

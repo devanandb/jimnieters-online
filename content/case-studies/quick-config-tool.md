@@ -28,7 +28,8 @@ case_study:
     * It turns out cost was fine. Deployment complexity drove down margins for
     deployment partners.
 
-    * We created solution bundles (millions to seven).
+    * We created solution bundles (decreased decisions points from millions to
+    seven).
 
     * We build a single wizard to rule all devices.
 order: 1

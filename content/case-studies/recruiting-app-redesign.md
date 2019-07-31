@@ -73,9 +73,9 @@ Our more quantitative research found that:
   an overwhelming lack of focus\
    an unclear visual hierarchy.
 
-One user said “going through this is like \[experiencing] death by a thousand cuts.”
+One user said “going through this is like \[experiencing] death by a thousand cuts.” It turned out that different teams owned different parts of the acquisition funnel and the marketing page, so no one person was responsible for looking at the end-to-end experience.
 
-Thus, we helped them redefine their focus and personas, decrease and simplify their calls to action, and we redesigned both the Marketing pages and their acquisition funnel, to gamify it and progressively reveal greater value at the point of need.
+Thus, we helped them redefine their focus and personas, decrease and simplify their calls to action, and we redesigned both the Marketing pages and their acquisition funnel, to gamify it and progressively reveal greater value at the point of need. More importantly, we created a single, cohesive experience.
 
 We also helped them redefine their roadmap. For example, instead of adding features that existing ATSs already had, they could create an algorithm that would enable them to do automated matching of candidate resumes to open positions, thereby increasing the quality of resumes.
 

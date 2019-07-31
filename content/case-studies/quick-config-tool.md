@@ -14,24 +14,19 @@ case_study:
     - src: /images/quick-config-tool.jpg
       title: Telephony Quick Config Tool Splash Screen
   impact: |-
-    * Significantly simplified the UX.
-    * User success on ad campaigns increased 85% (75% for novices).
-    * Increased revenue 16% in the 1st month.
-  problem: >-
-    * When I arrived, Yahoo Search Marketing was difficult to use.
-
-    * The product team resisted change.
-
-    * E.g., 57% of users with YSM campaigns could not successfully create a
-    second campaign.
-  solution: >-
-    * I requested and facilitated a Rapid Design Lab with PM, Eng, Sales and
-    Customers to brainstorm solutions and align teams.
-
-    * Collaboration resulted in agreement to build a separate desktop tool.
-
-    * Bought the time and directed my team to conduct research, prototype the
-    solution and test before coding.
+    * Reduced time to deploy from 9 hours to 45 min.
+    * Increased by $100M over plan in Q1 alone.
+    * Provided a blueprint for other solutions.
+    * Increased revenue by $1billion in two years.
+  problem: |-
+    * Our commercial voice solution was not selling.
+    * Executives thought the bottleneck was cost.
+    * My team was asked to investigate.
+  solution: |-
+    * User research, comparative analysis, journey map.
+    * Deployment complexity drove down margins
+    * Solution bundles (millions to seven).
+    * Single wizard to rule all devices.
 order: 1
 category: leader
 tags:

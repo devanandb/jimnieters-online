@@ -3,7 +3,7 @@ article_id: 11
 title: Recruiting App Redesign
 tagline: 'Research, Redesign, Improved Acquisition'
 slug: recruiting-app-redesign
-image: /images/how-it-works.png
+image: /images/bold-hero.png
 image_caption: Description of How Easy It is to Get Highly Relevant Candidates
 summary: >-
   Becoming relevant in any industry requires that a company provide a laser
@@ -58,65 +58,38 @@ tags:
 created: 2019-07-30T21:55:49.947Z
 published: true
 ---
-When we started this project, the CMO told us she needed someone who her VP of UX could learn from, in order to help the team design experiences that differentiated. The company had a 12-person UX team and had invested in marketing to drive people to their site. Their initial acquisition funnel looked OK, in that a sufficient number of users signed up for a free trial. However, most dropped off the free trial before paying a subscription fee for the product.
+When we started this project, the CMO told us she needed someone who her VP of UX could learn from, in order to help the team design experiences that differentated. The company had a 12-person UX team and had invested in marketing to drive people to their site. Their initial acquisition funnel looked OK, in that a sufficient number of users signed up for a free trial. However, most dropped off the free trial before paying a subscription fee for the product.
 
 We conducted qualitative user research and identified several key insights:
 
 * Their call-to-action, which was “Post your job to 100s of job sites with a single click” initially sounded good to recruiters. However, they received at times thousands of resumes, 90% of which were from completely unqualified candidates. Instead, they wanted maybe 50 to 100 resumes from highly qualified candidates.
 * Companies in the range of 30 - 100 employees would use this sort of tool.
-* Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS).  
-
-## 
+* Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS)
 
 Our more quantitative research found that:
 
-* The existing calls to action on the marketing page were confusing.
-* Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had confusing calls to action, an overwhelming lack of focus and an unclear visual hierarchy.
+* The existing calls to action on the marketing page were confusing
+* Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had:
+* confusing calls to action
+* a lack of focus that overwhelmed them
+* an unclear visual hierarchy
 
-## 
+One user said “going through this is like \[experiencing] death by a thousand cuts.”
 
-One user said “going through this is like \[experiencing] death by a thousand cuts.” It turned out that different teams owned different parts of the acquisition funnel and the marketing page, so no one person was responsible for looking at the end-to-end experience.
+Thus, we helped them redefine their focus and personas, decrease and simplify their calls to action, and we redesigned both the Marketing pages and their acquisition funnel, to gamify it and progressively reveal greater value at the point of need.
 
-Thus, we helped them redefine their focus and personas, decrease and simplify their calls to action, and we redesigned both the Marketing pages and their acquisition funnel, to gamify it and progressively reveal greater value at the point of need. More importantly, we created a single, cohesive experience.
-
-We also helped them redefine their roadmap. For example, instead of adding features that existing ATSs already had, they could create an algorithm that would enable them to do automated matching of candidate resumes to open positions, thereby increasing the quality of resumes.
+We also helped them redefine their roadmap. For example, instead of adding features that existing ATSs already had, they could create an algorighm that would enable them to do automated matching of candidate resumes to open positions, thereby increasing the quality of resumes.
 
 Here are screens that show the new marketing page, signup pages, and landing page to increase the quality of applicants.
 
 ![Simplified call to action](/images/recruiting-details-image-1.png "Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)")
 
-_Simplified Call to Action on Marketing Page (Subset of Total Marketing Page)_
-
-__
-
 ![How It Works On Marketing Page](/images/recruiting-details-image-2.png "How It Works On Marketing Page")
-
-_How It Works On Marketing Page_
-
-__
 
 ![Detailed text on How It Works after a User Clicks or Taps the ATTRACT, MATCH, or MANAGE & HIRE boxes](/images/recruiting-details-image-3.png "How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE")
 
-_How It Works When User Clicks or Taps ATTRACT, MATCH, or MANAGE & HIRE_
-
-__
-
 ![Sign Up Page. Note Chatbot in the Bottom Right and a Status Icon showing User Profile Creation in the Upper Right](/images/recruiting-details-image-4.png "Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right")
-
-_Sign Up Page, with Chatbot in the Bottom Right and Subtle Status Icons in the Upper Right_
-
-__
 
 ![Cost Screen, Showing Safety/Certification Graphic in the Upper Right](/images/recruiting-details-image-5.png "Cost Screen, Showing Safety/Certification Graphic in the Upper Right")
 
-_Cost Screen, Showing Safety/Certification Graphic in the Upper Right_
-
-__
-
 ![Job Landing Page, showing Users How To Create a More Effective Job Posting- in this case, they are 40% complete](/images/recruiting-details-image-6.png "Job Landing Page, Educating Users on How To Create a More Effective Job Posting")
-
-_Job Landing Page, Educating Users on How To Create a More Effective Job Posting_
-
-__
-
-This last screen is the Landing Page that appears when the recruiter has posted a job. This was entirely our recommendation and design, and research showed that it helped recruiters understand that there are things they must do to get more relevant candidates. In the end, there were many ways to represent this page, but the team chose this option. For example, the Effectiveness score (40%) could have appeared in a bar, showing more prominently how complete their job ad is. We urged the internal UX team to test different landing pages with different visual treatments, to continue improving, given the value of this page.

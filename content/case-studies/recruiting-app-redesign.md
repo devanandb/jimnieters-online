@@ -66,14 +66,16 @@ We conducted qualitative user research and identified several key insights:
 * Companies in the range of 30 - 100 employees would use this sort of tool.
 * Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS).
 
+ 
+
 Our more quantitative research found that:
 
 * The existing calls to action on the marketing page were confusing.
 * Over 90% of users were not able to do the work that would have helped them attract more qualified candidates, because their acquisition funnel had:
 
 \    –  confusing calls to action\
-       –  a lack of focus that overwhelmed them\
-       –  an unclear visual hierarchy.
+          –  a lack of focus that overwhelmed them\
+          –  an unclear visual hierarchy.
 
 One user said “going through this is like \[experiencing] death by a thousand cuts.”
 

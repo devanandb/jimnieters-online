@@ -3,7 +3,7 @@ article_id: 11
 title: Recruiting App Redesign
 tagline: 'Research, Redesign, Improved Acquisition'
 slug: recruiting-app-redesign
-image: /images/bold-hero.png
+image: /images/bold-hero-wayback.png
 image_caption: Description of How Easy It is to Get Highly Relevant Candidates
 summary: >-
   Becoming relevant in any industry requires that a company provide a laser

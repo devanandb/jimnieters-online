@@ -14,24 +14,19 @@ case_study:
     - src: /images/quick-config-tool.jpg
       title: Telephony Quick Config Tool Splash Screen
   impact: |-
-    * Significantly simplified the UX.
-    * User success on ad campaigns increased 85% (75% for novices).
-    * Increased revenue 16% in the 1st month.
-  problem: >-
-    * When I arrived, Yahoo Search Marketing was difficult to use.
-
-    * The product team resisted change.
-
-    * E.g., 57% of users with YSM campaigns could not successfully create a
-    second campaign.
-  solution: >-
-    * I requested and facilitated a Rapid Design Lab with PM, Eng, Sales and
-    Customers to brainstorm solutions and align teams.
-
-    * Collaboration resulted in agreement to build a separate desktop tool.
-
-    * Bought the time and directed my team to conduct research, prototype the
-    solution and test before coding.
+    * Reduced time to deploy from 9 hours to 45 min.
+    * Increased by $100M over plan in Q1 alone.
+    * Provided a blueprint for other solutions.
+    * Increased revenue by $1billion in two years.
+  problem: |-
+    * Our commercial voice solution was not selling.
+    * Executives thought the bottleneck was cost.
+    * My team was asked to investigate.
+  solution: |-
+    * User research, comparative analysis, journey map.
+    * Deployment complexity drove down margins
+    * Solution bundles (millions to seven).
+    * Single wizard to rule all devices.
 order: 1
 category: leader
 tags:
@@ -62,11 +57,11 @@ I presented these challenges to a cross-business-unit team of executives, along 
 * A quick config tool that configured all of the devices in a telephony solution, including a switch, a router, a PC running call control and voicemail software, and much more, then restarted all of the devices in the right order to ensure the solution functioned properly.
 * Solution bundles, which decreased purchasing decisions from millions of options to seven (there were 12 routers models with 60 possible software versions, 8 switch models with 80 software versions, and other software with numerous versions, many of which were completely incompatible with one another).
 
-In the end, my team took four people three months to design and build a tool that enabled resellers to set up our end-to-end solution in 15 minutes, instead of two days. It also resulted in $100 Million in sales _over_ our financial goals, in just the first year.
+In the end, my team took four people three months to design and build a tool that enabled resellers to set up our end-to-end solution in 15 minutes, instead of two days. It also resulted in $100 Million in sales _over and above_ our financial goals, in just the remainder of the fiscal year.
 
 ![UX Increasing Revenue by $100 Million over Goal in Year 1](/images/Commercial-Voice.jpg)
 
-Figure 1: Simplifying Deployment Increased Revenue by $100 Million Over Goal in the First Year Alone
+_Figure 1: Simplifying Deployment Increased Revenue by $100 Million Over Goal in the First Year Alone_
 
 However, after implementing this solution as a proof-of-concept, no one business unit would own the project and take it to market. As a result, I assembled the hardware and wheeled the solution into our cross-business-unit council of senior executives. I highlighted the challenges, then depicted our new solution. As part of the process, I asked our CMO as the least technically sophisticated person in the room if he would be willing to configure the solution. After some prompting, he did, and within 15 minutes, he had successfully set up a network that enabled him to place phone calls. The result? This executive council agreed to take this product to market. Within two months, it was on the corporate web site.
 
@@ -80,10 +75,10 @@ In another example, as one of my first projects ever I was asked to evaluate and
 
 ![Configuration Wizard (Windows 95)](/images/FastStep-Wizard.png)
 
-Figure 2: Configuration Wizard (Windows 95)
+_Figure 2: Configuration Wizard (Windows 95)_
 
-After implementing our recommendations, it took a novice less than 20 minutes from opening the box to surfing the Web. The SVP of the business unit said “Jim, I can’t say that our success was entirely due to your team. But, without the work you did, we never would have been as successful as fast.” In the end, entering this market when they did earned the company more than $2 Billion per year and provided a competitive advantage for four years. In this case, the experience itself differentiated even a highly technology-driven company.
+After implementing our recommendations, it took a novice less than 20 minutes from the time they began opening the box to the time they succesfully reached an external website. The SVP of the business unit said “Jim, I can’t say that our success was entirely due to your team. But, without the work you did, we never would have been as successful as fast.” In the end, entering this market when they did earned the company more than $2 Billion per year and provided a competitive advantage for many years. In this case, the experience itself differentiated even a highly technology-driven company.
 
 ![Open Me First Bag with Color Coded Cables](/images/Accessory-Kit.jpg)
 
-Figure 3: Open Me First Bag, Color-coded Cables, and Quick Start Guide
+_Figure 3: Open Me First Bag, Color-coded Cables, and Quick Start Guide_

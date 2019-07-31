@@ -57,7 +57,9 @@ They would see a visual representations of their itinerary, with links to either
 
 ![Daily Itinerary Screen](/images/Cruise-2.png)
 
-Daily Itinerary Screen
+_Daily Itinerary Screen_
+
+__
 
 ### Photo and Video Scrapbook Curation
 
@@ -67,7 +69,9 @@ The app would also be tied to the family’s onboard identifier card, which enab
 
 ![Photo Album Category Screen](/images/Cruise-3.png)
 
-Photo Album Category Screen
+_Photo Album Category Screen_
+
+__
 
 ### Entertainment- Movies and Games
 
@@ -75,11 +79,15 @@ The app would also provide entertainment in the form of movies (with parental co
 
 ![Entertainment -> Films Screen](/images/Cruise-4.png)
 
-Entertainment -> Films Screen
+_Entertainment -> Films Screen_
+
+__
 
 ![Photo Album Category Screen](/images/Cruise-5.png)
 
-Entertainment -> Games Screen
+_Entertainment -> Games Screen_
+
+__
 
 ### Shopping
 
@@ -87,7 +95,9 @@ Passengers can of course shop online at any store onboard the ship, and order ro
 
 ![Main Shopping Screen](/images/Cruise-6.png)
 
-Main Shopping Screen
+_Main Shopping Screen_
+
+__
 
 ### Summary
 

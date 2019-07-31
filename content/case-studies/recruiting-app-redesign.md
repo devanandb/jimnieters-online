@@ -66,6 +66,8 @@ We conducted qualitative user research and identified several key insights:
 * Companies in the range of 30 - 100 employees would use this sort of tool.
 * Companies ranging from 100 - 400 employees might use this tool, if it could integrate well with their existing Applicant Tracking System (ATS)
 
+
+
 Our more quantitative research found that:
 
 * The existing calls to action on the marketing page were confusing
@@ -118,4 +120,4 @@ _Job Landing Page, Educating Users on How To Create a More Effective Job Posting
 
 __
 
-This last screen is the Landing Page that appears when the recruiter has posted a job. This was entirely our recommendation and design, and research showed that it helped recruiters understand that there are things they must do to get more relevant candidates. In the end, there were many ways to represent this page, but the team chose this representation. For example, the Effectiveness score (40%) could have appeared in a bar, showing more visually how complete their job ad is. This would have provided greater visual prominence, and we urged the internal UX team to test different landing pages with different visual treatments, to continue improving.
+This last screen is the Landing Page that appears when the recruiter has posted a job. This was entirely our recommendation and design, and research showed that it helped recruiters understand that there are things they must do to get more relevant candidates. In the end, there were many ways to represent this page, but the team chose this option. For example, the Effectiveness score (40%) could have appeared in a bar, showing more prominently how complete their job ad is. We urged the internal UX team to test different landing pages with different visual treatments, to continue improving, given the value of this page.

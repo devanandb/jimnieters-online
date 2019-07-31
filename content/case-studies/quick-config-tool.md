@@ -22,11 +22,15 @@ case_study:
     * Our commercial voice solution was not selling.
     * Executives thought the bottleneck was cost.
     * My team was asked to investigate.
-  solution: |-
+  solution: >-
     * User research, comparative analysis, journey map.
-    * Deployment complexity drove down margins
-    * Solution bundles (millions to seven).
-    * Single wizard to rule all devices.
+
+    * It turns out cost was fine. Deployment complexity drove down margins for
+    deployment partners.
+
+    * We created solution bundles (millions to seven).
+
+    * We build a single wizard to rule all devices.
 order: 1
 category: leader
 tags:

@@ -69,12 +69,12 @@ In the end, in this Rapid Design Lab, we decided on a new design that reduced th
 
 During the design lab, we took the original sequence of 15 screens down to a single workspace, where users could modify all of the different values, and see the results in real-time in one location. It sped the process and provided much-needed flexibility.
 
-![More than 15 Screens](/images/apt-before.png)
+![More than 15 Screens](/images/apt-before.png "More than 15 Screens and Loss of Context")
 
 We also identified how to ensure the product was highly performant and scalable with large data sets, and that sales agents could perform many tasks in bulk. It turned out that _large data sets_ translated to _large revenue_. Though not easy, these changes were essential for this product to be marketable to large publishers. One week later, we had an interactive prototype based on our designs from the design lab. A week after this, a sales representative presented the interactive prototype to the Senior VP of Product and Sales and said “this is what we want.” Because Engineering participated, they agreed they could build it. And, the Product team agreed that the new version of the product would also sell much better externally.
 
 More importantly, in the next year, the Sales organization had adopted the product, and we highlighted a win to the press. The Senior VP of Sales said “My team is thrilled with the relationship we’ve built with your organization. Coming together… in the design labs… made my Sales team feel heard and empowered for the first time. I’m giving you a thumbs-up on your plans. I like it that we can go back to the CEO with a positive story.”
 
-![Search Results Page for the NDC TripAway app](/images/apt-after.png)
+![Single workspace](/images/apt-after.png "Single Page Workspace Sandbox")
 
 The idea of Rapid Design labs spread across Yahoo!, and other product teams requested we teach them how to facilitate such labs. I have also taught over 1,000 other people in day-long classes how to conduct successful design labs, and have received a 6.59 out of 7 scoring from attendees.
